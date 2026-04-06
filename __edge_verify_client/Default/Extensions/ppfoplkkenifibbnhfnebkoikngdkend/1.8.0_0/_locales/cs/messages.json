@@ -1,0 +1,758 @@
+{
+   "access": {
+      "message": "Přístup"
+   },
+   "activate": {
+      "message": "Aktivovat"
+   },
+   "active": {
+      "message": "Aktivní"
+   },
+   "active_all_day": {
+      "message": "Aktivní celý den"
+   },
+   "active_until": {
+      "message": "Aktivní do"
+   },
+   "add": {
+      "message": "Přidat"
+   },
+   "add_keyword_eg": {
+      "message": "Přidat klíčové slovo"
+   },
+   "add_time": {
+      "message": "Přidat čas"
+   },
+   "add_website_eg": {
+      "message": "Přidat stránku"
+   },
+   "added_to_blocking": {
+      "message": "Úspěšně přidáno"
+   },
+   "all_day_long": {
+      "message": "Celý den"
+   },
+   "allow_list": {
+      "message": "Seznam povolených"
+   },
+   "allow_list_text": {
+      "message": "Vyber aplikace, ke kterým chceš mít přístup. Všechny ostatní se zablokují."
+   },
+   "already_blocked": {
+      "message": "Tento profil již obsahuje vámi vybranou položku"
+   },
+   "and": {
+      "message": "a"
+   },
+   "anywhere_in_url": {
+      "message": "Kdekoliv v URL"
+   },
+   "anywhere_in_url_tooltip": {
+      "message": "Blokováno kdekoli v URL"
+   },
+   "banner_block_apps_and_websites": {
+      "message": "Blokujte aplikace a webové stránky"
+   },
+   "banner_block_based_on_location_and_more": {
+      "message": "Blokování podle polohy a dalších kritérií"
+   },
+   "banner_many_powerful_features": {
+      "message": "Mnoho užitečných funkcí"
+   },
+   "banner_try_appblock_on": {
+      "message": "Vyzkoušejte AppBlock na"
+   },
+   "banner_your_phone": {
+      "message": "vašem telefonu"
+   },
+   "block_list": {
+      "message": "Seznam blokovaných"
+   },
+   "block_list_text": {
+      "message": "Vyberte aplikace a webové stránky, které mají být blokovány"
+   },
+   "block_this_web": {
+      "message": "Zablokovat tuto stránku"
+   },
+   "blocked_by": {
+      "message": "Web je zablokován"
+   },
+   "blocked_by_appblock": {
+      "message": "Tato stránka je blokována rozšířením AppBlock pro %browserName%"
+   },
+   "blocked_by_blocklist": {
+      "message": "Tato stránka je blokována “%blocklist%”"
+   },
+   "blocked_in": {
+      "message": "Zablokováno v"
+   },
+   "blocking": {
+      "message": "Blokování"
+   },
+   "breaking_your_rules": {
+      "message": "Porušuješ svá pravidla?"
+   },
+   "btn_cancel": {
+      "message": "Zrušit"
+   },
+   "btn_delete": {
+      "message": "Smazat"
+   },
+   "btn_start_anyway": {
+      "message": "Přesto spustit"
+   },
+   "btn_switch": {
+      "message": "Přepnout"
+   },
+   "by_proceeding_you_agree_to_our": {
+      "message": "Pokračováním souhlasíte se "
+   },
+   "click_to_copy_link": {
+      "message": "Kopírovat odkaz"
+   },
+   "confirm": {
+      "message": "Potvrdit"
+   },
+   "continue": {
+      "message": "Pokračovat"
+   },
+   "continue_to_the_app": {
+      "message": "Pokračovat"
+   },
+   "current": {
+      "message": "Aktuální"
+   },
+   "custom_time": {
+      "message": "Vlastní čas"
+   },
+   "days": {
+      "message": "Dny"
+   },
+   "deactivate": {
+      "message": "Deaktivovat"
+   },
+   "delete": {
+      "message": "Smazat"
+   },
+   "delete_all": {
+      "message": "Smazat vše"
+   },
+   "delete_dialog_keywords": {
+      "message": "Opravdu chcete smazat všechny klíčové slova ze seznamu blokovaných? Tuto akci nelze vrátit zpět."
+   },
+   "delete_dialog_websites": {
+      "message": "Opravdu chcete smazat všechny webové stránky ze seznamu blokovaných? Tuto akci nelze vrátit zpět."
+   },
+   "delete_schedule_dialog_text1": {
+      "message": "Chceš opravdu smazat rozvrh? Operace nelze vzít zpět."
+   },
+   "delete_schedule_dialog_text2": {
+      "message": "Chystáte se odstranit Plánované blokování."
+   },
+   "delete_schedule_dialog_title": {
+      "message": "Smazat rozvrh"
+   },
+   "disable": {
+      "message": "Zakázat"
+   },
+   "discover_schedules_blocking": {
+      "message": "Objev plánované blokování"
+   },
+   "domain": {
+      "message": "Doména"
+   },
+   "domain_tooltip": {
+      "message": "Blokováno v doméně"
+   },
+   "duplicate": {
+      "message": "Duplikovat"
+   },
+   "easy": {
+      "message": "Snadný"
+   },
+   "enable_strict_mode_hint_text": {
+      "message": "Pokud chceš zůstat u blokování, vyzkoušej Přísný mód."
+   },
+   "every": {
+      "message": "Každý"
+   },
+   "every_2": {
+      "message": "Každá"
+   },
+   "every_3": {
+      "message": "Každé"
+   },
+   "every_day": {
+      "message": "Každý den"
+   },
+   "extend": {
+      "message": "Prodloužit čas"
+   },
+   "extend_timer": {
+      "message": "Prodloužení časovače"
+   },
+   "extended": {
+      "message": "Prodloužený"
+   },
+   "finish": {
+      "message": "Dokončit"
+   },
+   "for_15_min": {
+      "message": "Na 15 minut"
+   },
+   "for_1_hr": {
+      "message": "Na 1 hodinu"
+   },
+   "for_today": {
+      "message": "Na dnes"
+   },
+   "friday": {
+      "message": "Pátek"
+   },
+   "friday_short": {
+      "message": "Pá"
+   },
+   "get_started": {
+      "message": "Jdeme na to"
+   },
+   "go_to_store": {
+      "message": "Přejít do %browserName% Store"
+   },
+   "hard": {
+      "message": "Těžký"
+   },
+   "hours": {
+      "message": "Hodiny"
+   },
+   "hr_1": {
+      "message": "1h"
+   },
+   "hrs_24": {
+      "message": "24h"
+   },
+   "incognito_do_you_want_enable": {
+      "message": "Chcete blokovat v režimu incognito?"
+   },
+   "incognito_link_copied_open_in_new_tab": {
+      "message": "Odkaz zkopírován. Otevřete jej v nové kartě."
+   },
+   "incognito_must_enable_in_settings": {
+      "message": "Tuto možnost musíte povolit v nastavení prohlížeče."
+   },
+   "incognito_settings_path": {
+      "message": "Rozšíření -> Spravovat rozšíření -> Podrobnosti -> Povolit v režimu incognito"
+   },
+   "incognito_settings_path_safari": {
+      "message": "Safari -> Nastavení -> Rozšíření -> AppBlock -> Povolit při anonymním prohlížení"
+   },
+   "invalid_input": {
+      "message": "Neplatný vstup"
+   },
+   "keywords": {
+      "message": "klíčová slova"
+   },
+   "login": {
+      "message": "Přihlásit se"
+   },
+   "login_with_google": {
+      "message": "Pokračovat přes Google"
+   },
+   "min_25": {
+      "message": "25m"
+   },
+   "minutes": {
+      "message": "Minuty"
+   },
+   "monday": {
+      "message": "Pondělí"
+   },
+   "monday_short": {
+      "message": "Po"
+   },
+   "more_on_our_website": {
+      "message": "Více na našem webu"
+   },
+   "never_show_again": {
+      "message": "Nezobrazovat"
+   },
+   "new_schedule": {
+      "message": "Nový rozvrh"
+   },
+   "no_keyword_added": {
+      "message": "Nejsou zadána žádná klíčová slova"
+   },
+   "no_website_added": {
+      "message": "Nejsou vybrány žádné webové stránky"
+   },
+   "not_now": {
+      "message": "Nyní ne"
+   },
+   "onboarding_excessive_phone_usage": {
+      "message": "Přemíra používání telefonu"
+   },
+   "onboarding_focus_on_school_or_work": {
+      "message": "Soustřeďte se na školu nebo práci"
+   },
+   "onboarding_gaming_addiction": {
+      "message": "Herní závislost"
+   },
+   "onboarding_mental_health_and_adhd": {
+      "message": "Duševní zdraví & ADHD"
+   },
+   "onboarding_other": {
+      "message": "Ostatní"
+   },
+   "onboarding_porn_addiction": {
+      "message": "Závislost na pornu"
+   },
+   "onboarding_sleep_hygiene": {
+      "message": "Spánková hygiena"
+   },
+   "onboarding_step10_description": {
+      "message": "Prozkoumejte další funkce v aplikaci."
+   },
+   "onboarding_step10_header_title": {
+      "message": "Takhle funguje\nRychlý blok"
+   },
+   "onboarding_step11_description": {
+      "message": "Prozkoumejte další funkce v aplikaci."
+   },
+   "onboarding_step11_header_title": {
+      "message": "Věděli jste, že\nAppBlock je také k dispozici\njako mobilní aplikace?"
+   },
+   "onboarding_step11_no": {
+      "message": "Ne"
+   },
+   "onboarding_step11_yes_dont_use": {
+      "message": "Ano, ale nepoužívám ji"
+   },
+   "onboarding_step11_yes_use": {
+      "message": "Ano"
+   },
+   "onboarding_step12_content": {
+      "message": "Zkuste blokování mobilních aplikací a webových stránek na svém telefonu ještě dnes!"
+   },
+   "onboarding_step12_header_title": {
+      "message": "AppBlock používá miliony\nlidí po celém světě."
+   },
+   "onboarding_step1_header_title": {
+      "message": "Blokování rušivých\nwebových stránek a klíčových slov\npomocí aplikace AppBlock"
+   },
+   "onboarding_step2_header_title": {
+      "message": "S čím ti AppBlock může pomoci?"
+   },
+   "onboarding_step3_header_title": {
+      "message": "S čím ti AppBlock může pomoci?"
+   },
+   "onboarding_step4_header_title": {
+      "message": "Víš...\nNejsi v tom sám."
+   },
+   "onboarding_step4_text_1": {
+      "message": "Nesčetné studie ukazují, že mnoho lidí má problémy se soustředit kvůli tlaku moderního životního stylu a závislosti na telefonu, kdy o jejich pozornost soupeří rozptylující aplikace."
+   },
+   "onboarding_step4_text_2": {
+      "message": "Podle Světové zdravotnické organizace (WHO) trpí problémy s duševním zdravím přibližně každý čtvrtý člověk na světě."
+   },
+   "onboarding_step4_text_3": {
+      "message": "Podle nejnovějších údajů kontroluje průměrný uživatel svůj telefon každých 12 minut, tedy přibližně 80krát denně. Při jídle s přáteli nebo rodinou používá telefon 68 % lidí."
+   },
+   "onboarding_step4_text_4": {
+      "message": "Podle nejnovějších údajů sleduje porno v danou chvíli 28 000 lidí a 84 % všech sledování je na telefonu!"
+   },
+   "onboarding_step4_text_5": {
+      "message": "Závislost na hrách je celosvětově rostoucím problémem. Mezinárodní zdravotnická organizace WHO ji klasifikuje jako duševní poruchu a postihuje 3-4 % hráčů. To je přibližně 60 milionů lidí."
+   },
+   "onboarding_step4_text_6": {
+      "message": "Používání telefonu před spaním může narušit spánek snížením produkce melatoninu, což vede ke zhoršení kvality spánku. To ovlivňuje schopnost mnoha lidí dobře spát."
+   },
+   "onboarding_step5_content": {
+      "message": "Pomůžeme ti zablokovat rušivé vlivy, aby ses mohl soustředit na to, co je pro tebe nejdůležitější."
+   },
+   "onboarding_step5_header_title": {
+      "message": "AppBlock zkracuje čas strávený u obrazovky"
+   },
+   "onboarding_step6_header_title": {
+      "message": "Co říkají uživatelé o AppBlocku?"
+   },
+   "onboarding_step6_text_1": {
+      "message": "Miluju to - je to jednoduché a skvělé pro moje ADHD!"
+   },
+   "onboarding_step6_text_2": {
+      "message": "Touto aplikací blokuji aplikaci, která mě tak ruší ve studiu, a tím ušetřím spoustu času pro mé lepší budoucnosti."
+   },
+   "onboarding_step6_text_3": {
+      "message": "Tato aplikace byla pro mě extrémně užitečná. Velmi dobře funguje podle toho, co slibuje."
+   },
+   "onboarding_step7_continue_button": {
+      "message": "Pokračovat"
+   },
+   "onboarding_step7_header_title": {
+      "message": "Naše 3 hlavní\nfunkce blokování"
+   },
+   "onboarding_step7_quick_block_description": {
+      "message": "Chceš jednoduše zapínat/vypínat blokování?"
+   },
+   "onboarding_step7_quick_block_header": {
+      "message": "Rychlý blok"
+   },
+   "onboarding_step7_scheduled_block_description": {
+      "message": "Vytvořte automatické blokování podle svých potřeb, plánu a dalších kritérií."
+   },
+   "onboarding_step7_scheduled_block_header": {
+      "message": "Plánované blokování"
+   },
+   "onboarding_step7_strict_mode_coming_soon": {
+      "message": "Brzy dostupné"
+   },
+   "onboarding_step7_strict_mode_description": {
+      "message": "Pokud máš potíže s dodržováním pravidel, která jsi nastavil v AppBlocku, můžeš použít Přísný mód pro přísnější pravidla."
+   },
+   "onboarding_step7_strict_mode_header": {
+      "message": "Přísný mód"
+   },
+   "onboarding_step8_add_website_title": {
+      "message": "Přidat stránku"
+   },
+   "onboarding_step8_description": {
+      "message": "Přidejte webové stránky, které budou blokovány, když je zapnutý Rychlý blok. Nebojte se, blokování můžete kdykoli vypnout. Chceme vám jen ukázat, jak to všechno funguje."
+   },
+   "onboarding_step8_header_title": {
+      "message": "Zkusíme společně první blokování"
+   },
+   "onboarding_step9_description": {
+      "message": "Stiskněte tlačítko Start a podívejte se, zda jsou vybrané webové stránky skutečně blokovány."
+   },
+   "onboarding_step9_header_title": {
+      "message": "Tvůj Rychlý blok je připraven"
+   },
+   "page_set_as_distraction": {
+      "message": "Tuto stránku jste nastavili jako rušivou"
+   },
+   "pause": {
+      "message": "Pozastavit"
+   },
+   "pause_dialog_header_p1": {
+      "message": "Na jak dlouho chceš pozastavit?"
+   },
+   "pause_dialog_header_p2": {
+      "message": "Na jak dlouho chceš pozastavit?"
+   },
+   "paused": {
+      "message": "Pozastaven"
+   },
+   "permission_settings_path": {
+      "message": "Rozšíření -> Spravovat rozšíření -> Podrobnosti -> Přístup k webu -> Na všech webech"
+   },
+   "permission_settings_path_copy_link": {
+      "message": "Kopírovat odkaz"
+   },
+   "permission_settings_path_copy_link_finish": {
+      "message": "Zkopírováno"
+   },
+   "permission_settings_path_safari": {
+      "message": "Safari -> Nastavení -> Rozšíření -> AppBlock -> Vždy povolit na všech stránkách"
+   },
+   "permission_settings_path_website": {
+      "message": "Přejít na web"
+   },
+   "permission_settings_text": {
+      "message": "K zablokování je třeba udělat ještě jeden krok. Přejděte do nastavení %browserName% a vyberte možnost blokovat na všech stránkách. Úplné pokyny najdete na našich webových stránkách nebo postupujte podle přiložené cesty."
+   },
+   "permission_settings_title": {
+      "message": "Chybí oprávnění"
+   },
+   "please_send_us_email_at": {
+      "message": "Zkus to znovu nebo nám napiš"
+   },
+   "privacy_policy": {
+      "message": "Zásady ochrany osobních údajů"
+   },
+   "profile": {
+      "message": "Účet"
+   },
+   "profile_delete_account": {
+      "message": "Smazat účet"
+   },
+   "profile_dialog_text": {
+      "message": "Smazat účet"
+   },
+   "profile_email": {
+      "message": "E-mail"
+   },
+   "profile_name": {
+      "message": "Tvé jméno"
+   },
+   "quick_block": {
+      "message": "Rychlý blok"
+   },
+   "quick_block_brief_description": {
+      "message": "Jednoduchý způsob okamžitého blokování stránek jediným klepnutím na tlačítko"
+   },
+   "rating_dialog_content": {
+      "message": "Rádi bychom znali vaši zpětnou vazbu"
+   },
+   "rating_dialog_rate_us_on_store": {
+      "message": "Ohodnoťte nás na %browserName% Store"
+   },
+   "rating_dialog_rate_us_on_store_content": {
+      "message": "Opravdu by pro nás hodně znamenalo, kdybyste nám dali kladné hodnocení obchodu."
+   },
+   "rating_dialog_title": {
+      "message": "Užíváš si AppBlock?"
+   },
+   "reset": {
+      "message": "Obnovit"
+   },
+   "resume": {
+      "message": "Obnovit"
+   },
+   "saturday": {
+      "message": "Sobota"
+   },
+   "saturday_short": {
+      "message": "So"
+   },
+   "save": {
+      "message": "Uložit"
+   },
+   "schedule": {
+      "message": "Rozvrh"
+   },
+   "schedule_delete": {
+      "message": "Smazat rozvrh"
+   },
+   "schedule_name": {
+      "message": "Název rozvrhu"
+   },
+   "schedule_pause_counting_down": {
+      "message": "Tvá pauza se odpočítává"
+   },
+   "schedule_template_detox": {
+      "message": "Digitální detox"
+   },
+   "schedule_template_detox_text": {
+      "message": "Dopřej si den bez telefonu."
+   },
+   "schedule_template_focus": {
+      "message": "Soustředění"
+   },
+   "schedule_template_focus_text": {
+      "message": "Zefektivni svůj čas ve škole nebo v práci."
+   },
+   "schedule_template_morning": {
+      "message": "Rozjímavé ráno"
+   },
+   "schedule_template_morning_text": {
+      "message": "Užívej si ranní rutinu bez přerušení."
+   },
+   "schedule_template_myself": {
+      "message": "Čas pro sebe"
+   },
+   "schedule_template_myself_text": {
+      "message": "Využij své vzácné chvíle na maximum."
+   },
+   "schedule_template_study": {
+      "message": "Čas na studium"
+   },
+   "schedule_template_study_text": {
+      "message": "Procházej svým studiem s lehkostí."
+   },
+   "schedule_template_winddown": {
+      "message": "Odpočinek"
+   },
+   "schedule_template_winddown_text": {
+      "message": "Dojdi snadněji ke svým sladkým snům."
+   },
+   "schedules": {
+      "message": "Rozvrhy"
+   },
+   "schedules_empty_view_text": {
+      "message": "Naplánujte si každodenní blokování podle času."
+   },
+   "schedules_templates_title": {
+      "message": "Šablony rozvrhů"
+   },
+   "select_all": {
+      "message": "Označit vše"
+   },
+   "select_days": {
+      "message": "Vybrat dny"
+   },
+   "send_feedback": {
+      "message": "Poslat zpětnou vazbu"
+   },
+   "send_feedback_send_us_feedback": {
+      "message": "Pokud potřebujete pomoc, narazili jste na chybu nebo chcete nám poslat zpětnou vazbu."
+   },
+   "setup_strict_mode": {
+      "message": "Nastav Přísný mód"
+   },
+   "sign_in": {
+      "message": "Přihlásit se"
+   },
+   "sign_out": {
+      "message": "Odhlásit se"
+   },
+   "start": {
+      "message": "Spustit"
+   },
+   "stop": {
+      "message": "Zastavit"
+   },
+   "strict_mode": {
+      "message": "Přísný mód"
+   },
+   "strict_mode_activate_so_you_cant_bypass": {
+      "message": "Aktivuj Přísný mód, který ti je nedovolí obcházet."
+   },
+   "strict_mode_active_snackbar": {
+      "message": "Přísný mód je aktivní"
+   },
+   "strict_mode_blockings_are_unlocked": {
+      "message": "Blokování jsou odemčená"
+   },
+   "strict_mode_blockings_not_set": {
+      "message": "Zatím nemáš vytvořená žádná blokování"
+   },
+   "strict_mode_blockings_not_set_description": {
+      "message": "Přísný mód zabezpečí blokování, která ti pomáhají snižovat čas u obrazovky. Vytvoř svůj první rozvrh nebo nastav Rychlý blok."
+   },
+   "strict_mode_coming_soon": {
+      "message": "Brzy dostupné"
+   },
+   "strict_mode_confirm_dialog_description": {
+      "message": "Zatímco je aktivní Přísný mód, nebudete moci upravovat své profily a měnit některá nastavení."
+   },
+   "strict_mode_confirm_dialog_title": {
+      "message": "Jsi připravený aktivovat Přísný mód?"
+   },
+   "strict_mode_deactivate_info": {
+      "message": "Přísný mód budeš moct vypnout jen za podmínek, které předem určíš."
+   },
+   "strict_mode_follow_schedules": {
+      "message": "Podle rozvrhu"
+   },
+   "strict_mode_follow_schedules_description": {
+      "message": "Přísný mód budeš moct vypnout jen v době mimo vybrané rozvrhy."
+   },
+   "strict_mode_pin": {
+      "message": "PIN kód"
+   },
+   "strict_mode_pin_config_dialog_title": {
+      "message": "Nastav PIN kód (4 - 8 číslic)"
+   },
+   "strict_mode_pin_deactivate_dialog_title": {
+      "message": "Zadejte PIN kód"
+   },
+   "strict_mode_pin_description": {
+      "message": "Přísný mód vypneš zadáním nastaveného PIN kódu."
+   },
+   "strict_mode_pin_error_incorrect_pin": {
+      "message": "Nesprávny PIN"
+   },
+   "strict_mode_pin_error_not_matching_pin": {
+      "message": "PIN kódy se neshodují"
+   },
+   "strict_mode_quick_block_dialog_text1": {
+      "message": "Jestli teď zapneš Rychlý blok, nebudeš ho moci vypnout, dokud je aktivní Přísný mód. Opravdu to chceš udělat?"
+   },
+   "strict_mode_quick_block_dialog_text2": {
+      "message": "Jestli teď zapneš Rychlý blok, nebudeš ho moci vypnout, dokud je aktivní Přísný mód. Opravdu to chceš udělat?"
+   },
+   "strict_mode_quick_block_dialog_title": {
+      "message": "Spustit Rychlý blok"
+   },
+   "strict_mode_repeat_pin": {
+      "message": "Potvrdit PIN"
+   },
+   "strict_mode_timer": {
+      "message": "Časovač"
+   },
+   "strict_mode_timer_config_dialog_title": {
+      "message": "Nastav časovač"
+   },
+   "strict_mode_timer_confirm_dialog_title": {
+      "message": "Striktní režim bude aktivní po"
+   },
+   "strict_mode_timer_description": {
+      "message": "Přísný mód se vypne po vypršení nastaveného času."
+   },
+   "strict_mode_you_are_locked": {
+      "message": "Blokování máš zabezpečená proti jakémukoliv způsobu obcházení."
+   },
+   "sunday": {
+      "message": "Neděle"
+   },
+   "sunday_short": {
+      "message": "Ne"
+   },
+   "switch_blockmode_dialog_text": {
+      "message": "Opravdu chcete přepnout blokovací režim na %blockMode%? Tato akce smaže všechny weby, klíčová slova a je nevratná."
+   },
+   "thursday": {
+      "message": "Čtvrtek"
+   },
+   "thursday_short": {
+      "message": "Čt"
+   },
+   "time": {
+      "message": "Čas"
+   },
+   "tos": {
+      "message": "Podmínky použití"
+   },
+   "try_blocking_by_your_needs": {
+      "message": "Vyzkoušej blokování podle svých potřeb, času, místa a další"
+   },
+   "tuesday": {
+      "message": "Úterý"
+   },
+   "tuesday_short": {
+      "message": "Út"
+   },
+   "warning": {
+      "message": "Pozor!"
+   },
+   "warning_dialog_btn": {
+      "message": "OK"
+   },
+   "warning_dialog_extend": {
+      "message": "Můžete pouze prodloužit čas plánovaného blokování."
+   },
+   "warning_dialog_extend_all_week": {
+      "message": "Nemůžete prodloužit planované blokování na celý týden."
+   },
+   "warning_dialog_text": {
+      "message": "Tento rozvrh se do minuty zamkne. Poté s ním již nepůjde pracovat."
+   },
+   "warning_dialog_title": {
+      "message": "Pozor"
+   },
+   "web_content": {
+      "message": "Obsah stránky"
+   },
+   "web_content_tooltip": {
+      "message": "Bude blokováno, pokud stránka obsahuje zadané klíčové slovo:"
+   },
+   "websites": {
+      "message": "Webové stránky"
+   },
+   "wednesday": {
+      "message": "Středa"
+   },
+   "wednesday_short": {
+      "message": "St"
+   },
+   "weekdays": {
+      "message": "Pracovní dny"
+   },
+   "weekend": {
+      "message": "Víkend"
+   },
+   "welcome_to_appblock": {
+      "message": "Vítej v AppBlock"
+   },
+   "when_is_active": {
+      "message": "Kdy je aktivní?"
+   }
+}

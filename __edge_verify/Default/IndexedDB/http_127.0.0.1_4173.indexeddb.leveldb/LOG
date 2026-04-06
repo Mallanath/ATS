@@ -1,0 +1,5 @@
+2026/04/04-23:04:37.049 3344 Creating DB C:\Users\malla\Downloads\ATS\__edge_verify\Default\IndexedDB\http_127.0.0.1_4173.indexeddb.leveldb since it was missing.
+2026/04/04-23:04:37.057 3344 Reusing MANIFEST C:\Users\malla\Downloads\ATS\__edge_verify\Default\IndexedDB\http_127.0.0.1_4173.indexeddb.leveldb/MANIFEST-000001
+2026/04/04-23:04:39.153 3e4c Level-0 table #5: started
+2026/04/04-23:04:39.205 3e4c Level-0 table #5: 1182034 bytes OK
+2026/04/04-23:04:39.208 3e4c Delete type=0 #3

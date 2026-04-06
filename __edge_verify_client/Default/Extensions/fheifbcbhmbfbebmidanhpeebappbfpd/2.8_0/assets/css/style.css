@@ -1,0 +1,604 @@
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+html {
+    font: 400 normal 12px / 22px "Clarkson", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    letter-spacing: normal;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+    overflow: hidden;
+    background-color: #f6f6f6;
+    margin:0;
+    height: 457px;
+    width: 335px;
+    font: 400 normal 12px / 22px "Clarkson", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+body {
+    color: #3e3e3e;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid #797979;
+    transition: border-color 0.1s ease-in-out;
+}
+
+a:hover {
+    border-color: #3e3e3e;
+}
+
+::-webkit-input-placeholder {
+    color: #d0d0d0;
+}
+
+::-moz-placeholder {
+    color: #d0d0d0;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #d0d0d0;
+}
+
+.yui3-slider,
+.yui3-slider-rail {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.yui3-slider-content {
+    position: relative;
+    display: block;
+}
+
+.yui3-slider-rail {
+    position: relative;
+}
+
+.yui3-slider-rail-cap-left,
+.yui3-slider-rail-cap-right,
+.yui3-slider-thumb,
+.yui3-slider-thumb-image,
+.yui3-slider-thumb-shadow {
+    position: absolute;
+}
+
+.yui3-slider-thumb {
+    overflow: hidden;
+}
+
+.sqs-dialog-field.sqs-description {
+    margin-top: 33px;
+}
+
+.sqs-dialog-field:not(.sqs-description) {
+    margin-top: 11px;
+}
+
+.sqs-dialog-field .title {
+    font-weight: 500;
+}
+
+.sqs-dialog-field .description {
+    color: #797979;
+    font-size: 11px;
+}
+
+.tab-wrapper .sqs-dialog-field {
+    margin: 18px 0;
+    width: 100% !important;
+}
+
+.standard-dialog-wrapper {
+    position: absolute !important;
+    transform: scale(0.97) translate3d(0, 0, 0);
+    -webkit-transform: scale(0.97) translate3d(0, 0, 0);
+    opacity: 0;
+    z-index: 30000;
+    transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.standard-dialog-wrapper.visible {
+    opacity: 1;
+    transform: scale(1) translate3d(0, 0, 0);
+}
+
+
+.standard-dialog-wrapper .main-container {
+    background: #f6f6f6;
+    box-shadow: 0 4px 33px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    max-height: 100%;
+    overflow: hidden;
+    width: 100% !important;
+}
+
+
+
+.standard-dialog-wrapper .title-block {
+    position: relative;
+    padding-top: 11px;
+}
+
+.standard-dialog-wrapper .title-block.singleTab {
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 11px;
+    flex-direction: column;
+}
+
+
+.standard-dialog-wrapper .title-block .text-holder {
+    margin: 0 33px;
+}
+
+
+.standard-dialog-wrapper .title-text {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+.standard-dialog-wrapper .tabbed-header-container {
+    width: 100%;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.standard-dialog-wrapper .body-block {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100% !important;
+}
+
+
+.standard-dialog-wrapper .body-block>.tab-wrapper {
+    position: absolute;
+    padding: 0 33px;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+
+.standard-dialog-wrapper .button-holder {
+    border-top: 1px solid #e4e4e4;
+    display: flex;
+}
+
+.standard-dialog-wrapper .button-holder:empty {
+    border-top: 0;
+}
+
+.standard-dialog-wrapper .button-holder>* {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #e4e4e4 !important;
+}
+
+.standard-dialog-wrapper .button-holder>*:first-child {
+    border-left: none !important;
+}
+
+.standard-dialog-wrapper .button-holder input {
+    background: transparent;
+}
+
+.standard-dialog-wrapper .button-holder a {
+    border-bottom: none;
+}
+
+.standard-dialog-wrapper .button-holder>* {
+    cursor: pointer;
+    outline: none;
+    background: #f6f6f6;
+    padding: 11px;
+    text-align: center;
+    transition: background-color 0.1s ease-in-out, opacity 0.1s ease-in-out;
+    line-height: 22px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-left: 1px solid #e4e4e4 !important;
+    min-height: 44px;
+    padding: 0;
+}
+
+.standard-dialog-wrapper .button-holder>*,
+.standard-dialog-wrapper .button-holder>*>* {
+    color: #3e3e3e !important;
+    -webkit-appearance: none;
+    border: 0;
+    text-transform: uppercase;
+    outline: none;
+    letter-spacing: 0.5px;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: inherit;
+}
+
+.standard-dialog-wrapper .button-holder>*:hover {
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.standard-dialog-wrapper .button-holder .button-block>input,
+.standard-dialog-wrapper .button-holder .cancel-block>a {
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    line-height: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.sqs-text input {
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+    padding: 11px;
+    line-height: 22px;
+    height: 44px;
+    width: 100%;
+    color: #3e3e3e;
+    border: none;
+}
+
+.sqs-text input:focus {
+    outline: none;
+}
+
+.sqs-text.button-state-label input {
+    width: 100%;
+    text-align: center;
+    background: #f6f6f6;
+    color: #797979;
+}
+
+.sqs-check .check-element {
+    padding-left: 33px;
+    cursor: pointer;
+    position: relative;
+}
+
+.sqs-check .check-element:before {
+    z-index: 1;
+    display: block;
+    content: " ";
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    border: 2px solid rgba(121, 121, 121, 0.19999999999999996);
+    box-sizing: border-box;
+    transition: border-color 0.1s ease-in-out;
+}
+
+.sqs-check .check-element:hover:before {
+    border-color: rgba(121, 121, 121, 0.5);
+}
+
+.sqs-check .check-element:after {
+    z-index: 2;
+    display: block;
+    content: " ";
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #3e3e3e url("https://assets.squarespace.com/universal/images-v6/damask/checkmark-light.png") center center no-repeat;
+    background-size: 9px;
+    transform: scale(0);
+    animation-fill-mode: both;
+}
+
+
+.sqs-description .text a:hover {
+    color: #3e3e3e;
+}
+
+.sqs-text input {
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+    padding: 11px;
+    line-height: 22px;
+    height: 44px;
+    width: 100%;
+    color: #3e3e3e;
+    border: none;
+}
+
+.sqs-text input:focus {
+    outline: none;
+}
+
+.sqs-slider .slider-container {
+    width: auto !important;
+}
+
+.sqs-slider .yui3-slider {
+    width: 100%;
+}
+
+.sqs-slider .yui3-slider-content {
+    height: 22px;
+}
+
+.sqs-slider .yui3-slider-rail {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    height: 2px;
+    background-color: #dfdfdf;
+    width: 100% !important;
+}
+
+.sqs-slider .yui3-slider-thumb {
+    z-index: 10;
+    position: absolute;
+    top: -21px !important;
+    height: 44px;
+    width: 44px;
+    cursor: col-resize;
+    outline: none;
+}
+
+.sqs-slider .yui3-slider-thumb:after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%) translatey(-50%);
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    cursor: col-resize;
+    background-color: #3e3e3e;
+    transition: all 0.1s ease-in-out;
+}
+
+.sqs-slider .yui3-slider-thumb:hover:after {
+    height: 27.5px;
+    width: 27.5px;
+}
+
+.sqs-slider .yui3-slider-thumb img {
+    display: none;
+}
+
+.sqs-slider .sqs-slider-with-numeric-label .numeric-display {
+    position: absolute;
+}
+
+
+.sqs-dialog-field.sqs-check .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.sqs-dialog-field.sqs-check .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.sqs-dialog-field.sqs-check .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+}
+
+/* On mouse-over, add a grey background color */
+.sqs-dialog-field.sqs-check .container:hover input~.checkmark {}
+
+/* When the checkbox is checked, add a blue background */
+.sqs-dialog-field.sqs-check .container input:checked~.checkmark {
+    z-index: 2;
+    display: block;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #3e3e3e url(https://assets.squarespace.com/universal/images-v6/damask/checkmark-light.png) center center no-repeat;
+    background-size: 9px;
+    animation-fill-mode: both;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.sqs-dialog-field.sqs-check .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.sqs-dialog-field.sqs-check .container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.sqs-dialog-field.sqs-check .container .checkmark:after {}
+
+
+.u-field-button.Button-button.Button-primary {
+    display: block;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 11px 0;
+    text-align: center;
+    transition: background-color 0.1s ease-in-out;
+    line-height: 22px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: inherit;
+    font-size: 11px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    background-color: #e4e4e4;
+    color: #3e3e3e;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.u-field-button.Button-button.Button-primary:hover {
+    color: white;
+    background: #3e3e3e;
+}
+.u-field-button.Button-button.Button-primary.donation {
+    background: #4CAF50;
+    color: white;
+}
+.u-field-wrapper.FieldWrapper-wrapper {
+    margin: 5px 0;
+    width: 100%;
+    float: left;
+    padding: 5px;
+    max-width: 260px;
+}
+
+.u-field-wrapper.FieldWrapper-wrapper.two-btn {
+    margin: 5px 0;
+    width: calc(50% - 10px);
+    float: left;
+    padding: 5px;
+    position: relative;
+}
+
+.sqs-dialog-field .description.copyright {
+    color: #797979;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 220px;
+}
+
+.sqs-dialog-field .description.copyright span{
+    text-decoration: underline;
+}
+
+.hidden{display: none;}
+
+.update-notification{
+    color: white;
+    background-color: #D32F2F;
+    border-radius: 3px;
+    padding: 2px 4px;
+    margin-left: 10px;
+    text-transform: none;
+}
+a#update-link{
+    text-decoration: none;
+    border: none;
+}
+
+
+.controls-block.second-btn {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Password protection styles */
+.hidden {
+    display: none !important;
+}
+
+div#password-card {
+    width: 300px;
+}
+
+#password-protection input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#password-protection button {
+    /* margin-top: 15px; */
+    padding: 8px 20px;
+    background-color: #3e3e3e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+    width:100%;
+}
+
+#password-protection button:hover {
+    background-color: #555;
+}
+
+#password-error {
+    color: #ff3c3c;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+#password-protection h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#password-protection p {
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 14px;
+}

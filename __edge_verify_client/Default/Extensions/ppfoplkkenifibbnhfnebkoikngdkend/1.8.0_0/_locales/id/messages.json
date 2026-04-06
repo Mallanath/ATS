@@ -1,0 +1,752 @@
+{
+   "access": {
+      "message": "Akses"
+   },
+   "activate": {
+      "message": "Mengaktifasi"
+   },
+   "active": {
+      "message": "Aktif"
+   },
+   "active_all_day": {
+      "message": "Aktif sepanjang hari"
+   },
+   "active_until": {
+      "message": "Aktif hingga"
+   },
+   "add": {
+      "message": "Menambahkan"
+   },
+   "add_keyword_eg": {
+      "message": "Tambah kata kunci"
+   },
+   "add_time": {
+      "message": "Tambah waktu"
+   },
+   "add_website_eg": {
+      "message": "Tambahkan situs"
+   },
+   "added_to_blocking": {
+      "message": "Berhasil ditambahkan"
+   },
+   "all_day_long": {
+      "message": "Sepanjang hari"
+   },
+   "allow_list": {
+      "message": "Daftarizin"
+   },
+   "allow_list_text": {
+      "message": "Pilih aplikasi yang ingin Anda izinkan. Semua aplikasi lain akan diblokir."
+   },
+   "already_blocked": {
+      "message": "Profil ini sudah berisi item yang dipilih"
+   },
+   "and": {
+      "message": "dan"
+   },
+   "anywhere_in_url": {
+      "message": "Di mana saja di URL"
+   },
+   "anywhere_in_url_tooltip": {
+      "message": "Diblokir di mana saja dalam URL"
+   },
+   "banner_block_apps_and_websites": {
+      "message": "Memblokir aplikasi dan situs web"
+   },
+   "banner_block_based_on_location_and_more": {
+      "message": "Pemblokiran berdasarkan lokasi dan lainnya"
+   },
+   "banner_many_powerful_features": {
+      "message": "Banyak fitur canggih"
+   },
+   "banner_try_appblock_on": {
+      "message": "Coba AppBlock di"
+   },
+   "banner_your_phone": {
+      "message": "telepon Anda"
+   },
+   "block_list": {
+      "message": "Daftar Blokir"
+   },
+   "block_list_text": {
+      "message": "Pilih aplikasi dan situs web mana yang ingin Anda blokir"
+   },
+   "block_this_web": {
+      "message": "Blokir web ini"
+   },
+   "blocked_by": {
+      "message": "Web diblokir"
+   },
+   "blocked_by_appblock": {
+      "message": "Situs web ini diblokir oleh AppBlock %browserName% Ekstensi"
+   },
+   "blocked_by_blocklist": {
+      "message": "Situs web ini diblokir oleh “%blocklist%”"
+   },
+   "blocked_in": {
+      "message": "Diblokir"
+   },
+   "blocking": {
+      "message": "Pemblokiran"
+   },
+   "breaking_your_rules": {
+      "message": "Melanggar aturan Anda?"
+   },
+   "btn_cancel": {
+      "message": "Batal"
+   },
+   "btn_delete": {
+      "message": "hapus"
+   },
+   "btn_start_anyway": {
+      "message": "Tetap mulai"
+   },
+   "btn_switch": {
+      "message": "Beralih"
+   },
+   "by_proceeding_you_agree_to_our": {
+      "message": "Dengan melanjutkan, Anda menyetujui"
+   },
+   "click_to_copy_link": {
+      "message": "Klik untuk menyalin tautan"
+   },
+   "confirm": {
+      "message": "Konfirmasi"
+   },
+   "continue": {
+      "message": "Lanjutkan"
+   },
+   "continue_to_the_app": {
+      "message": "Lanjutkan"
+   },
+   "current": {
+      "message": "Saat ini"
+   },
+   "custom_time": {
+      "message": "Waktu kustom"
+   },
+   "days": {
+      "message": "Hari"
+   },
+   "deactivate": {
+      "message": "Menonaktifkan"
+   },
+   "delete": {
+      "message": "hapus"
+   },
+   "delete_all": {
+      "message": "Hapus semua"
+   },
+   "delete_dialog_keywords": {
+      "message": "Apakah Anda benar-benar ingin menghapus semua kata kunci dari daftar blokir? Tindakan ini tidak dapat diubah"
+   },
+   "delete_dialog_websites": {
+      "message": "Apakah Anda benar-benar ingin menghapus semua situs web dari daftar blokir? Tindakan ini tidak dapat diubah"
+   },
+   "delete_schedule_dialog_text1": {
+      "message": "Anda yakin ingin menghapus jadwal? Tindakan ini tidak dapat diurungkan."
+   },
+   "delete_schedule_dialog_text2": {
+      "message": "Anda akan menghapus jadwal."
+   },
+   "delete_schedule_dialog_title": {
+      "message": "Hapus jadwal"
+   },
+   "disable": {
+      "message": "Nonaktifkan"
+   },
+   "discover_schedules_blocking": {
+      "message": "Temukan pemblokiran terjadwal"
+   },
+   "domain": {
+      "message": "Domain"
+   },
+   "domain_tooltip": {
+      "message": "Diblokir dalam domain"
+   },
+   "duplicate": {
+      "message": "Duplikasi"
+   },
+   "easy": {
+      "message": "Mudah"
+   },
+   "enable_strict_mode_hint_text": {
+      "message": "Jika Anda ingin tetap berpegang pada pemblokiran Anda, coba Mode Ketat."
+   },
+   "every": {
+      "message": "Setiap"
+   },
+   "every_day": {
+      "message": "Setiap hari"
+   },
+   "extend": {
+      "message": "Perpanjang waktu"
+   },
+   "extend_timer": {
+      "message": "Perpanjang timer"
+   },
+   "extended": {
+      "message": "Diperpanjang"
+   },
+   "finish": {
+      "message": "Selesai"
+   },
+   "for_15_min": {
+      "message": "Selama 15 menit"
+   },
+   "for_1_hr": {
+      "message": "Selama 1 jam"
+   },
+   "for_today": {
+      "message": "Untuk hari ini"
+   },
+   "friday": {
+      "message": "Jumat"
+   },
+   "friday_short": {
+      "message": "Jum"
+   },
+   "get_started": {
+      "message": "Memulai"
+   },
+   "go_to_store": {
+      "message": "Buka %browserName% Store"
+   },
+   "hard": {
+      "message": "Sulit"
+   },
+   "hours": {
+      "message": "Jam"
+   },
+   "hr_1": {
+      "message": "1 jam"
+   },
+   "hrs_24": {
+      "message": "24 jam"
+   },
+   "incognito_do_you_want_enable": {
+      "message": "Apakah Anda ingin memblokir di jendela Penyamaran?"
+   },
+   "incognito_link_copied_open_in_new_tab": {
+      "message": "Tautan disalin. Silakan buka di tab baru."
+   },
+   "incognito_must_enable_in_settings": {
+      "message": "Anda harus mengaktifkan opsi ini dalam pengaturan browser Anda."
+   },
+   "incognito_settings_path": {
+      "message": "Ekstensi -> Kekola Ekstensi -> Detail -> Izinkan dalam mode Samaran"
+   },
+   "incognito_settings_path_safari": {
+      "message": "Safari -> Pengaturan -> Ekstensi -> AppBlock -> Izinkan di Penelusuran Pribadi"
+   },
+   "invalid_input": {
+      "message": "Masukan tidak valid"
+   },
+   "keywords": {
+      "message": "kata kunci"
+   },
+   "login": {
+      "message": "Masuk"
+   },
+   "login_with_google": {
+      "message": "Lanjutkan dengan Google"
+   },
+   "min_25": {
+      "message": "25 menit"
+   },
+   "minutes": {
+      "message": "Menit"
+   },
+   "monday": {
+      "message": "Senin"
+   },
+   "monday_short": {
+      "message": "Sen"
+   },
+   "more_on_our_website": {
+      "message": "Selengkapnya di situs web kami"
+   },
+   "never_show_again": {
+      "message": "Jangan tampilkan lagi"
+   },
+   "new_schedule": {
+      "message": "Jadwal baru"
+   },
+   "no_keyword_added": {
+      "message": "Tidak ada kata kunci yang ditambahkan"
+   },
+   "no_website_added": {
+      "message": "Tidak ada situs yang ditambahkan"
+   },
+   "not_now": {
+      "message": "Tidak sekarang"
+   },
+   "onboarding_excessive_phone_usage": {
+      "message": "Penggunaan ponsel berlebih"
+   },
+   "onboarding_focus_on_school_or_work": {
+      "message": "Fokus di sekolah atau tempat kerja"
+   },
+   "onboarding_gaming_addiction": {
+      "message": "Kecanduan gim"
+   },
+   "onboarding_mental_health_and_adhd": {
+      "message": "Kesehatan mental & ADHD"
+   },
+   "onboarding_other": {
+      "message": "Lainnya"
+   },
+   "onboarding_porn_addiction": {
+      "message": "Kecanduan pornografi"
+   },
+   "onboarding_sleep_hygiene": {
+      "message": "Higiene tidur"
+   },
+   "onboarding_step10_description": {
+      "message": "Jelajahi lebih banyak fitur dalam aplikasi."
+   },
+   "onboarding_step10_header_title": {
+      "message": "Begitulah cara kerja Quick Block"
+   },
+   "onboarding_step11_description": {
+      "message": "Jelajahi lebih banyak fitur dalam aplikasi."
+   },
+   "onboarding_step11_header_title": {
+      "message": "Tahukah Anda bahwa AppBlock juga tersedia sebagai aplikasi seluler?"
+   },
+   "onboarding_step11_no": {
+      "message": "Tidak."
+   },
+   "onboarding_step11_yes_dont_use": {
+      "message": "Ya, tetapi saya tidak menggunakannya"
+   },
+   "onboarding_step11_yes_use": {
+      "message": "Ya."
+   },
+   "onboarding_step12_content": {
+      "message": "Coba blokir aplikasi dan situs web seluler di ponsel Anda hari ini!"
+   },
+   "onboarding_step12_header_title": {
+      "message": "AppBlock digunakan oleh jutaan orang di seluruh dunia."
+   },
+   "onboarding_step1_header_title": {
+      "message": "Blokir situs web dan kata kunci yang mengganggu dengan AppBlock"
+   },
+   "onboarding_step2_header_title": {
+      "message": "Apa yang bisa dibantu oleh AppBlock?"
+   },
+   "onboarding_step3_header_title": {
+      "message": "Apa yang bisa dibantu oleh AppBlock?"
+   },
+   "onboarding_step4_header_title": {
+      "message": "Ketahuilah ...\nAnda benar-benar tidak sendirian."
+   },
+   "onboarding_step4_text_1": {
+      "message": "Begitu banyak studi menunjukkan bahwa banyak orang berjuang untuk berkonsentrasi akibat tekanan gaya hidup modern dan ketergantungan terhadap ponsel, dengan aplikasi yang mengganggu berkompetisi untuk diperhatikan."
+   },
+   "onboarding_step4_text_2": {
+      "message": "Menurut Organisasi Kesehatan Dunia (WHO), isu kesehatan mental memengaruhi sekitar 1 dalam 4 orang di seluruh dunia."
+   },
+   "onboarding_step4_text_3": {
+      "message": "Menurut data terakhir, rata-rata pengguna memeriksa ponsel mereka setiap 12 menit, sekitar 80 kali sehari. 68% orang menggunakan ponsel ketika sedang makan dengan teman atau keluarga."
+   },
+   "onboarding_step4_text_4": {
+      "message": "Menurut data terakhir, 28.000 orang menonton pornografi pada waktu tertentu, dan 84% waktu menonton adalah pada ponsel!"
+   },
+   "onboarding_step4_text_5": {
+      "message": "Kecanduan game adalah masalah yang berkembang di seluruh dunia. Kecanduan ini digolongkan sebagai gangguan mental oleh WHO dan memengaruhi 3–4% pemain game. Yaitu sekitar 60 juta orang."
+   },
+   "onboarding_step4_text_6": {
+      "message": "Menggunakan ponsel sebelum waktu tidur dapat mengganggu tidur dengan mengurangi produksi melatonin, yang mengakibatkan kualitas tidur buruk. Ini memengaruhi kemampuan banyak orang untuk tidur dengan baik."
+   },
+   "onboarding_step5_content": {
+      "message": "Kami akan membantu Anda dengan memblokir gangguan sehingga Anda bisa berfokus pada hal yang paling penting."
+   },
+   "onboarding_step5_header_title": {
+      "message": "AppBlock mengurangi waktu layar Anda"
+   },
+   "onboarding_step6_header_title": {
+      "message": "Apa yang dikatakan pengguna tentang AppBlock?"
+   },
+   "onboarding_step6_text_1": {
+      "message": "“Saya suka ini- simpel dan cocok untuk ADHD saya!”"
+   },
+   "onboarding_step6_text_2": {
+      "message": "Dengan aplikasi ini, saya memblokir aplikasi yang sangat mengganggu saya untuk belajar dan dengan aplikasi ini, saya menghemat banyak waktu untuk belajar demi masa depan yang lebih baik"
+   },
+   "onboarding_step6_text_3": {
+      "message": "Ini merupakan aplikasi yang sangat berguna bagi saya. Bekerja dengan sangat baik dalam hal cara kerjanya."
+   },
+   "onboarding_step7_continue_button": {
+      "message": "Lanjutkan"
+   },
+   "onboarding_step7_header_title": {
+      "message": "3 fungsi pemblokiran utama kami"
+   },
+   "onboarding_step7_quick_block_description": {
+      "message": "Permudah saja dan cukup nyala/matikan pemblokiran?"
+   },
+   "onboarding_step7_quick_block_header": {
+      "message": "Blokir Cepat"
+   },
+   "onboarding_step7_scheduled_block_description": {
+      "message": "Buat pemblokiran otomatis berdasarkan kebutuhan, jadwal, dan lainnya."
+   },
+   "onboarding_step7_scheduled_block_header": {
+      "message": "Pemblokiran terjadwal"
+   },
+   "onboarding_step7_strict_mode_coming_soon": {
+      "message": "Segera hadir"
+   },
+   "onboarding_step7_strict_mode_description": {
+      "message": "Jika menemui masalah dalam mengikuti aturan yang Anda tetapkan dalam AppBlock, Anda bisa menggunakan Mode Ketat untuk aturan yang lebih ketat."
+   },
+   "onboarding_step7_strict_mode_header": {
+      "message": "Mode Ketat"
+   },
+   "onboarding_step8_add_website_title": {
+      "message": "Tambahkan situs"
+   },
+   "onboarding_step8_description": {
+      "message": "Tambahkan situs web yang akan diblokir saat Blokir Cepat aktif. Jangan khawatir, Anda bisa menonaktifkan pemblokiran kapan saja. Kami hanya ingin menunjukkan kepada Anda bagaimana cara kerjanya."
+   },
+   "onboarding_step8_header_title": {
+      "message": "Ayo coba pemblokiran pertama bersama-sama"
+   },
+   "onboarding_step9_description": {
+      "message": "Tekan tombol Start dan lihat apakah situs web yang Anda pilih benar-benar diblokir."
+   },
+   "onboarding_step9_header_title": {
+      "message": "Blokir Cepat Anda sudah siap"
+   },
+   "page_set_as_distraction": {
+      "message": "Anda telah menetapkan situs web ini sebagai pengalih perhatian"
+   },
+   "pause": {
+      "message": "Jeda"
+   },
+   "pause_dialog_header_p1": {
+      "message": "Berapa lama Anda ingin menjeda?"
+   },
+   "pause_dialog_header_p2": {
+      "message": "Berapa lama Anda ingin menjeda?"
+   },
+   "paused": {
+      "message": "Dijeda"
+   },
+   "permission_settings_path": {
+      "message": "Ekstensi -> Kekola Ekstensi -> Detail -> Akses situs -> Di semua situs"
+   },
+   "permission_settings_path_copy_link": {
+      "message": "Salin tautan"
+   },
+   "permission_settings_path_copy_link_finish": {
+      "message": "Disalin"
+   },
+   "permission_settings_path_safari": {
+      "message": "Safari -> Pengaturan -> Ekstensi -> AppBlock -> Selalu Izinkan di Semua Situs Web"
+   },
+   "permission_settings_path_website": {
+      "message": "Kunjungi situs web"
+   },
+   "permission_settings_text": {
+      "message": "Ada satu langkah lagi yang perlu Anda lakukan untuk memblokir. Buka pengaturan %browserName% dan pilih opsi untuk memblokir semua situs. Anda dapat menemukan instruksi lengkap di situs web kami atau ikuti jalur terlampir."
+   },
+   "permission_settings_title": {
+      "message": "Izin tidak ada"
+   },
+   "please_send_us_email_at": {
+      "message": "Coba lagi, atau kirim email kepada kami di"
+   },
+   "privacy_policy": {
+      "message": "Kebijakan privasi"
+   },
+   "profile": {
+      "message": "Akun"
+   },
+   "profile_delete_account": {
+      "message": "Hapus akun"
+   },
+   "profile_dialog_text": {
+      "message": "Hapus akun"
+   },
+   "profile_email": {
+      "message": "Email"
+   },
+   "profile_name": {
+      "message": "Nama Anda"
+   },
+   "quick_block": {
+      "message": "Blokir Cepat"
+   },
+   "quick_block_brief_description": {
+      "message": "Ini adalah cara sederhana untuk langsung mulai memblokir situs web secara instan dengan satu ketukan pada tombol"
+   },
+   "rating_dialog_content": {
+      "message": "Kami ingin mengetahui tanggapan Anda"
+   },
+   "rating_dialog_rate_us_on_store": {
+      "message": "Beri nilai kami di %browserName% Store"
+   },
+   "rating_dialog_rate_us_on_store_content": {
+      "message": "Akan sangat berarti bagi kami jika Anda mau memberikan ulasan positif tentang toko kami."
+   },
+   "rating_dialog_title": {
+      "message": "Menikmati AppBlock?"
+   },
+   "reset": {
+      "message": "Atur ulang"
+   },
+   "resume": {
+      "message": "Lanjutkan"
+   },
+   "saturday": {
+      "message": "Sabtu"
+   },
+   "saturday_short": {
+      "message": "Sab"
+   },
+   "save": {
+      "message": "Simpan"
+   },
+   "schedule": {
+      "message": "Jadwal"
+   },
+   "schedule_delete": {
+      "message": "Hapus jadwal"
+   },
+   "schedule_name": {
+      "message": "Nama jadwal"
+   },
+   "schedule_pause_counting_down": {
+      "message": "Jeda Anda dihitung mundur"
+   },
+   "schedule_template_detox": {
+      "message": "Detoks Digital"
+   },
+   "schedule_template_detox_text": {
+      "message": "Manjakan diri Anda dengan hari bebas telepon."
+   },
+   "schedule_template_focus": {
+      "message": "Fokus"
+   },
+   "schedule_template_focus_text": {
+      "message": "Tingkatkan sesi sekolah atau bekerja Anda."
+   },
+   "schedule_template_morning": {
+      "message": "Pagi yang Fokus"
+   },
+   "schedule_template_morning_text": {
+      "message": "Nikmati rutinitas pagi Anda tanpa ada gangguan."
+   },
+   "schedule_template_myself": {
+      "message": "Waktu untuk Diri Sendiri"
+   },
+   "schedule_template_myself_text": {
+      "message": "Manfaatkan momen berharga Anda sebaik mungkin."
+   },
+   "schedule_template_study": {
+      "message": "Waktu Belajar"
+   },
+   "schedule_template_study_text": {
+      "message": "Navigasikan belajar Anda dengan mudah."
+   },
+   "schedule_template_winddown": {
+      "message": "Bersantai"
+   },
+   "schedule_template_winddown_text": {
+      "message": "Jadikan mimpi indah Anda lebih mudah tercapai."
+   },
+   "schedules": {
+      "message": "Jadwal"
+   },
+   "schedules_empty_view_text": {
+      "message": "Rencanakan pemblokiran harian Anda berdasarkan waktu."
+   },
+   "schedules_templates_title": {
+      "message": "Jadwalkan templat"
+   },
+   "select_all": {
+      "message": "Pilih semua"
+   },
+   "select_days": {
+      "message": "Pilih hari"
+   },
+   "send_feedback": {
+      "message": "Kirim umpan balik"
+   },
+   "send_feedback_send_us_feedback": {
+      "message": "Jika Anda memerlukan bantuan, mengalami kesalahan, atau ingin mengirimkan umpan balik kepada kami."
+   },
+   "setup_strict_mode": {
+      "message": "Atur Mode Ketat"
+   },
+   "sign_in": {
+      "message": "Masuk"
+   },
+   "sign_out": {
+      "message": "Keluar"
+   },
+   "start": {
+      "message": "Mulai"
+   },
+   "stop": {
+      "message": "Berhenti"
+   },
+   "strict_mode": {
+      "message": "Mode Ketat"
+   },
+   "strict_mode_activate_so_you_cant_bypass": {
+      "message": "Aktifkan Mode Ketat sehingga Anda tidak dapat melewatinya."
+   },
+   "strict_mode_active_snackbar": {
+      "message": "Mode Ketat aktif"
+   },
+   "strict_mode_blockings_are_unlocked": {
+      "message": "Pemblokiran Anda dibuka kuncinya"
+   },
+   "strict_mode_blockings_not_set": {
+      "message": "Anda belum mengatur pemblokiran apa pun"
+   },
+   "strict_mode_blockings_not_set_description": {
+      "message": "Mode Ketat akan mengamankan pemblokiran untuk mengurangi waktu layar Anda. Buat jadwal pertama Anda atau atur Blokir Cepat."
+   },
+   "strict_mode_coming_soon": {
+      "message": "Segera hadir"
+   },
+   "strict_mode_confirm_dialog_description": {
+      "message": "Anda tidak akan dapat mengedit profil Anda dan mengubah beberapa pengaturan saat Mode Ketat aktif."
+   },
+   "strict_mode_confirm_dialog_title": {
+      "message": "Anda siap untuk mengaktifkan Mode Ketat?"
+   },
+   "strict_mode_deactivate_info": {
+      "message": "Mode Ketat dapat dinonaktifkan hanya melalui metode yang Anda pilih."
+   },
+   "strict_mode_follow_schedules": {
+      "message": "Ikuti jadwal"
+   },
+   "strict_mode_follow_schedules_description": {
+      "message": "Anda akan bisa menonaktifkan Mode Ketat saat jadwal terpilih tidak aktif."
+   },
+   "strict_mode_pin": {
+      "message": "Kode PIN"
+   },
+   "strict_mode_pin_config_dialog_title": {
+      "message": "Atur kode PIN (4–⁠8 digit)"
+   },
+   "strict_mode_pin_deactivate_dialog_title": {
+      "message": "Masukan kode PIN"
+   },
+   "strict_mode_pin_description": {
+      "message": "Anda akan bisa menonaktifkan fungsi ini dengan menggunakan kode PIN yang telah ditetapkan."
+   },
+   "strict_mode_pin_error_incorrect_pin": {
+      "message": "PIN salah"
+   },
+   "strict_mode_pin_error_not_matching_pin": {
+      "message": "Kode PIN tidak cocok"
+   },
+   "strict_mode_quick_block_dialog_text1": {
+      "message": "Jika Anda menyalakan Blokir Cepat, Anda tidak akan bisa mematikannya saat Mode Ketat aktif. Apakah Anda sungguh ingin melakukannya?"
+   },
+   "strict_mode_quick_block_dialog_text2": {
+      "message": "Jika Anda menyalakan Blokir Cepat, Anda tidak akan bisa mematikannya saat Mode Ketat aktif. Apakah Anda sungguh ingin melakukannya?"
+   },
+   "strict_mode_quick_block_dialog_title": {
+      "message": "Mulai Blokir Cepat"
+   },
+   "strict_mode_repeat_pin": {
+      "message": "Konfirmasi PIN"
+   },
+   "strict_mode_timer": {
+      "message": "Timer"
+   },
+   "strict_mode_timer_config_dialog_title": {
+      "message": "Atur timer"
+   },
+   "strict_mode_timer_confirm_dialog_title": {
+      "message": "Mode Ketat akan aktif untuk"
+   },
+   "strict_mode_timer_description": {
+      "message": "Mode Ketat akan dinonaktifkan setelah waktu yang ditetapkan berakhir."
+   },
+   "strict_mode_you_are_locked": {
+      "message": "Pemblokiran Anda dikunci terhadap pelewatan apa pun."
+   },
+   "sunday": {
+      "message": "Minggu"
+   },
+   "sunday_short": {
+      "message": "Min"
+   },
+   "switch_blockmode_dialog_text": {
+      "message": "Apakah Anda benar-benar ingin mengganti mode pemblokiran ke %blockMode%? Tindakan ini akan menghapus semua situs web yang telah ditetapkan dan tidak dapat diubah."
+   },
+   "thursday": {
+      "message": "Kamis"
+   },
+   "thursday_short": {
+      "message": "Kam"
+   },
+   "time": {
+      "message": "Waktu"
+   },
+   "tos": {
+      "message": "Ketentuan Penggunaan"
+   },
+   "try_blocking_by_your_needs": {
+      "message": "Coba pemblokiran sesuai dengan kebutuhan, waktu, lokasi, dan lainnya"
+   },
+   "tuesday": {
+      "message": "Selasa"
+   },
+   "tuesday_short": {
+      "message": "Sel"
+   },
+   "warning": {
+      "message": "Hati-hati!"
+   },
+   "warning_dialog_btn": {
+      "message": "OKE"
+   },
+   "warning_dialog_extend": {
+      "message": "Anda hanya dapat memperpanjang waktu jadwal."
+   },
+   "warning_dialog_extend_all_week": {
+      "message": "Anda tidak dapat memperpanjang jadwal selama satu minggu penuh."
+   },
+   "warning_dialog_text": {
+      "message": "Jadwal ini akan terkunci dalam satu menit. Setelah itu, tidak mungkin untuk bekerja dengannya."
+   },
+   "warning_dialog_title": {
+      "message": "Peringatan"
+   },
+   "web_content": {
+      "message": "Konten web"
+   },
+   "web_content_tooltip": {
+      "message": "Ini akan diblokir jika konten halaman mengandung kata kunci yang diberikan:"
+   },
+   "websites": {
+      "message": "Situs"
+   },
+   "wednesday": {
+      "message": "Rabu"
+   },
+   "wednesday_short": {
+      "message": "Rab"
+   },
+   "weekdays": {
+      "message": "Hari kerja"
+   },
+   "weekend": {
+      "message": "Akhir pekan"
+   },
+   "welcome_to_appblock": {
+      "message": "Selamat datang di AppBlock"
+   },
+   "when_is_active": {
+      "message": "Kapan aktif?"
+   }
+}

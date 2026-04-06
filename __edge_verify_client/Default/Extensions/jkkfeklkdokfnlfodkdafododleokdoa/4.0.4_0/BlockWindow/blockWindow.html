@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocked by BlockerX</title>
+    <script src="/scripts/jQuery.js"></script>
+    <link rel="stylesheet" href="blockWindow.css">
+    <script src="../scripts/mixpanel.js"></script>
+</head>
+
+<body>
+    <section id="block_window_frame">
+        <div class="top_bar">
+            <div class="iconSection">
+                <img src="../assets/icon.png" alt="">
+                <span>This website is blocked by BlockerX</span>
+            </div>
+            <div class="buttonArea">
+                <div class="actionButton" id="report_this_blocking">
+                    <svg width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.96282 25.75C1.7031 25.75 1.46699 25.6851 1.25449 25.5552C1.04199 25.4253 0.876709 25.2542 0.758654 25.0417C0.640598 24.8292 0.575668 24.599 0.563862 24.351C0.552057 24.1031 0.616987 23.8611 0.758654 23.625L13.8628 0.958333C14.0045 0.722222 14.1875 0.545139 14.4118 0.427083C14.6361 0.309028 14.8663 0.25 15.1024 0.25C15.3385 0.25 15.5687 0.309028 15.793 0.427083C16.0173 0.545139 16.2003 0.722222 16.342 0.958333L29.4462 23.625C29.5878 23.8611 29.6528 24.1031 29.6409 24.351C29.6291 24.599 29.5642 24.8292 29.4462 25.0417C29.3281 25.2542 29.1628 25.4253 28.9503 25.5552C28.7378 25.6851 28.5017 25.75 28.242 25.75H1.96282ZM15.1024 21.5C15.5038 21.5 15.8403 21.3642 16.1118 21.0927C16.3833 20.8212 16.5191 20.4847 16.5191 20.0833C16.5191 19.6819 16.3833 19.3455 16.1118 19.074C15.8403 18.8024 15.5038 18.6667 15.1024 18.6667C14.701 18.6667 14.3646 18.8024 14.093 19.074C13.8215 19.3455 13.6857 19.6819 13.6857 20.0833C13.6857 20.4847 13.8215 20.8212 14.093 21.0927C14.3646 21.3642 14.701 21.5 15.1024 21.5ZM15.1024 17.25C15.5038 17.25 15.8403 17.1142 16.1118 16.8427C16.3833 16.5712 16.5191 16.2347 16.5191 15.8333V11.5833C16.5191 11.1819 16.3833 10.8455 16.1118 10.574C15.8403 10.3024 15.5038 10.1667 15.1024 10.1667C14.701 10.1667 14.3646 10.3024 14.093 10.574C13.8215 10.8455 13.6857 11.1819 13.6857 11.5833V15.8333C13.6857 16.2347 13.8215 16.5712 14.093 16.8427C14.3646 17.1142 14.701 17.25 15.1024 17.25Z" />
+                    </svg>
+
+                    <span>Wrongly Blocked</span>
+                </div>
+                <div class="actionButton" id="reported_blocking" style="display: none;">
+                    <svg width="30" height="26" viewBox="0 0 30 26" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.96282 25.75C1.7031 25.75 1.46699 25.6851 1.25449 25.5552C1.04199 25.4253 0.876709 25.2542 0.758654 25.0417C0.640598 24.8292 0.575668 24.599 0.563862 24.351C0.552057 24.1031 0.616987 23.8611 0.758654 23.625L13.8628 0.958333C14.0045 0.722222 14.1875 0.545139 14.4118 0.427083C14.6361 0.309028 14.8663 0.25 15.1024 0.25C15.3385 0.25 15.5687 0.309028 15.793 0.427083C16.0173 0.545139 16.2003 0.722222 16.342 0.958333L29.4462 23.625C29.5878 23.8611 29.6528 24.1031 29.6409 24.351C29.6291 24.599 29.5642 24.8292 29.4462 25.0417C29.3281 25.2542 29.1628 25.4253 28.9503 25.5552C28.7378 25.6851 28.5017 25.75 28.242 25.75H1.96282ZM15.1024 21.5C15.5038 21.5 15.8403 21.3642 16.1118 21.0927C16.3833 20.8212 16.5191 20.4847 16.5191 20.0833C16.5191 19.6819 16.3833 19.3455 16.1118 19.074C15.8403 18.8024 15.5038 18.6667 15.1024 18.6667C14.701 18.6667 14.3646 18.8024 14.093 19.074C13.8215 19.3455 13.6857 19.6819 13.6857 20.0833C13.6857 20.4847 13.8215 20.8212 14.093 21.0927C14.3646 21.3642 14.701 21.5 15.1024 21.5ZM15.1024 17.25C15.5038 17.25 15.8403 17.1142 16.1118 16.8427C16.3833 16.5712 16.5191 16.2347 16.5191 15.8333V11.5833C16.5191 11.1819 16.3833 10.8455 16.1118 10.574C15.8403 10.3024 15.5038 10.1667 15.1024 10.1667C14.701 10.1667 14.3646 10.3024 14.093 10.574C13.8215 10.8455 13.6857 11.1819 13.6857 11.5833V15.8333C13.6857 16.2347 13.8215 16.5712 14.093 16.8427C14.3646 17.1142 14.701 17.25 15.1024 17.25Z" />
+                    </svg>
+
+                    <span>Reported!</span>
+                </div>
+                <div class="actionButton" id="customize_block_window">
+                    <svg width="27" height="24" viewBox="0 0 27 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.08073 14.8334C1.67934 14.8334 1.34288 14.6977 1.07135 14.4261C0.799826 14.1546 0.664062 13.8181 0.664062 13.4167C0.664062 13.0154 0.799826 12.6789 1.07135 12.4074C1.34288 12.1358 1.67934 12.0001 2.08073 12.0001H9.16406C9.56545 12.0001 9.90191 12.1358 10.1734 12.4074C10.445 12.6789 10.5807 13.0154 10.5807 13.4167C10.5807 13.8181 10.445 14.1546 10.1734 14.4261C9.90191 14.6977 9.56545 14.8334 9.16406 14.8334H2.08073ZM2.08073 9.16675C1.67934 9.16675 1.34288 9.03098 1.07135 8.75946C0.799826 8.48793 0.664062 8.15147 0.664062 7.75008C0.664062 7.34869 0.799826 7.01223 1.07135 6.74071C1.34288 6.46918 1.67934 6.33341 2.08073 6.33341H14.8307C15.2321 6.33341 15.5686 6.46918 15.8401 6.74071C16.1116 7.01223 16.2474 7.34869 16.2474 7.75008C16.2474 8.15147 16.1116 8.48793 15.8401 8.75946C15.5686 9.03098 15.2321 9.16675 14.8307 9.16675H2.08073ZM2.08073 3.50008C1.67934 3.50008 1.34288 3.36432 1.07135 3.09279C0.799826 2.82126 0.664062 2.4848 0.664062 2.08341C0.664062 1.68203 0.799826 1.34557 1.07135 1.07404C1.34288 0.802512 1.67934 0.666748 2.08073 0.666748H14.8307C15.2321 0.666748 15.5686 0.802512 15.8401 1.07404C16.1116 1.34557 16.2474 1.68203 16.2474 2.08341C16.2474 2.4848 16.1116 2.82126 15.8401 3.09279C15.5686 3.36432 15.2321 3.50008 14.8307 3.50008H2.08073ZM13.4141 21.9167V19.5792C13.4141 19.3904 13.4495 19.2074 13.5203 19.0303C13.5911 18.8532 13.6974 18.6938 13.8391 18.5522L21.2411 11.1855C21.4536 10.973 21.6898 10.8195 21.9495 10.7251C22.2092 10.6306 22.4689 10.5834 22.7286 10.5834C23.012 10.5834 23.2835 10.6365 23.5432 10.7428C23.803 10.849 24.0391 11.0084 24.2516 11.2209L25.562 12.5313C25.7509 12.7438 25.8984 12.9799 26.0047 13.2397C26.1109 13.4994 26.1641 13.7591 26.1641 14.0188C26.1641 14.2786 26.1168 14.5442 26.0224 14.8157C25.928 15.0872 25.7745 15.3292 25.562 15.5417L18.1953 22.9084C18.0536 23.0501 17.8943 23.1563 17.7172 23.2272C17.5401 23.298 17.3571 23.3334 17.1682 23.3334H14.8307C14.4293 23.3334 14.0929 23.1977 13.8214 22.9261C13.5498 22.6546 13.4141 22.3181 13.4141 21.9167ZM22.7286 15.4001L24.0391 14.0188L22.7286 12.7084L21.3828 14.0542L22.7286 15.4001ZM15.5391 21.2084H16.8849L21.1703 16.8876L20.5328 16.2147L19.8599 15.5772L15.5391 19.8626V21.2084ZM15.5391 21.2084V19.8626L19.8599 15.5772L21.1703 16.8876L16.8849 21.2084H15.5391Z" />
+                    </svg>
+                    <span>Customise</span>
+                </div>
+                <div class="actionButton" id="rate_blockerx">
+                    <svg width="26" height="24" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.9257 19.473L7.04655 23.0147C6.78683 23.18 6.5153 23.2508 6.23197 23.2272C5.94864 23.2036 5.70072 23.1091 5.48822 22.9439C5.27572 22.7786 5.11044 22.572 4.99239 22.3241C4.87433 22.0762 4.85072 21.7987 4.92155 21.4918L6.47989 14.798L1.27364 10.3001C1.03753 10.0876 0.889957 9.8456 0.830929 9.57407C0.771902 9.30254 0.78961 9.03692 0.884054 8.7772C0.978499 8.51748 1.12017 8.30497 1.30905 8.1397C1.49794 7.97442 1.75767 7.86817 2.08822 7.82095L8.95905 7.21886L11.6153 0.914697C11.7334 0.631364 11.9163 0.418864 12.1643 0.277197C12.4122 0.135531 12.666 0.0646973 12.9257 0.0646973C13.1854 0.0646973 13.4393 0.135531 13.6872 0.277197C13.9351 0.418864 14.1181 0.631364 14.2361 0.914697L16.8924 7.21886L23.7632 7.82095C24.0938 7.86817 24.3535 7.97442 24.5424 8.1397C24.7313 8.30497 24.8729 8.51748 24.9674 8.7772C25.0618 9.03692 25.0795 9.30254 25.0205 9.57407C24.9615 9.8456 24.8139 10.0876 24.5778 10.3001L19.3716 14.798L20.9299 21.4918C21.0007 21.7987 20.9771 22.0762 20.8591 22.3241C20.741 22.572 20.5757 22.7786 20.3632 22.9439C20.1507 23.1091 19.9028 23.2036 19.6195 23.2272C19.3361 23.2508 19.0646 23.18 18.8049 23.0147L12.9257 19.473Z" />
+                    </svg>
+                    <span>Rate Us</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="blockScreenDivider">
+            <div class="leftScreen">
+                <div class="blocked">
+                    <p class="blockedByBlockerX">This Website is Blocked by BlockerX</p>
+                    <h1 id="blocking_message">HOLD ON BUDDY!</h1>
+                    <h1 id="hide_during_custom">NOT NOW</h1>
+                    <p>Webpage Blocked: <strong id="blockedUrl"></strong></p>
+                    <p id="case_blocklist_website" style="display: none;">
+                        You have added <strong id="reasonForBlocking1"></strong> to your Blocklist.
+                    </p>
+                    <p id="case_blocklist_keyword" style="display: none;">
+                        This page contain <strong id="reasonForBlocking2"></strong>, which you have added in your
+                        Blocklist.
+                    </p>
+                    <p id="case_adultlist_website" style="display: none;">
+                        This page contains adult content.
+                    </p>
+                    <p id="case_adultlist_keyword" style="display: none;">
+                        Found Adult Keyword in the page. Keyword: <strong id="reasonForBlocking3"></strong>
+                    </p>
+                    <p id="case_gaming_blocked" style="display: none;">
+                        Your Category Blocking for Gaming is ON.
+                    </p>
+                    <p id="case_gambling_blocked" style="display: none;">
+                        Your Category Blocking for Gambling is ON.
+                    </p>
+                    <p id="case_dating_blocked" style="display: none;">
+                        Your Category Blocking for Dating is ON.
+                    </p>
+                    <p id="case_social_blocked" style="display: none;">
+                        Your Category Blocking for Social Media is ON.
+                    </p>
+                </div>
+                <div class="viewBlocklist" id="go_to_blocklist">
+                    <span>View Blocklist</span>
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.6 6L0 1.4L1.4 0L7.4 6L1.4 12L0 10.6L4.6 6Z" />
+                    </svg>
+                </div>
+                <div class="emergencySection" id="emergencySection" style="display: none;">
+                    <div class="goBack" id="go_back_dashboard">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.825 9L9.425 14.6L8 16L0 8L8 0L9.425 1.4L3.825 7H16V9H3.825Z" fill="white" />
+                        </svg>
+                    </div>
+                    <div class="emergency">
+                        <div class="accessButton" id="emergencyAccess">
+                            <span>EMERGENCY ACCESS X </span>
+                            <span id="accessLeft"></span>
+                        </div>
+                        <div class="accessInfo">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9 15H11V9H9V15ZM10 7C10.2833 7 10.5208 6.90417 10.7125 6.7125C10.9042 6.52083 11 6.28333 11 6C11 5.71667 10.9042 5.47917 10.7125 5.2875C10.5208 5.09583 10.2833 5 10 5C9.71667 5 9.47917 5.09583 9.2875 5.2875C9.09583 5.47917 9 5.71667 9 6C9 6.28333 9.09583 6.52083 9.2875 6.7125C9.47917 6.90417 9.71667 7 10 7ZM10 20C8.61667 20 7.31667 19.7375 6.1 19.2125C4.88333 18.6875 3.825 17.975 2.925 17.075C2.025 16.175 1.3125 15.1167 0.7875 13.9C0.2625 12.6833 0 11.3833 0 10C0 8.61667 0.2625 7.31667 0.7875 6.1C1.3125 4.88333 2.025 3.825 2.925 2.925C3.825 2.025 4.88333 1.3125 6.1 0.7875C7.31667 0.2625 8.61667 0 10 0C11.3833 0 12.6833 0.2625 13.9 0.7875C15.1167 1.3125 16.175 2.025 17.075 2.925C17.975 3.825 18.6875 4.88333 19.2125 6.1C19.7375 7.31667 20 8.61667 20 10C20 11.3833 19.7375 12.6833 19.2125 13.9C18.6875 15.1167 17.975 16.175 17.075 17.075C16.175 17.975 15.1167 18.6875 13.9 19.2125C12.6833 19.7375 11.3833 20 10 20ZM10 18C12.2333 18 14.125 17.225 15.675 15.675C17.225 14.125 18 12.2333 18 10C18 7.76667 17.225 5.875 15.675 4.325C14.125 2.775 12.2333 2 10 2C7.76667 2 5.875 2.775 4.325 4.325C2.775 5.875 2 7.76667 2 10C2 12.2333 2.775 14.125 4.325 15.675C5.875 17.225 7.76667 18 10 18Z"
+                                    fill="white" />
+                            </svg>
+                            <p>You can instantly access this website for 5 minutes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="goBackButton" id="go_back_dashboard2" style="display: none;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.825 9L9.425 14.6L8 16L0 8L8 0L9.425 1.4L3.825 7H16V9H3.825Z" />
+                    </svg> <span>Go Back</span>
+                </div>
+                <div class="nps-rating-container" id="nps_rating_container" style="display: none;">
+                    <h2>How satisfied are you with BlockerX? <span>⭐</span></h2>
+                    <div id="npsRating" class="rating-row">
+                        <div class="rating-number" id="nps_1" style="border-color: #BD0000;">1</div>
+                        <div class="rating-number" id="nps_2" style="border-color: #F41313;">2</div>
+                        <div class="rating-number" id="nps_3" style="border-color: #F87B7B;">3</div>
+                        <div class="rating-number" id="nps_4" style="border-color: #FB9F27;">4</div>
+                        <div class="rating-number" id="nps_5" style="border-color: #FEBE68;">5</div>
+                        <div class="rating-number" id="nps_6" style="border-color: #E1FB63;">6</div>
+                        <div class="rating-number" id="nps_7" style="border-color: #B7F208;">7</div>
+                        <div class="rating-number" id="nps_8" style="border-color: #63FC5B;">8</div>
+                        <div class="rating-number" id="nps_9" style="border-color: #33F853;">9</div>
+                        <div class="rating-number" id="nps_10" style="border-color: #0DCE2C;">10</div>
+                    </div>
+                    <div class="emoji-labels" id="emojis_nps">
+                        <span>😣 Frustrated</span>
+                        <span>😌 Satisfied</span>
+                        <span>😁 Happy</span>
+                    </div>
+                    <div id="thankyou" class="thankyou hidden">
+                        ✨<span id="response"></span>✨
+                    </div>
+                </div>
+            </div>
+            <div class="rightScreen">
+                <div class="premiumCardOuter" id="getPremiumCard" style="display: none;">
+                    <div class="premiumCardInner">
+                        <div class="premiumHead">
+                            <div class="premiumHeading">
+                                <img src="../assets/Feature Icons/crown.png" alt="">
+                                <span>PREMIUM</span>
+                            </div>
+                            <div class="offerPercent">
+                                SAVE 66%
+                            </div>
+                        </div>
+                        <h3>Get better Blocking Experience with BlockerX Premium</h3>
+                        <div class="premiumItems">
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="12" fill="#118724" />
+                                    <path d="M7 11.5L11 15.5L17.5 9" stroke="white" stroke-width="3" />
+                                </svg>
+                                Customised Block Screen
+                            </span>
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="12" fill="#118724" />
+                                    <path d="M7 11.5L11 15.5L17.5 9" stroke="white" stroke-width="3" />
+                                </svg>
+                                Unlimited Blocklist
+                            </span>
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="12" fill="#118724" />
+                                    <path d="M7 11.5L11 15.5L17.5 9" stroke="white" stroke-width="3" />
+                                </svg>
+                                Custom URL
+                            </span>
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="12" fill="#118724" />
+                                    <path d="M7 11.5L11 15.5L17.5 9" stroke="white" stroke-width="3" />
+                                </svg>
+                                Get Daily Report to Partner
+                            </span>
+                        </div>
+                        <div class="ctaArea">
+                            <div class="tooltip" id="developedPricing" style="display: none;">
+                                <button id="developedAnnualPlan">Get it Today!</button>
+                                <span class="tooltiptext"><span style="color: #FDBD50;">Annual Plan</span> <span
+                                        style="padding: 0px 5px;"><svg width="6" height="6" viewBox="0 0 6 6"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="3" cy="3" r="3" fill="white" />
+                                        </svg>
+                                    </span> $109.59</span>
+                            </div>
+                            <div class="tooltip" id="developingPricing" style="display: none;">
+                                <button id="developingAnnualPlan">Get it Today!</button>
+                                <span class="tooltiptext"><span style="color: #FDBD50;">Annual Plan</span> <span
+                                        style="padding: 0px 5px;"><svg width="6" height="6" viewBox="0 0 6 6"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="3" cy="3" r="3" fill="white" />
+                                        </svg>
+                                    </span> $20.59</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="zenzeCardOuter">
+                    <div class="zenzeCardInner">
+                        <div class="scannerImg">
+                            <img src="../assets/BlockWindowWallpaper/zenzeScanner.png" alt="scan">
+                        </div>
+                        <div class="zenzeDetails">
+                            <img src="../assets/BlockWindowWallpaper/zenzeLogo.png" alt="">
+                            <p>UNLEASH YOUR PRODUCTIVE POTENTIAL</p>
+                            <div class="platform">
+                                <img id="download_zenze_google" style="margin-right: 5px;"
+                                    src="../assets/BlockWindowWallpaper/googlePlay.png" alt="android">
+                                <img id="download_zenze_apple" src="../assets/BlockWindowWallpaper/appleStore.png"
+                                    alt="ios">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup_modal" id="limitReached" style="display: none;">
+            <div class="popup_container">
+                <div class="close_area">
+                    <svg id="closelimitReached" width="34" height="34" viewBox="0 0 34 34" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="17" cy="17" r="16" stroke="black" stroke-width="2" />
+                        <path d="M11 11L22 22" stroke="black" stroke-width="2" />
+                        <path d="M22 11.5L11 22.5" stroke="black" stroke-width="2" />
+                    </svg>
+                </div>
+                <div class="heading_area">
+                    <h2>Daily Limit Reached!</h2>
+                </div>
+                <div class="description_area">
+                    <p>
+                        You have reached the maximum limit of 5 Emergency Access requests within the last 24 hours.
+                    </p>
+                </div>
+                <div class="button_selection_area">
+                    <button id="emergencyLimitClose">
+                        Okay
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="popup_modal" id="wronglyBlocked" style="display: none;">
+            <div class="popup_container" style="width: 500px;">
+                <div class="close_area">
+                    <svg id="closewronglyBlocked" width="34" height="34" viewBox="0 0 34 34" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="17" cy="17" r="16" stroke="black" stroke-width="2" />
+                        <path d="M11 11L22 22" stroke="black" stroke-width="2" />
+                        <path d="M22 11.5L11 22.5" stroke="black" stroke-width="2" />
+                    </svg>
+                </div>
+                <div class="heading_area">
+                    <h2>Are you sure this is Wrongly Blocked?
+                    </h2>
+                </div>
+                <div class="description_area">
+                    <p id="popup_case_blocklist_website" style="display: none;">
+                        You have added <strong id="reasonForBlocking4"></strong> to your Blocklist.
+                    </p>
+                    <p id="popup_case_blocklist_keyword" style="display: none;">
+                        This page contain <strong id="reasonForBlocking5"></strong>, which you have added in your
+                        Blocklist.
+                    </p>
+                    <p id="popup_case_adultlist_website" style="display: none;">
+                        This page contains adult content.
+                    </p>
+                    <p id="popup_case_adultlist_keyword" style="display: none;">
+                        Found Adult Keyword in the page. Keyword: <strong id="reasonForBlocking6"></strong>
+                    </p>
+                    <p id="popup_case_gaming_blocked" style="display: none;">
+                        Your Category Blocking for Gaming is ON.
+                    </p>
+                    <p id="popup_case_gambling_blocked" style="display: none;">
+                        Your Category Blocking for Gambling is ON.
+                    </p>
+                    <p id="popup_case_dating_blocked" style="display: none;">
+                        Your Category Blocking for Dating is ON.
+                    </p>
+                    <p id="popup_case_social_blocked" style="display: none;">
+                        Your Category Blocking for Social Media is ON.
+                    </p>
+                </div>
+                <div class="button_selection_area" style="display: flex; justify-content: space-between; align-items: center;">
+                    <button id="not_wrongly_blocked" style="width: 48%; background-color: #ffffff; border: 1px solid #e64a19; color: #e64a19;">Cancel</button>
+                    <button id="yes_wrongly_blocked" style="width: 48%; border: 1px solid #e64a19;">
+                        Yes
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script type="module" src="blockWindow.js"></script>
+
+</html>

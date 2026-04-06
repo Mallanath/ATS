@@ -1,0 +1,32 @@
+{
+   "dark_theme": {
+      "message": "Koyu Tema"
+   },
+   "dark_theme_off": {
+      "message": "Kapalı"
+   },
+   "dark_theme_on": {
+      "message": "Açık"
+   },
+   "extension_description": {
+      "message": "Udemy Plus, en sevdiğiniz Udemy'ye yeni özellikler ekler."
+   },
+   "extension_name": {
+      "message": "Udemy Plus"
+   },
+   "gmail": {
+      "message": ".com\u003C/strong> adresini kullanarak istediğiniz özellikleri bize bildirin."
+   },
+   "loading_please_wait": {
+      "message": "Yükleniyor lütfen bekleyin"
+   },
+   "mark_all_completed": {
+      "message": "✔ Tamamlandı olarak işaretle"
+   },
+   "mark_all_uncompleted": {
+      "message": "❌ Tamamlanmamış olarak işaretle"
+   },
+   "upcoming_features": {
+      "message": "\u003Cstrong>tulpar.dev"
+   }
+}

@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Adult Blocker - Settings</title>
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="settings.css" rel="stylesheet">
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/icon-sync.js"></script>
+    <script src="settings.js"></script>
+</head>
+<body>
+    <!-- Global top loading bar -->
+    <div id="global-loading-bar"><div class="bar"></div></div>
+    <!-- Enhanced Password Protection Overlay -->
+<div id="password-protection" class="settings-password-protection">
+    <div class="setting-card" id="password-card">
+                    <div class="card-header">
+                        <h3>Protected Settings</h3>
+                        <!-- <p>Your settings are secured with a password</p> -->
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="password" id="enter-password" placeholder="Enter password" autocomplete="current-password">
+                        </div>
+                        <div id="password-error" class="message error hidden">Incorrect password. Please try again.</div>
+                        <div class="setting-control full-width" style="margin-top: 10px;">
+                            <button id="submit-password" class="action-button" type="button">Login</button>
+                        </div>
+        </div>
+        </div>
+        </div>
+
+    <!-- Main Settings UI (hidden until password verification) -->
+    <div id="main-settings" class="hidden">
+    <!-- (Removed sticky banner to avoid layout shift) -->
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="../assets/images/ninja-enable.png" alt="Ninja Adult Blocker">
+                <h3>Ninja Adult Blocker</h3>
+            </div>
+            <!-- Sidebar Protection Toggle -->
+            <div class="sidebar-control">
+                <span class="sidebar-label">Protection</span>
+                <label class="toggle-switch small">
+                    <input type="checkbox" id="ninja-enable-sidebar">
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item active" data-tab="dashboard">
+                    <span class="icon">🏠</span>
+                    <span class="nav-text">Dashboard</span>
+                </li>
+                <li class="nav-item" data-tab="general">
+                    <span class="icon">⚙️</span>
+                    <span class="nav-text">General</span>
+                </li>
+                <li class="nav-item" data-tab="blocklist">
+                    <span class="icon">🚫</span>
+                    <span class="nav-text">Block List</span>
+                </li>
+                <li class="nav-item" data-tab="whitelist">
+                    <span class="icon">✅</span>
+                    <span class="nav-text">Whitelist</span>
+                </li>
+                <li class="nav-item" data-tab="keywords">
+                    <span class="icon">🔤</span>
+                    <span class="nav-text">Keywords</span>
+                </li>
+                <li class="nav-item" data-tab="uninstall-alert">
+                    <span class="icon">🔔</span>
+                    <span class="nav-text">Uninstall Alert</span>
+                </li>
+                <li class="nav-item" data-tab="security">
+                    <span class="icon">🔒</span>
+                    <span class="nav-text">Security</span>
+                </li>
+                <li class="nav-item" data-tab="about">
+                    <span class="icon">ℹ️</span>
+                    <span class="nav-text">About</span>
+                </li>
+            </ul>
+            
+            <div class="sidebar-footer">
+                <div class="sidebar-actions">
+                    <button id="get-premium-btn" class="sidebar-btn primary" aria-label="Get Premium">
+                        Get Premium
+                        <span class="discount-chip">70% OFF</span>
+                    </button>
+                    <div class="sidebar-countdown" id="sidebar-countdown">
+                        <span class="sidebar-countdown-icon">⏰</span>
+                        <span class="sidebar-countdown-text">
+                            <span id="sidebar-hours">23</span>:<span id="sidebar-minutes">59</span>:<span id="sidebar-seconds">59</span>
+                        </span>
+                    </div>
+                    <button id="enter-license-btn" class="sidebar-btn" aria-label="Enter License">Enter License</button>
+                </div>
+                <p class="version">Version <span id="version-number">2.8</span></p>
+            </div>
+        </div>
+
+    <!-- Content Area -->
+    <div class="content">
+            <!-- Dashboard Tab -->
+            <div class="content-tab active" id="dashboard-tab">
+                <div class="tab-header">
+                    <h2>Dashboard</h2>
+                    <p>Quick overview and controls</p>
+                    <div class="saving-indicator" id="saving-indicator"><span class="dot"></span>Applying changes…</div>
+                </div>
+                <div class="settings-section">
+                    <div class="dashboard-grid">
+
+                        <div class="dash-card span-2">
+                            <div class="card-header">
+                                <h3>Block Level</h3>
+                                <p>Choose how aggressive the blocking should be</p>
+                            </div>
+                            <div class="card-body">
+                                <div id="block-level-btns" class="levels-grid">
+                    <button class="btn level-btn" id="btn-normal" data-level="normal">
+                                        <div class="level-row">
+                                            <div class="level-left">
+                                                <span class="level-icon" data-level="normal"></span>
+                                                <span class="level-title">Lite</span>
+                                            </div>
+                                            <span class="level-chip neutral" title="Approximate number of sites in this list">+500</span>
+                                        </div>
+                                        <div class="level-sub">Light protection — fewest blocks, minimal false positives</div>
+                                    </button>
+                                    <button class="btn level-btn" id="btn-strict" data-level="strict">
+                                        <div class="level-row">
+                                            <div class="level-left">
+                                                <span class="level-icon" data-level="strict"></span>
+                                                <span class="level-title">Balanced</span>
+                                            </div>
+                                            <div class="level-right">
+                                                <span class="level-chip warning" title="Approximate number of sites in this list">+5K</span>
+                                            </div>
+                                        </div>
+                                        <div class="level-sub">Balanced protection — strong coverage with low false positives</div>
+                                    </button>
+                                    <button class="btn level-btn" id="btn-very-strict" data-level="very-strict">
+                                        <div class="level-row">
+                                            <div class="level-left">
+                                                <span class="level-icon" data-level="very-strict"></span>
+                                                <span class="level-title">Ultimate</span>
+                                            </div>
+                                            <div class="level-right">
+                                                <span class="level-prem">Premium</span>
+                                                <span class="level-chip danger" title="Approximate number of sites in this list">+50K</span>
+                                            </div>
+                                        </div>
+                                        <div class="level-sub">Maximum protection — widest coverage; best for families</div>
+                                    </button>
+                                </div>
+                                <div class="dash-help dash-help-legend">
+                                    <span class="help-icon" aria-hidden="true">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                                            <path d="M11 10h2v7h-2z" fill="currentColor"/>
+                                            <circle cx="12" cy="7" r="1.25" fill="currentColor"/>
+                                        </svg>
+                                    </span>
+                                    <span>Numbers indicate approx. site count</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="dash-card">
+                            <div class="card-header">
+                                <h3>Safe Search</h3>
+                                <p>Master switch for safe search</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="dash-row">
+                                    <label class="toggle-switch">
+                                        <input type="checkbox" id="enable-safe-search-dashboard">
+                                        <span class="toggle-slider"></span>
+                                    </label>
+                                    <span class="dash-status" id="dash-safesearch-label">—</span>
+                                </div>
+                                <div class="dash-providers" id="dash-safesearch-providers" aria-label="Safe Search providers status"></div>
+                                <div class="dash-help"><a href="#general-safe-search" id="dash-open-safe-search">Detailed providers are in General &gt; Safe Search</a></div>
+                            </div>
+                        </div>
+
+
+                        <div class="dash-card col-2-3">
+                            <div class="card-header">
+                                <h3>Stats</h3>
+                                <p>Overview of your setup</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="stats-grid">
+                                    <div class="metric">
+                                        <div class="metric-head">
+                                            <span class="metric-icon" data-type="blocked"></span>
+                                            <span class="metric-label">Custom Block List</span>
+                                        </div>
+                                        <div class="metric-value" id="stat-custom-blocked">0</div>
+                                    </div>
+                                    <div class="metric">
+                                        <div class="metric-head">
+                                            <span class="metric-icon" data-type="whitelist"></span>
+                                            <span class="metric-label">Whitelisted</span>
+                                        </div>
+                                        <div class="metric-value" id="stat-whitelist">0</div>
+                                    </div>
+                                    <div class="metric">
+                                        <div class="metric-head">
+                                            <span class="metric-icon" data-type="rules"></span>
+                                            <span class="metric-label">Total Sites Blocked</span>
+                                        </div>
+                                        <div class="metric-value" id="stat-total-rules">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dash-card app-icon-card">
+                            <div class="card-header">
+                                <h3>App Icon</h3>
+                                <p>Current toolbar icon</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="dash-row">
+                                    <img id="dash-icon-thumb" class="dash-icon-thumb" src="" alt="" aria-hidden="true">
+                                       <button id="dash-open-icon" class="dash-btn small" type="button">Change Icon</button>
+                                       <button id="dash-stealth-btn" class="dash-btn small" type="button" title="Enable Hidden (Stealth) icon">🙈 Stealth Mode</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dash-card uninstall-alert-card">
+                            <div class="card-header">
+                                <h3>Uninstall Alert <span class="level-prem">Premium</span></h3>
+                                <p>Email me if extension is removed</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="dash-row">
+                                    <label class="toggle-switch">
+                                        <input type="checkbox" id="dash-uninstall-alert-toggle">
+                                        <span class="toggle-slider"></span>
+                                    </label>
+                                    <span class="dash-status" id="dash-uninstall-alert-status">Off</span>
+                                </div>
+                                <div class="dash-help"><a href="#uninstall-alert" id="dash-open-uninstall-alert">Configure email in Uninstall Alert settings</a></div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- General Settings Tab -->
+            <div class="content-tab" id="general-tab">
+                <div class="tab-header">
+                    <h2>General Settings</h2>
+                    <p>Configure the basic settings for Ninja Adult Blocker</p>
+                    <div class="saving-indicator" id="saving-indicator-2"><span class="dot"></span>Applying changes…</div>
+                    <div class="status-bar">
+                        <span class="status-pill" id="status-protection">Protection: —</span>
+                        <span class="status-pill" id="status-block-level">Block Level: —</span>
+                        <span class="status-pill" id="status-safe-search">Safe Search: —</span>
+                    </div>
+                </div>
+                
+                <div class="settings-section">
+                    <!-- Protection Card -->
+                    <div class="setting-card hidden" id="protection-card">
+                        <div class="card-header">
+                            <h3>Protection</h3>
+                            <p>Core protection controls</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h3>Enable Blocker</h3>
+                                    <p>Turn on/off the blocking functionality</p>
+                                </div>
+                                <div class="setting-control">
+                                    <label class="toggle-switch">
+                                        <input type="checkbox" id="ninja-enable">
+                                        <span class="toggle-slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h3>Block Level</h3>
+                                    <p>Choose how aggressive the blocking should be</p>
+                                </div>
+                                <div class="setting-control">
+                                    <select id="block-level">
+                                        <option value="normal">Lite (500 sites)</option>
+                                        <option value="strict" selected>Balanced (+5K sites)</option>
+                                        <option value="very-strict">Ultimate (Premium, +50K sites)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+
+                    <!-- Block Action Card -->
+                    <div class="setting-card">
+                        <div class="card-header">
+                            <h3>Block Action</h3>
+                            <p>Choose what happens when a site is blocked</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="setting-item">
+                                
+                                <div class="setting-control full-width">
+                                    <div class="actions-grid" id="block-action-grid">
+                                        <button type="button" class="action-btn btn" data-action="stealth-nxdomain" aria-label="DNS Not Found (Default)">
+                                            <div class="action-row">
+                                                <div class="action-left">
+                                                    <span class="action-icon" data-type="stealth"></span>
+                                                    <span class="action-title">DNS Not Found</span>
+                                                </div>
+                                                <span class="action-chip neutral">Default</span>
+                                            </div>
+                                            <div class="action-sub">Simulate not-found via data:&lt;domain&gt; (discreet).</div>
+                                            <div class="action-preview error dns">
+                                                <div class="error-code">DNS_PROBE_FINISHED_NXDOMAIN</div>
+                                                <div class="line w70"></div>
+                                                <div class="line w50"></div>
+                                            </div>
+                                        </button>
+                                        <button type="button" class="action-btn btn" data-action="custom-page" aria-label="Show Custom Block Page">
+                                            <div class="action-row">
+                                                <div class="action-left">
+                                                    <span class="action-icon" data-type="custom"></span>
+                                                    <span class="action-title">Custom Page</span>
+                                                </div>
+                                                <span class="action-chip neutral">Recommended</span>
+                                            </div>
+                                            <div class="action-sub">Friendly page with tips and a Ninja theme.</div>
+                                            <div class="action-preview custom">
+                                                <div class="bar"></div>
+                                                <div class="line w70"></div>
+                                                <div class="line w50"></div>
+                                            </div>
+                                        </button>
+                                        <button type="button" class="action-btn btn" data-action="redirect" aria-label="Redirect to Custom URL">
+                                            <div class="action-row">
+                                                <div class="action-left">
+                                                    <span class="action-icon" data-type="redirect"></span>
+                                                    <span class="action-title">Redirect</span>
+                                                </div>
+                                                <span class="action-chip info">Custom</span>
+                                            </div>
+                                            <div class="action-sub">Send users to your own safe destination.</div>
+                                            <div class="action-preview redirect" id="redirect-preview">
+                                                <div class="url-pill" id="redirect-url-pill">https://your-site…</div>
+                                            </div>
+                                        </button>
+                                        <!-- Stealth Modes (Row 2 order: Reset, Error, Refused) -->
+                                        <button type="button" class="action-btn btn" data-action="stealth-reset" aria-label="Connection Reset">
+                                            <div class="action-row">
+                                                <div class="action-left">
+                                                    <span class="action-icon" data-type="stealth"></span>
+                                                    <span class="action-title">Connection Reset 🤩</span>
+                                                </div>
+                                                <span class="action-chip neutral">Stealth</span>
+                                            </div>
+                                            <div class="action-sub">Connection reset mid‑flight.</div>
+                                            <div class="action-preview error reset">
+                                                <div class="error-code">ERR_CONNECTION_RESET</div>
+                                                <div class="line w70"></div>
+                                                <div class="line w50"></div>
+                                            </div>
+                                        </button>
+
+<button type="button" class="action-btn btn" data-action="stealth-back" aria-label="Go Back">
+    <div class="action-row">
+        <div class="action-left">
+            <span class="action-icon" data-type="stealth"></span>
+            <span class="action-title">Go Back 🏆</span>
+        </div>
+    </div>
+    <div class="action-sub">Auto go back; if no history, jump to a safe page.</div>
+    <div class="action-preview error back">
+        <div class="error-code">GO_BACK</div>
+        <div class="line w70"></div>
+        <div class="line w50"></div>
+    </div>
+</button>
+
+                                        <button type="button" class="action-btn btn premium" data-action="error-page" aria-label="Show Error Page">
+                                            <div class="action-row">
+                                                <div class="action-left">
+                                                    <span class="action-icon" data-type="error"></span>
+                                                    <span class="action-title">Browser Error</span>
+                                                </div>
+                                                <span class="level-prem">Premium</span>
+                                            </div>
+                                            <div class="action-sub">Looks like a generic connection error.</div>
+                                            <div class="action-preview error">
+                                                <div class="error-code">ERR_BLOCKED</div>
+                                                <div class="line w60"></div>
+                                                <div class="line w40"></div>
+                                            </div>
+                                        </button>
+                                        <button type="button" class="action-btn btn premium" data-action="stealth-timeout" aria-label="Request Timeout">
+                                            <div class="action-row">
+                                                <div class="action-left">
+                                                    <span class="action-icon" data-type="stealth"></span>
+                                                    <span class="action-title">Request Timeout 👑</span>
+                                                </div>
+                                                <span class="level-prem">Premium</span>
+                                            </div>
+                                            <div class="action-sub">Very discreet but slower (request times out).</div>
+                                            <div class="action-preview error timeout">
+                                                <div class="error-code">ERR_TIMED_OUT</div>
+                                                <div class="line w70"></div>
+                                                <div class="line w50"></div>
+                                            </div>
+                                        </button>
+                                        <button type="button" class="action-btn btn premium" data-action="stealth-refused" aria-label="Connection Refused">
+                                            <div class="action-row">
+                                                <div class="action-left">
+                                                    <span class="action-icon" data-type="stealth"></span>
+                                                    <span class="action-title">Connection Refused 💯</span>
+                                                </div>
+                                                <span class="level-prem">Premium</span>
+                                            </div>
+                                            <div class="action-sub">Connection refused (fast, common).</div>
+                                            <div class="action-preview error refused">
+                                                <div class="error-code">ERR_CONNECTION_REFUSED</div>
+                                                <div class="line w70"></div>
+                                                <div class="line w50"></div>
+                                            </div>
+                                        </button>
+                                        
+                                        
+                                    </div>
+                                    <!-- Hidden native select kept for compatibility and storage sync -->
+                                    <select id="block-action" class="hidden" aria-hidden="true" tabindex="-1">
+                                        <option value="custom-page">Show Custom Block Page</option>
+                                        <option value="error-page">Show Error Page</option>
+                                        <option value="redirect">Redirect to Custom URL</option>
+                                        <option value="stealth-nxdomain">Stealth — NXDOMAIN</option>
+                                        <option value="stealth-refused">Stealth — Refused</option>
+                                        <option value="stealth-reset">Stealth — Reset</option>
+                                        <option value="stealth-timeout">Stealth — Timeout</option>
+                                        <option value="stealth-back">Stealth — Back</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="setting-item" id="custom-redirect-url-container" style="display: none;">
+                                <div class="setting-info">
+                                    <h3>Custom Redirect URL</h3>
+                                    <p>Enter the URL to redirect to when a site is blocked</p>
+                                </div>
+                                <div class="setting-control">
+                                    <input type="text" id="custom-redirect-url" placeholder="https://example.com">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App Icon Card -->
+                    <div class="setting-card" id="icon-card">
+                        <div class="card-header">
+                            <h3>App Icon</h3>
+                            <p>Pick the toolbar icon style you like</p>
+                        </div>
+                        <div class="card-body">
+                            <!-- Inline trial countdown (no layout shift) -->
+                            <div id="icon-trial-inline" class="hidden" style="border: 1px solid #fde68a; background: #fffbeb; border-radius: 12px; padding: 10px; margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between; gap: 10px;">
+                                <div>
+                                    <strong style="color: #92400e;">Premium icon trial</strong>
+                                    <span> · </span>
+                                    <span id="icon-trial-inline-time" style="font-weight: 800; color: #92400e;">60s</span>
+                                    <div style="margin-top: 2px; font-size: 12px; color: #3d3d3d; line-height: 1.4;font-weight:500;">
+                                        Note: With the Hidden (Stealth) icon, the toolbar button is intentionally hidden. Look at your browser’s extensions area (top‑right)—you won’t see it there.
+                                    </div>
+                                </div>
+                                <div style="display: inline-flex; gap: 8px;">
+                                    <button id="icon-trial-inline-cancel" class="plan-cta">Cancel</button>
+                                    <button id="icon-trial-inline-buy" class="plan-cta primary">Buy Premium</button>
+                                </div>
+                            </div>
+                            <!-- Premium Trial Dialog -->
+                            <div id="icon-trial-dialog" class="hidden" style="border: 1px solid #fde68a; background: #fffbeb; border-radius: 12px; padding: 12px; margin-bottom: 8px; display: grid; gap: 6px;">
+                                <div style="font-weight: 800; color: #92400e;">This icon is Premium</div>
+                                <div style="font-size: 13px; color: #92400e;">You can try it for 1 minute or get Premium.</div>
+                                <div style="display: inline-flex; gap: 8px;">
+                                    <button id="icon-trial-start" class="plan-cta">Try 1 minute</button>
+                                    <button id="icon-trial-buy2" class="plan-cta primary">Buy Premium</button>
+                                </div>
+                            </div>
+                            <div class="icon-picker" role="group" aria-labelledby="icon-picker-label">
+                                <div class="icon-option">
+                                    <input type="radio" name="icon-theme" id="icon-classic" value="classic">
+                                    <label for="icon-classic">
+                                        <img class="icon-thumb" src="../assets/images/ninja-enable.png" alt="" aria-hidden="true">
+                                        <span class="icon-name">Classic (Green)</span>
+                                    </label>
+                                </div>
+                                <div class="icon-option">
+                                    <input type="radio" name="icon-theme" id="icon-dark" value="dark">
+                                    <label for="icon-dark">
+                                        <img class="icon-thumb" src="../assets/images/ninja-dark.png" alt="" aria-hidden="true">
+                                        <span class="icon-name">Dark</span>
+                                    </label>
+                                </div>
+                                <div class="icon-option">
+                                    <input type="radio" name="icon-theme" id="icon-blue" value="blue">
+                                    <label for="icon-blue">
+                                        <img class="icon-thumb" src="../assets/images/ninja-blue.png" alt="" aria-hidden="true">
+                                        <span class="icon-name">Blue</span>
+                                    </label>
+                                </div>
+                                <div class="icon-option">
+                                    <input type="radio" name="icon-theme" id="icon-pink" value="pink">
+                                    <label for="icon-pink">
+                                        <img class="icon-thumb" src="../assets/images/ninja-pink.png" alt="" aria-hidden="true">
+                                        <span class="icon-name">Pink</span>
+                                    </label>
+                                </div>
+                                <div class="icon-option">
+                                    <input type="radio" name="icon-theme" id="icon-purple" value="purple">
+                                    <label for="icon-purple">
+                                        <img class="icon-thumb" src="../assets/images/ninja-purple.png" alt="" aria-hidden="true">
+                                        <span class="icon-name">Purple</span>
+                                    </label>
+                                </div>
+                                <div class="icon-option">
+                                    <input type="radio" name="icon-theme" id="icon-orange" value="orange">
+                                    <label for="icon-orange">
+                                        <img class="icon-thumb" src="../assets/images/ninja-orange.png" alt="" aria-hidden="true">
+                                        <span class="icon-name">Orange</span>
+                                    </label>
+                                </div>
+                                <div class="icon-option">
+                                    <input type="radio" name="icon-theme" id="icon-red" value="red">
+                                    <label for="icon-red">
+                                        <img class="icon-thumb" src="../assets/images/ninja-red.png" alt="" aria-hidden="true">
+                                        <span class="icon-name">Red</span>
+                                    </label>
+                                </div>
+                                <div class="icon-option">
+                                    <input type="radio" name="icon-theme" id="icon-teal" value="teal">
+                                    <label for="icon-teal">
+                                        <img class="icon-thumb" src="../assets/images/ninja-teal.png" alt="" aria-hidden="true">
+                                        <span class="icon-name">Teal</span>
+                                    </label>
+                                </div>
+                                <div class="icon-option">
+                                    <input type="radio" name="icon-theme" id="icon-gray" value="gray">
+                                    <label for="icon-gray">
+                                        <img class="icon-thumb" src="../assets/images/ninja-gray.png" alt="" aria-hidden="true">
+                                        <span class="icon-name">Gray</span>
+                                    </label>
+                                </div>
+                                <div class="icon-option">
+                                    <input type="radio" name="icon-theme" id="icon-hidden" value="hidden">
+                                    <label for="icon-hidden">
+                                        <!-- <img class="icon-thumb" src="../assets/images/ninja-hidden.png" alt="" aria-hidden="true"> -->
+                                        <span class="icon-name">Hidden (Stealth) 🙈</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="icon-hint">Your choice applies instantly. You can change it anytime.</div>
+                        </div>
+                    </div>
+
+                    <!-- Safe Search Card -->
+                    <div class="setting-card safe-search-card">
+                        <div class="card-header">
+                            <h3>Safe Search</h3>
+                            <p>Force safe search on search engines and restricted mode on video platforms</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h3>Enable Safe Search</h3>
+                                    <p>Master switch for all providers</p>
+                                </div>
+                                <div class="setting-control">
+                                    <label class="toggle-switch">
+                                        <input type="checkbox" id="enable-safe-search" checked>
+                                        <span class="toggle-slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="provider-grid" id="safe-search-options-container">
+                                <div class="provider-note">Choose which providers should have safe search enabled</div>
+                                <div class="setting-item provider" data-provider="google">
+                                    <div class="setting-info">
+                                        <h3>Google</h3>
+                                        <p>Enable safe search for Google</p>
+                                    </div>
+                                    <div class="setting-control">
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" id="safe-search-google" checked>
+                                            <span class="toggle-slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="setting-item provider" data-provider="bing">
+                                    <div class="setting-info">
+                                        <h3>Bing</h3>
+                                        <p>Enable safe search for Bing</p>
+                                    </div>
+                                    <div class="setting-control">
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" id="safe-search-bing" checked>
+                                            <span class="toggle-slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="setting-item provider" data-provider="yahoo">
+                                    <div class="setting-info">
+                                        <h3>Yahoo</h3>
+                                        <p>Enable safe search for Yahoo</p>
+                                    </div>
+                                    <div class="setting-control">
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" id="safe-search-yahoo" checked>
+                                            <span class="toggle-slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="setting-item provider" data-provider="duckduckgo">
+                                    <div class="setting-info">
+                                        <h3>DuckDuckGo</h3>
+                                        <p>Enable safe search for DuckDuckGo</p>
+                                    </div>
+                                    <div class="setting-control">
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" id="safe-search-duckduckgo" checked>
+                                            <span class="toggle-slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="setting-item provider" data-provider="youtube">
+                                    <div class="setting-info">
+                                        <h3>YouTube</h3>
+                                        <p>Enable restricted mode for YouTube</p>
+                                    </div>
+                                    <div class="setting-control">
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" id="safe-search-youtube" checked>
+                                            <span class="toggle-slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="setting-item provider" data-provider="facebook">
+                                    <div class="setting-info">
+                                        <h3>Facebook</h3>
+                                        <p>Enable safe search for Facebook</p>
+                                    </div>
+                                    <div class="setting-control">
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" id="safe-search-facebook" checked>
+                                            <span class="toggle-slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Block List Tab -->
+            <div class="content-tab" id="blocklist-tab">
+                <div class="tab-header">
+                    <h2>Block List</h2>
+                    <p>Manage websites that will be blocked</p>
+                </div>
+                
+                <div class="settings-section">
+                    <div class="setting-item column">
+                        <div class="setting-info full-width">
+                            <h3>Add New Site to Block</h3>
+                            <div class="input-group with-button">
+                                <input type="text" id="new-block-site" placeholder="Enter domain to block (e.g., example.com)">
+                                <button id="add-block-site" class="action-button">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="setting-item column">
+                        <div class="setting-info full-width">
+                            <h3>Current Block List</h3>
+                            <div class="list-container">
+                                <div class="list-header">
+                                    <span class="domain-name">Domain</span>
+                                    <span class="action">Action</span>
+                                </div>
+                                <div class="list-body" id="block-list">
+                                    <!-- List items will be populated by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Whitelist Tab -->
+            <div class="content-tab" id="whitelist-tab">
+                <div class="tab-header">
+                    <h2>Whitelist</h2>
+                    <p>Manage websites that will always be allowed</p>
+                </div>
+                
+                <div class="settings-section">
+                    <div class="setting-item column">
+                        <div class="setting-info full-width">
+                            <h3>Add New Site to Whitelist</h3>
+                            <div class="input-group with-button">
+                                <input type="text" id="new-whitelist-site" placeholder="Enter domain to whitelist (e.g., example.com)">
+                                <button id="add-whitelist-site" class="action-button">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="setting-item column">
+                        <div class="setting-info full-width">
+                            <h3>Current Whitelist</h3>
+                            <div class="list-container">
+                                <div class="list-header">
+                                    <span class="domain-name">Domain</span>
+                                    <span class="action">Action</span>
+                                </div>
+                                <div class="list-body" id="whitelist">
+                                    <!-- List items will be populated by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Keywords Tab -->
+            <div class="content-tab" id="keywords-tab">
+                <div class="tab-header">
+                    <h2>Keywords</h2>
+                    <p>Block websites containing specific keywords in their URLs</p>
+                </div>
+                
+                <div class="settings-section">
+                    <div class="setting-item column">
+                        <div class="setting-info full-width">
+                            <h3>Add New Keyword</h3>
+                            <div class="input-group with-button">
+                                <input type="text" id="new-keyword" placeholder="Enter keyword to block (e.g., dating)">
+                                <button id="add-keyword" class="action-button">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="setting-item column">
+                        <div class="setting-info full-width">
+                            <h3>Current Keywords</h3>
+                            <div class="list-container">
+                                <div class="list-header">
+                                    <span class="domain-name">Keyword</span>
+                                    <span class="action">Action</span>
+                                </div>
+                                <div class="list-body" id="keyword-list">
+                                    <!-- Keywords will be populated here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Uninstall Alert Tab -->
+            <div class="content-tab" id="uninstall-alert-tab">
+                <div class="tab-header">
+                    <h2>Uninstall Alert</h2>
+                    <p>Get notified if this extension is removed</p>
+                </div>
+                
+                <div class="settings-section">
+                    <div class="setting-item column">
+                        <div class="setting-info full-width">
+                            <h3>Email Notification <span class="level-prem">Premium</span></h3>
+                            <p>Receive an email when the extension is uninstalled</p>
+                            
+                            <div class="uninstall-alert-form">
+                                <div class="input-group">
+                                    <label for="uninstall-alert-email">Email Address</label>
+                                    <input type="email" id="uninstall-alert-email" placeholder="your@email.com">
+                                </div>
+                                
+                                <div class="toggle-group">
+                                    <label class="toggle-label-row">
+                                        <span>Enable notifications</span>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" id="uninstall-alert-enabled">
+                                            <span class="toggle-slider"></span>
+                                        </label>
+                                    </label>
+                                </div>
+                                
+                                <button id="uninstall-alert-save" class="action-button">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Tab -->
+            <div class="content-tab" id="security-tab">
+                <div class="tab-header">
+                    <h2>Security Settings</h2>
+                    <p>Manage password protection and security options</p>
+                </div>
+                
+                <div class="settings-section">
+                    <div class="setting-item column">
+                        <div class="setting-info full-width">
+                            <h3>Change Password</h3>
+                            <p>Update your settings access password</p>
+                            
+                            <div class="password-change-form">
+                                <div class="input-group">
+                                    <label for="current-password">Current Password</label>
+                                    <input type="password" id="current-password" placeholder="Enter current password">
+                                </div>
+                                
+                                <div class="input-group">
+                                    <label for="new-password">New Password</label>
+                                    <input type="password" id="new-password" placeholder="Enter new password">
+                                </div>
+                                
+                                <div class="input-group">
+                                    <label for="confirm-password">Confirm New Password</label>
+                                    <input type="password" id="confirm-password" placeholder="Confirm new password">
+                                </div>
+                                
+                                <button id="change-password" class="action-button">Update Password</button>
+                                <p id="password-message" class="message hidden"></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Require Password for Settings</h3>
+                            <p>Always require password to access settings</p>
+                        </div>
+                        <div class="setting-control">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="require-password" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- About Tab -->
+            <div class="content-tab" id="about-tab">
+                <div class="tab-header">
+                    <h2>About</h2>
+                    <p>Information about Ninja Adult Blocker</p>
+                </div>
+                
+                <div class="settings-section">
+                    <div class="about-content">
+                        <div class="about-logo">
+                            <img src="../assets/images/ninja-enable.png" alt="Ninja Adult Blocker">
+                        </div>
+                        
+                        <h1>Ninja Adult Blocker</h1>
+                        <h3>The most powerful adult content blocker</h3>
+                        
+                        <div class="about-info">
+                            <p>Ninja Adult Blocker helps you create a safer browsing experience by blocking access to adult content websites. With powerful filtering and customization options, you can ensure a clean browsing experience.</p>
+                            
+                            <div class="info-item">
+                                <strong>Version:</strong> <span id="about-version">2.8</span>
+                            </div>
+                            
+                            <div class="info-item">
+                                <strong>Developer:</strong> IX Studio
+                            </div>
+                            
+                            <div class="info-item">
+                                <strong>Website:</strong> <a href="https://www.ixstudio.net" target="_blank">www.ixstudio.net</a>
+                            </div>
+                            
+                            <div class="support-buttons">
+                                <a href="https://chrome.google.com/webstore/detail/ninja-adult-porn-blocker/fheifbcbhmbfbebmidanhpeebappbfpd/reviews" target="_blank" class="secondary-button">⭐ Rate Extension</a>
+                                <a href="mailto:ixstudio.net@gmail.com?subject=Ninja Adult Blocker - Support" class="secondary-button">✉️ Contact Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Redirect URL Modal -->
+    <div id="redirect-modal" class="license-overlay hidden" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="license-modal" role="document">
+            <button class="license-close" id="redirect-close-btn" aria-label="Close">×</button>
+            <div class="license-header">
+                <div class="license-icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <defs>
+                            <linearGradient id="redirGrad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#60a5fa"/>
+                                <stop offset="100%" stop-color="#3b82f6"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="24" cy="24" r="20" fill="url(#redirGrad)" />
+                        <circle cx="24" cy="24" r="20" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1" />
+                        <path d="M16 24h16M28 16l8 8-8 8" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <h3>Custom Redirect URL</h3>
+                <p>Enter a full URL to redirect blocked pages</p>
+            </div>
+            <div class="license-body">
+                <div class="license-input-wrap">
+                    <span class="input-leading" aria-hidden="true">🔗</span>
+                    <input type="text" id="redirect-url-input" placeholder="https://example.com" autocomplete="off" inputmode="url" aria-describedby="redirect-help redirect-error" />
+                </div>
+                <div id="redirect-error" class="license-error hidden" role="alert">Please enter a valid URL (https://…)</div>
+            </div>
+            <div class="license-actions">
+                <button id="redirect-cancel-btn" class="secondary-button" type="button">Cancel</button>
+                <button id="redirect-save-btn" class="primary-button" type="button">Save</button>
+            </div>
+        </div>
+    </div>
+    <!-- Onboarding overlay removed from settings page as requested -->
+    <!-- Premium Upsell Modal -->
+    <!-- License Modal -->
+    <div id="license-modal" class="license-overlay hidden" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="license-modal" role="document">
+            <button class="license-close" id="license-close-btn" aria-label="Close">×</button>
+            <div class="license-header" id="license-header">
+                <div class="license-icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <defs>
+                            <linearGradient id="licGrad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#22c55e"/>
+                                <stop offset="100%" stop-color="#16a34a"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- Badge -->
+                        <circle cx="24" cy="24" r="20" fill="url(#licGrad)" />
+                        <!-- Subtle inner ring to match app style -->
+                        <circle cx="24" cy="24" r="20" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1" />
+                        <!-- Check mark (scaled down a bit more) -->
+                        <g transform="translate(24 24) scale(0.88) translate(-24 -24)">
+                            <path d="M14 25.5 L21 32.5 L36 18.5" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+                        </g>
+                    </svg>
+                </div>
+                <h3 id="license-title">Enter License</h3>
+                <p id="license-subtitle">Paste your license key to activate Premium</p>
+                <div class="license-hint" id="license-hint">Tip: Your key is in your email receipt.</div>
+            </div>
+            <!-- Inactive (enter license) view -->
+            <div class="license-body" id="license-form-view">
+                <div class="license-input-wrap">
+                    <span class="input-leading" aria-hidden="true">🔑</span>
+                    <input type="text" id="license-input" placeholder="Enter your license key" autocomplete="off" inputmode="text" aria-describedby="license-help license-error" />
+                    <button id="license-paste-btn" class="input-trailing" type="button" aria-label="Paste from clipboard">Paste</button>
+                </div>
+                <!-- <div id="license-help" class="license-help">Format: 4 groups of 4 characters (letters or numbers)</div> -->
+                <div id="license-error" class="license-error hidden" role="alert">Please enter a valid license key</div>
+            </div>
+            <div class="license-actions" id="license-form-actions">
+                <button id="license-cancel-btn" class="secondary-button" type="button">Cancel</button>
+                <button id="license-submit-btn" class="primary-button" type="button" disabled>Activate</button>
+            </div>
+            <!-- Active (license enabled) view -->
+            <div class="license-body hidden" id="license-active-view">
+                <div class="license-active-summary">
+                    <div class="active-badge">License Active</div>
+                    <div class="license-key-box">Key: <span id="license-key-text">••••-••••-••••-••••</span></div>
+                </div>
+            </div>
+            <div class="license-actions hidden" id="license-active-actions">
+                <button id="license-deactivate-btn" class="danger-button" type="button">Deactivate</button>
+                <button id="license-close-btn-2" class="secondary-button" type="button">Close</button>
+            </div>
+            <!-- <div class="license-trust" role="note"><span class="lock" aria-hidden="true">🔒</span> We don’t store your license. Activation is instant.</div> -->
+        </div>
+    </div>
+    
+    <!-- Fixed Countdown Timer (shows when premium modal is open) -->
+    <div class="countdown-timer-fixed hidden" id="discount-countdown">
+        <div class="countdown-icon">⏰</div>
+        <div class="countdown-content">
+            <div class="countdown-label">70% OFF ends in</div>
+            <div class="countdown-display">
+                <span class="countdown-segment">
+                    <span class="countdown-value" id="hours">23</span>
+                    <span class="countdown-unit">h</span>
+                </span>
+                <span class="countdown-separator">:</span>
+                <span class="countdown-segment">
+                    <span class="countdown-value" id="minutes">59</span>
+                    <span class="countdown-unit">m</span>
+                </span>
+                <span class="countdown-separator">:</span>
+                <span class="countdown-segment">
+                    <span class="countdown-value" id="seconds">59</span>
+                    <span class="countdown-unit">s</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Premium Upsell Modal -->
+    <div id="premium-modal" class="premium-overlay hidden" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="premium-modal" role="document">
+            <button class="premium-close" id="premium-close-btn" aria-label="Close">×</button>
+            <div class="premium-header">
+                <span class="discount-badge">🎉 70% OFF — Limited time</span>
+                <div id="premium-reason" class="premium-reason hidden" aria-live="polite"></div>
+                <h3>Unlock Ultimate Protection</h3>
+                <p>Go beyond the free limits for seamless, powerful filtering</p>
+                
+            </div>
+            <div class="premium-body">
+                <div class="pricing-grid" role="list">
+                    <div class="plan-card free" data-plan="free" role="listitem">
+                        <div class="plan-badge">Current</div>
+                        <div class="plan-head">
+                            <h4>Free</h4>
+                            <div class="plan-price"><span class="amount">$0</span><span class="per">/forever</span></div>
+                        </div>
+                        <ul class="plan-features crossed">
+                            <li class="included">Lite Protection (500 sites)</li>
+                            <li class="included">Safe Search (Optional)</li>
+                            <li class="included">15 Block/Whitelist Slots</li>
+                            <li class="included">15 Custom Keywords</li>
+                            <li class="included">All Future Updates</li>
+                            <li>❌ Premium Block Lists (50K sites)</li>
+                            <li>❌ Stealth Icon Modes</li>
+                            <li>❌ Priority Support</li>
+                            <li>❌ Uninstall Alert</li>
+                        </ul>
+                        <!-- <div class="plan-foot">Great for personal use!</div> -->
+                        <button class="plan-cta disabled" disabled>Current Plan</button>
+                    </div>
+                    <!-- Monthly plan hidden for now
+                    <div class="plan-card" data-plan="monthly" role="listitem">
+                        <div class="plan-badge">Flexible</div>
+                        <div class="plan-head">
+                            <h4>Monthly</h4>
+                            <div class="plan-price"><span class="was-price" aria-hidden="true">$6.99</span><span class="amount">$1.99</span><span class="per">/mo</span></div>
+                        </div>
+                        <ul class="plan-features">
+                            <li>MAX Protection (+50,000 sites)</li>
+                            <li>All Safe Search Engines</li>
+                            <li>Stealth Icon Modes</li>
+                            <li>Unlimited Block/Whitelist</li>
+                            <li>Unlimited Keywords</li>
+                            <li>All Future Updates</li>
+                            <li>Priority Support</li>
+                        </ul>
+                        
+                        <a href="https://gumroad.com/checkout?product=egcgh&recurrence=monthly&quantity=1&wanted=true" target="_blank" rel="noopener" class="plan-cta" aria-hidden="true" tabindex="-1">Get Monthly</a>
+                        <a href="https://gumroad.com/checkout?product=egcgh&recurrence=monthly&quantity=1&wanted=true" target="_blank" rel="noopener" class="stretched-link" aria-label="Get Monthly">Monthly</a>
+                    </div>
+                    -->
+                    <div class="plan-card popular" data-plan="yearly" role="listitem" aria-label="Most popular">
+                        <div class="plan-badge">⭐ Best Value</div>
+                        <div class="plan-head">
+                            <h4>Yearly</h4>
+                            <div class="plan-price"><span class="was-price" aria-hidden="true">$23.88</span><span class="amount">$4.99</span><span class="per">/yr</span></div>
+                        </div>
+                        <ul class="plan-features">
+                            <li>MAX Protection (+50,000 sites)</li>
+                            <li>All Safe Search Engines</li>
+                            <li>Stealth Icon Modes</li>
+                            <li>Unlimited Block/Whitelist</li>
+                            <li>Unlimited Keywords</li>
+                            <li>All Future Updates</li>
+                            <li>Priority Support</li>
+                        </ul>
+                        <div class="plan-foot" style="visibility: hidden;">Save 79% vs monthly! 🎉</div>
+                        <a href="https://gumroad.com/checkout?product=egcgh&recurrence=yearly&quantity=1&wanted=true" target="_blank" rel="noopener" class="plan-cta secondary" aria-hidden="true" tabindex="-1">Get Yearly</a>
+                        <a href="https://gumroad.com/checkout?product=egcgh&recurrence=yearly&quantity=1&wanted=true" target="_blank" rel="noopener" class="stretched-link" aria-label="Get Yearly">Yearly</a>
+                    </div>
+                    <div class="plan-card" data-plan="lifetime" role="listitem">
+                        <div class="plan-badge">🏆 Lifetime Deal</div>
+                        <div class="plan-head">
+                            <h4>Lifetime</h4>
+                            <div class="plan-price"><span class="was-price" aria-hidden="true">$49.99</span><span class="amount">$9.99</span><span class="per">one‑time</span></div>
+                        </div>
+                        <ul class="plan-features">
+                            <li>MAX Protection (+50,000 sites)</li>
+                            <li>All Safe Search Engines</li>
+                            <li>Stealth Icon Modes</li>
+                            <li>Unlimited Block/Whitelist</li>
+                            <li>Unlimited Keywords</li>
+                            <li>All Future Updates Forever</li>
+                            <li>Priority Support</li>
+                        </ul>
+                        <div class="plan-foot">Pay once, protected forever! 💎</div>
+                        <a href="https://gumroad.com/checkout?product=thqlbl&quantity=1" target="_blank" rel="noopener" class="plan-cta primary" aria-label="Get Lifetime — one-time purchase">Get Lifetime</a>
+                        <a href="https://gumroad.com/checkout?product=thqlbl&quantity=1" target="_blank" rel="noopener" class="stretched-link" aria-label="Get Lifetime — one-time purchase">Lifetime</a>
+                    </div>
+                </div>
+                <!-- Compassionate Gift Section -->
+                <div class="gift-section" role="region" aria-label="Gifted Premium">
+                    <div class="gift-card">
+                        <span class="gift-ribbon" aria-hidden="true">Gifted</span>
+                        <span class="sheen" aria-hidden="true"></span>
+                        <div class="gift-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" role="img" aria-label="Heart">
+                                <defs>
+                                    <linearGradient id="giftHeartGrad" x1="0" y1="0" x2="1" y2="1">
+                                        <stop offset="0%" stop-color="#ff6b81"/>
+                                        <stop offset="100%" stop-color="#e11d48"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M12 21.35l-1.2-1.1C5.3 15.2 2.5 12.6 2.5 8.9 2.5 6.3 4.6 4.5 7 4.5c1.6 0 3.1.85 4 2.15.9-1.3 2.4-2.15 4-2.15 2.4 0 4.5 1.8 4.5 4.4 0 3.7-2.8 6.3-8.3 11.3L12 21.35z" fill="url(#giftHeartGrad)"/>
+                                <path d="M12 21.35l-1.2-1.1C5.3 15.2 2.5 12.6 2.5 8.9 2.5 6.3 4.6 4.5 7 4.5c1.6 0 3.1.85 4 2.15.9-1.3 2.4-2.15 4-2.15 2.4 0 4.5 1.8 4.5 4.4 0 3.7-2.8 6.3-8.3 11.3L12 21.35z" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="0.6"/>
+                            </svg>
+                        </div>
+                        <div class="gift-copy">
+                            <div class="gift-head">
+                                <!-- <span class="gift-chip">Community Gift</span> -->
+                                <div class="gift-title">Gifted Premium</div>
+                            </div>
+                            <div class="gift-desc">If you can’t afford it, email us — we’ll gift you a license.</div>
+                        </div>
+                        <button class="gift-link-btn" id="gift-open-form" type="button" aria-expanded="false">
+                            <span class="gift-cta-icon" aria-hidden="true">✨</span>
+                            <span>Request gift</span>
+                        </button>
+                    </div>
+                    <!-- Inline micro-form (hidden by default) -->
+                    <div class="gift-form hidden" id="gift-form" aria-hidden="true">
+                        <div class="gift-form-grid">
+                            <label class="gift-field">
+                                <span class="gift-label">Your email</span>
+                                <input type="email" id="gift-email-input" placeholder="you@example.com" autocomplete="email"/>
+                                <!-- <span class="gift-hint">We’ll send the license here</span> -->
+                            </label>
+                            <label class="gift-field">
+                                <span class="gift-label">Reason</span>
+                                <select id="gift-reason">
+                                    <option value="Financial hardship">Financial hardship</option>
+                                    <option value="Student">Student</option>
+                                    <option value="Non-profit / Community">Non-profit / Community</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </label>
+                            <label class="gift-field gift-field--full">
+                                <span class="gift-label">Message</span>
+                                <textarea id="gift-message" rows="3" placeholder="Please share a few details to help us approve faster (optional)"></textarea>
+                            </label>
+                            <div class="gift-notice" role="note" style="margin-top:4px; font-size:12px; color:#6b7280; display:flex; align-items:center; gap:6px"><span aria-hidden="true">⏳</span> Gift licenses are typically sent within 1 business day.</div>
+                        </div>
+                        <div class="gift-actions">
+                            <button type="button" class="plan-cta primary" id="gift-send-btn">Send Request</button>
+                        </div>
+                        <div class="gift-privacy" role="note"><span aria-hidden="true">🤝</span> No questions asked. Private and respectful.</div>
+                        <div class="gift-fallback">If the form doesn’t work, email us directly at <a href="mailto:ixstudio.net@gmail.com?subject=Ninja%20Premium%20Gift%20Request" target="_self">ixstudio.net@gmail.com</a>.</div>
+                    </div>
+                </div>
+                <div class="premium-trust" role="note">
+                    <span class="lock" aria-hidden="true">🔒</span>
+                    <span>Secure checkout via Gumroad</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Gift License Modal -->
+    <div id="gift-license-modal" class="license-overlay hidden" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="license-modal" role="document">
+            <button class="license-close" id="gift-license-close-btn" aria-label="Close">×</button>
+            <div class="license-header">
+                <div class="license-icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <defs>
+                            <linearGradient id="giftLicGrad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#ff6b81"/>
+                                <stop offset="100%" stop-color="#e11d48"/>
+                            </linearGradient>
+                            <!-- Fancy rounded heart gradient -->
+                            <linearGradient id="heartGrad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#ff89b3"/>
+                                <stop offset="100%" stop-color="#ff3b6c"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="24" cy="24" r="20" fill="url(#giftLicGrad)" />
+                        <circle cx="24" cy="24" r="20" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1" />
+                        <g transform="translate(12 12)">
+                            <!-- Rounded heart with white fill -->
+                            <path d="M12 20.9c-.3-.25-.62-.52-.95-.8C6.24 16.29 3 13.51 3 9.6 3 6.98 5.03 5 7.55 5c1.74 0 3.33.87 4.45 2.2C13.12 5.87 14.71 5 16.45 5 18.97 5 21 6.98 21 9.6c0 3.91-3.24 6.69-8.05 10.5-.33.28-.65.55-.95.8z" fill="#ffffff"/>
+                            <!-- Colored outline for contrast on white fill -->
+                            <path d="M12 20.9c-.3-.25-.62-.52-.95-.8C6.24 16.29 3 13.51 3 9.6 3 6.98 5.03 5 7.55 5c1.74 0 3.33.87 4.45 2.2C13.12 5.87 14.71 5 16.45 5 18.97 5 21 6.98 21 9.6c0 3.91-3.24 6.69-8.05 10.5-.33.28-.65.55-.95.8z" fill="none" stroke="url(#heartGrad)" stroke-width="0.9" stroke-linejoin="round"/>
+                            <!-- Sparkles -->
+                            <g opacity="0.9" fill="#ffffff">
+                                <path d="M2.8 3.2l.35.9.9.35-.9.35-.35.9-.35-.9-.9-.35.9-.35.35-.9z" transform="translate(2 1) scale(0.6)"/>
+                                <path d="M2.8 3.2l.35.9.9.35-.9.35-.35.9-.35-.9-.9-.35.9-.35.35-.9z" transform="translate(15 0) scale(0.5)"/>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <h3 id="gift-license-title">Gifted Premium</h3>
+                <p id="gift-license-subtitle">Request 3 months of gifted Premium — private and respectful</p>
+                <div class="license-hint">If approved, we’ll email you a 3‑month Premium license.</div>
+                <div class="gift-notice" role="note"><span aria-hidden="true">⏳</span> Gift licenses are typically sent within 1 business day.</div>
+            </div>
+            <div class="license-body">
+                <div class="gift-form-grid">
+                    <label class="gift-field">
+                        <span class="gift-label">Your email</span>
+                        <input type="email" id="gift-modal-email" placeholder="you@example.com" autocomplete="email"/>
+                        <!-- <span class="gift-hint">We’ll send the license here</span> -->
+                    </label>
+                    <label class="gift-field">
+                        <span class="gift-label">Reason</span>
+                        <select id="gift-modal-reason">
+                            <option value="Financial hardship">Financial hardship</option>
+                            <option value="Student">Student</option>
+                            <option value="Non-profit / Community">Non-profit / Community</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </label>
+                    <label class="gift-field gift-field--full">
+                        <span class="gift-label">Message (optional)</span>
+                        <textarea id="gift-modal-message" rows="3" placeholder="Please share a few details to help us approve faster (optional)"></textarea>
+                        <div class="gift-guidance">Please share a few details so we can help faster.</div>
+                    </label>
+                </div>
+            </div>
+            <div class="license-actions">
+                <button id="gift-modal-cancel-btn" class="secondary-button" type="button">Cancel</button>
+                <button id="gift-modal-send-btn" class="primary-button" type="button">Send request</button>
+            </div>
+            <div class="gift-fallback">If the form doesn't work, email us directly at <a href="mailto:ixstudio.net@gmail.com?subject=Ninja%20Premium%20Gift%20Request" target="_self">ixstudio.net@gmail.com</a>.</div>
+        </div>
+    </div>
+    
+    <!-- Feedback Modal -->
+    <div id="feedback-modal" class="license-overlay hidden" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="license-modal" role="document" style="max-width: 520px;">
+            <button class="license-close" id="feedback-close-btn" aria-label="Close">×</button>
+            <div class="license-header">
+                <div class="license-icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <defs>
+                            <linearGradient id="feedbackGrad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#3b82f6"/>
+                                <stop offset="100%" stop-color="#2563eb"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="24" cy="24" r="20" fill="url(#feedbackGrad)" />
+                        <circle cx="24" cy="24" r="20" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1" />
+                        <path d="M12 14 C12 12 13 10 15 10 L33 10 C35 10 36 12 36 14 L36 28 C36 30 35 32 33 32 L18 32 L12 38 Z" fill="#ffffff" stroke="none"/>
+                        <circle cx="18" cy="20" r="1.5" fill="#2563eb"/>
+                        <circle cx="24" cy="20" r="1.5" fill="#2563eb"/>
+                        <circle cx="30" cy="20" r="1.5" fill="#2563eb"/>
+                    </svg>
+                </div>
+                <h3>💬 We'd Love Your Feedback!</h3>
+                <p>Help us improve Ninja Blocker</p>
+            </div>
+            <div class="license-body">
+                <div class="gift-form-grid">
+                    <label class="gift-field gift-field--full">
+                        <span class="gift-label">How would you rate your experience? ⭐</span>
+                        <div style="display: flex; gap: 8px; justify-content: center; margin-top: 8px;">
+                            <button class="rating-star" data-rating="1" style="background: none; border: none; font-size: 32px; cursor: pointer; padding: 4px; transition: transform 0.2s;">⭐</button>
+                            <button class="rating-star" data-rating="2" style="background: none; border: none; font-size: 32px; cursor: pointer; padding: 4px; transition: transform 0.2s;">⭐</button>
+                            <button class="rating-star" data-rating="3" style="background: none; border: none; font-size: 32px; cursor: pointer; padding: 4px; transition: transform 0.2s;">⭐</button>
+                            <button class="rating-star" data-rating="4" style="background: none; border: none; font-size: 32px; cursor: pointer; padding: 4px; transition: transform 0.2s;">⭐</button>
+                            <button class="rating-star" data-rating="5" style="background: none; border: none; font-size: 32px; cursor: pointer; padding: 4px; transition: transform 0.2s;">⭐</button>
+                        </div>
+                        <input type="hidden" id="feedback-rating" value="0">
+                    </label>
+                    <label class="gift-field gift-field--full">
+                        <span class="gift-label">What's working well? What needs improvement?</span>
+                        <textarea id="feedback-message" rows="4" placeholder="Share your thoughts, suggestions, or issues..."></textarea>
+                    </label>
+                    <label class="gift-field">
+                        <span class="gift-label">Email (optional)</span>
+                        <input type="email" id="feedback-email" placeholder="your@email.com" autocomplete="email"/>
+                        <span class="gift-hint" style="font-size: 11px; color: #64748b;">Only if you want us to follow up</span>
+                    </label>
+                </div>
+            </div>
+            <div class="license-actions">
+                <button id="feedback-cancel-btn" class="secondary-button" type="button">Cancel</button>
+                <button id="feedback-submit-btn" class="primary-button" type="button">Send Feedback 🚀</button>
+            </div>
+            <div style="text-align: center; font-size: 12px; color: #64748b; margin-top: 12px;">
+                Your feedback helps us build a better extension for everyone. Thank you! 💚
+            </div>
+        </div>
+    </div>
+</body>
+</html>

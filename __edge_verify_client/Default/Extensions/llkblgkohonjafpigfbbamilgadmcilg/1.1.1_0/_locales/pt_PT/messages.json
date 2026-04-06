@@ -1,0 +1,32 @@
+{
+   "dark_theme": {
+      "message": "Tema escuro"
+   },
+   "dark_theme_off": {
+      "message": "Fora"
+   },
+   "dark_theme_on": {
+      "message": "Em"
+   },
+   "extension_description": {
+      "message": "O Udemy Plus adiciona novos recursos além do seu Udemy favorito."
+   },
+   "extension_name": {
+      "message": "Udemy Plus"
+   },
+   "gmail": {
+      "message": ".com \u003C/strong>"
+   },
+   "loading_please_wait": {
+      "message": "Carregando, por favor espere"
+   },
+   "mark_all_completed": {
+      "message": "✔ Marque tudo concluído"
+   },
+   "mark_all_uncompleted": {
+      "message": "❌ Marcar todos incompletos"
+   },
+   "upcoming_features": {
+      "message": "Deixe-nos saber quais recursos você gostaria de ver em seguida usando \u003Cstrong> tulpar.dev"
+   }
+}

@@ -1,0 +1,752 @@
+{
+   "access": {
+      "message": "アクセス"
+   },
+   "activate": {
+      "message": "有効にする"
+   },
+   "active": {
+      "message": "アクティブにする"
+   },
+   "active_all_day": {
+      "message": "1日中アクティブにする"
+   },
+   "active_until": {
+      "message": "まで有効"
+   },
+   "add": {
+      "message": "追加する"
+   },
+   "add_keyword_eg": {
+      "message": "キーワードを追加する"
+   },
+   "add_time": {
+      "message": "時間を追加"
+   },
+   "add_website_eg": {
+      "message": "ウェブサイトを追加する"
+   },
+   "added_to_blocking": {
+      "message": "追加に成功"
+   },
+   "all_day_long": {
+      "message": "１日中"
+   },
+   "allow_list": {
+      "message": "許可リスト"
+   },
+   "allow_list_text": {
+      "message": "許可したいアプリを選択します。他のすべてはブロックされます。"
+   },
+   "already_blocked": {
+      "message": "このプロフィールには既に選択したアイテムが含まれます"
+   },
+   "and": {
+      "message": "そして"
+   },
+   "anywhere_in_url": {
+      "message": "URLの任意の場所"
+   },
+   "anywhere_in_url_tooltip": {
+      "message": "URLの任意の場所でブロック"
+   },
+   "banner_block_apps_and_websites": {
+      "message": "アプリやウェブサイトをブロックする"
+   },
+   "banner_block_based_on_location_and_more": {
+      "message": "位置情報によるブロックなど"
+   },
+   "banner_many_powerful_features": {
+      "message": "多くの強力な機能"
+   },
+   "banner_try_appblock_on": {
+      "message": "AppBlockを試す"
+   },
+   "banner_your_phone": {
+      "message": "携帯電話"
+   },
+   "block_list": {
+      "message": "ブロックリスト"
+   },
+   "block_list_text": {
+      "message": "ブロックするアプリケーションまたはウェブサイトを選択"
+   },
+   "block_this_web": {
+      "message": "このウェブをブロックする"
+   },
+   "blocked_by": {
+      "message": "ウェブがブロックされています"
+   },
+   "blocked_by_appblock": {
+      "message": "このウェブサイトは、AppBlock %browserName% Extensionによってブロックされています。"
+   },
+   "blocked_by_blocklist": {
+      "message": "このウェブサイトは 「%blocklist%」 によってブロックされています。"
+   },
+   "blocked_in": {
+      "message": "ブロックイン"
+   },
+   "blocking": {
+      "message": "ブロック"
+   },
+   "breaking_your_rules": {
+      "message": "ルールを守っていませんか？"
+   },
+   "btn_cancel": {
+      "message": "キャンセル"
+   },
+   "btn_delete": {
+      "message": "削除する"
+   },
+   "btn_start_anyway": {
+      "message": "そのまま開始する"
+   },
+   "btn_switch": {
+      "message": "スイッチ"
+   },
+   "by_proceeding_you_agree_to_our": {
+      "message": "続行することで、あなたは当社の に同意します。"
+   },
+   "click_to_copy_link": {
+      "message": "クリックしてリンクをコピー"
+   },
+   "confirm": {
+      "message": "確定"
+   },
+   "continue": {
+      "message": "続行"
+   },
+   "continue_to_the_app": {
+      "message": "続行"
+   },
+   "current": {
+      "message": "現在"
+   },
+   "custom_time": {
+      "message": "カスタム時間"
+   },
+   "days": {
+      "message": "月日"
+   },
+   "deactivate": {
+      "message": "無効にする"
+   },
+   "delete": {
+      "message": "削除する"
+   },
+   "delete_all": {
+      "message": "すべて削除"
+   },
+   "delete_dialog_keywords": {
+      "message": "本当にブロックリストからすべてのキーワードを削除したいのですか？このアクションは不可逆的です"
+   },
+   "delete_dialog_websites": {
+      "message": "本当にブロックリストからすべてのウェブサイトを削除したいですか？このアクションは不可逆的です"
+   },
+   "delete_schedule_dialog_text1": {
+      "message": "本当にスケジュールを削除しますか？ この操作を元に戻すことはできません。"
+   },
+   "delete_schedule_dialog_text2": {
+      "message": "スケジュールを削除しようとしています。"
+   },
+   "delete_schedule_dialog_title": {
+      "message": "スケジュールの削除"
+   },
+   "disable": {
+      "message": "無効にする"
+   },
+   "discover_schedules_blocking": {
+      "message": "スケジュールブロックの発見"
+   },
+   "domain": {
+      "message": "ドメイン"
+   },
+   "domain_tooltip": {
+      "message": "ドメイン内でブロック"
+   },
+   "duplicate": {
+      "message": "複製"
+   },
+   "easy": {
+      "message": "簡単"
+   },
+   "enable_strict_mode_hint_text": {
+      "message": "ブロックを継続したい場合は、厳格モードを試してください。"
+   },
+   "every": {
+      "message": "すべての"
+   },
+   "every_day": {
+      "message": "毎日"
+   },
+   "extend": {
+      "message": "時間を延長する"
+   },
+   "extend_timer": {
+      "message": "タイマーの延長"
+   },
+   "extended": {
+      "message": "延長"
+   },
+   "finish": {
+      "message": "終了"
+   },
+   "for_15_min": {
+      "message": "15分間"
+   },
+   "for_1_hr": {
+      "message": "1時間"
+   },
+   "for_today": {
+      "message": "今日のために"
+   },
+   "friday": {
+      "message": "金曜日"
+   },
+   "friday_short": {
+      "message": "金"
+   },
+   "get_started": {
+      "message": "スタート"
+   },
+   "go_to_store": {
+      "message": "こちらへ %browserName%店舗"
+   },
+   "hard": {
+      "message": "困難"
+   },
+   "hours": {
+      "message": "時間"
+   },
+   "hr_1": {
+      "message": "1時間"
+   },
+   "hrs_24": {
+      "message": "24時間"
+   },
+   "incognito_do_you_want_enable": {
+      "message": "インコグニートウィンドウでブロックしますか？"
+   },
+   "incognito_link_copied_open_in_new_tab": {
+      "message": "リンクをコピーしました。新しいタブで開いてください。"
+   },
+   "incognito_must_enable_in_settings": {
+      "message": "ブラウザの設定でこのオプションを有効にする必要があります。"
+   },
+   "incognito_settings_path": {
+      "message": "拡張機能 -> 拡張機能を管理 -> 詳細 -> シークレット モードでの実行を許可する"
+   },
+   "incognito_settings_path_safari": {
+      "message": "Safari -> 設定 -> 機能拡張 -> AppBlock -> プライベートブラウズで許可"
+   },
+   "invalid_input": {
+      "message": "無効な入力"
+   },
+   "keywords": {
+      "message": "キーワード"
+   },
+   "login": {
+      "message": "サインイン"
+   },
+   "login_with_google": {
+      "message": "Googleで続行する"
+   },
+   "min_25": {
+      "message": "25分"
+   },
+   "minutes": {
+      "message": "分"
+   },
+   "monday": {
+      "message": "月曜日"
+   },
+   "monday_short": {
+      "message": "月"
+   },
+   "more_on_our_website": {
+      "message": "詳細はウェブサイトをご覧ください。"
+   },
+   "never_show_again": {
+      "message": "二度と表示しないようにする"
+   },
+   "new_schedule": {
+      "message": "新しいスケジュール"
+   },
+   "no_keyword_added": {
+      "message": "追加されたキーワードはありません"
+   },
+   "no_website_added": {
+      "message": "追加されたウェブサイトはありません"
+   },
+   "not_now": {
+      "message": "今はしない"
+   },
+   "onboarding_excessive_phone_usage": {
+      "message": "スマホ依存"
+   },
+   "onboarding_focus_on_school_or_work": {
+      "message": "勉強や仕事に\n集中"
+   },
+   "onboarding_gaming_addiction": {
+      "message": "ゲーム中毒"
+   },
+   "onboarding_mental_health_and_adhd": {
+      "message": "心の健康 & ADHD"
+   },
+   "onboarding_other": {
+      "message": "その他"
+   },
+   "onboarding_porn_addiction": {
+      "message": "ポルノ中毒"
+   },
+   "onboarding_sleep_hygiene": {
+      "message": "睡眠不足"
+   },
+   "onboarding_step10_description": {
+      "message": "アプリの機能をもっと見る"
+   },
+   "onboarding_step10_header_title": {
+      "message": "これがクイックブロックの仕組みだ"
+   },
+   "onboarding_step11_description": {
+      "message": "アプリの機能をもっと見る"
+   },
+   "onboarding_step11_header_title": {
+      "message": "AppBlockがモバイルアプリとしても利用できることをご存知ですか？"
+   },
+   "onboarding_step11_no": {
+      "message": "いいえ"
+   },
+   "onboarding_step11_yes_dont_use": {
+      "message": "はい、でも使いません"
+   },
+   "onboarding_step11_yes_use": {
+      "message": "はい"
+   },
+   "onboarding_step12_content": {
+      "message": "今すぐ携帯電話のアプリやウェブサイトをブロックしてみよう！"
+   },
+   "onboarding_step12_header_title": {
+      "message": "AppBlockは世界中で数百万人に利用されている。"
+   },
+   "onboarding_step1_header_title": {
+      "message": "AppBlockで邪魔なウェブサイトやキーワードをブロックする"
+   },
+   "onboarding_step2_header_title": {
+      "message": "AppBlockがお役に立てることは何ですか？"
+   },
+   "onboarding_step3_header_title": {
+      "message": "AppBlockがお役に立てることは何ですか？"
+   },
+   "onboarding_step4_header_title": {
+      "message": "あのね…\nあなたは本当に一人じゃないんです。"
+   },
+   "onboarding_step4_text_1": {
+      "message": "多種に及ぶ研究結果によると、現代のライフスタイルのプレッシャーとスマホ依存のために、多くの人は集中力が欠けており、気を散らすアプリが注意を引くために競い合っています。"
+   },
+   "onboarding_step4_text_2": {
+      "message": "世界保健機関（WHO）によると、メンタルヘルスの問題は、世界の約4人に1人の割合で影響を及ぼすとされています。"
+   },
+   "onboarding_step4_text_3": {
+      "message": "最新のデータによると、平均的なユーザーは12分おきにスマホをチェックし、1日に約80回チェックしています。68%の人が友人や家族と食事をしている時にスマホを使用しています。"
+   },
+   "onboarding_step4_text_4": {
+      "message": "最新のデータによると、常時28,000人がポルノを見ており、全体の84%がスマホで見ているそうです！"
+   },
+   "onboarding_step4_text_5": {
+      "message": "ゲーム依存症は、世界的に拡大しつつある問題です。WHOでは精神障害に分類され、ゲーマーの3～4%が罹患しているとされています。これは約6,000万人にあたります。"
+   },
+   "onboarding_step4_text_6": {
+      "message": "就寝前のスマホの使用は、メラトニンの分泌を減少させることで睡眠を妨げ、睡眠の質を低下させます。そのため、多くの人の快眠に影響を及ぼします。"
+   },
+   "onboarding_step5_content": {
+      "message": "当アプリは、あなたが最も重要なことに集中できるように、雑念を遮断することでサポートします。"
+   },
+   "onboarding_step5_header_title": {
+      "message": "AppBlockはスクリーンタイムを短縮します"
+   },
+   "onboarding_step6_header_title": {
+      "message": "ユーザーはAppBlockについてどのように言っていますか？"
+   },
+   "onboarding_step6_text_1": {
+      "message": "お気に入り。ADHDの私にとってシンプルで最高！"
+   },
+   "onboarding_step6_text_2": {
+      "message": "このアプリによって、勉強の邪魔になるアプリをブロックし、勉強時間を大幅に節約することができました。"
+   },
+   "onboarding_step6_text_3": {
+      "message": "これは私にとって非常に便利なアプリです。謳い文句通り、とてもよく機能しています。"
+   },
+   "onboarding_step7_continue_button": {
+      "message": "続行"
+   },
+   "onboarding_step7_header_title": {
+      "message": "3つの主なブロック機能"
+   },
+   "onboarding_step7_quick_block_description": {
+      "message": "ただ単純に、ブロックをオン・オフにしますか？"
+   },
+   "onboarding_step7_quick_block_header": {
+      "message": "クイックブロック"
+   },
+   "onboarding_step7_scheduled_block_description": {
+      "message": "ニーズやスケジュールなどに基づいて自動ブロッキングを作成。"
+   },
+   "onboarding_step7_scheduled_block_header": {
+      "message": "ブロックの計画をする"
+   },
+   "onboarding_step7_strict_mode_coming_soon": {
+      "message": "近日公開"
+   },
+   "onboarding_step7_strict_mode_description": {
+      "message": "Appblockで設定したルールに従うのが難しい場合は、より厳しいルールを設定する厳格モードを使用することができます。"
+   },
+   "onboarding_step7_strict_mode_header": {
+      "message": "厳格モード"
+   },
+   "onboarding_step8_add_website_title": {
+      "message": "ウェブサイトを追加する"
+   },
+   "onboarding_step8_description": {
+      "message": "クイックブロックが有効なときにブロックされるウェブサイトを追加します。ブロックはいつでもオフにできますのでご安心ください。どのように機能するのかをお見せしたいだけなのです。"
+   },
+   "onboarding_step8_header_title": {
+      "message": "最初のブロックを一緒にやってみましょう"
+   },
+   "onboarding_step9_description": {
+      "message": "スタートボタンを押して、選択したウェブサイトが本当にブロックされているかどうかを確認する。"
+   },
+   "onboarding_step9_header_title": {
+      "message": "クイックブロックの準備ができました"
+   },
+   "page_set_as_distraction": {
+      "message": "あなたはこのウェブサイトを気晴らしに設定している"
+   },
+   "pause": {
+      "message": "一時停止"
+   },
+   "pause_dialog_header_p1": {
+      "message": "どのくらいの間、一時停止したいですか？"
+   },
+   "pause_dialog_header_p2": {
+      "message": "どのくらいの間、一時停止したいですか？"
+   },
+   "paused": {
+      "message": "一時停止中"
+   },
+   "permission_settings_path": {
+      "message": "拡張機能 -> 拡張機能を管理 -> 詳細 -> サイトへのアクセス -> すべてのサイト"
+   },
+   "permission_settings_path_copy_link": {
+      "message": "リンクをコピーする"
+   },
+   "permission_settings_path_copy_link_finish": {
+      "message": "コピー"
+   },
+   "permission_settings_path_safari": {
+      "message": "Safari -> 設定 -> 機能拡張 -> AppBlock -> すべてのWebサイトで常に許可."
+   },
+   "permission_settings_path_website": {
+      "message": "ウェブサイトを見る"
+   },
+   "permission_settings_text": {
+      "message": "ブロックするにはもう1つステップが必要です。browserName%の設定に移動し、すべてのサイトでブロックするオプションを選択します。私たちのウェブサイトで完全な手順を見つけるか、添付のパスに従ってください。"
+   },
+   "permission_settings_title": {
+      "message": "許可されていません"
+   },
+   "please_send_us_email_at": {
+      "message": "もう一度お試しいただくか、 までメールでお問い合わせください。"
+   },
+   "privacy_policy": {
+      "message": "プライバシーポリシー"
+   },
+   "profile": {
+      "message": "アカウント"
+   },
+   "profile_delete_account": {
+      "message": "アカウントの削除"
+   },
+   "profile_dialog_text": {
+      "message": "アカウントの削除"
+   },
+   "profile_email": {
+      "message": "メールアドレス"
+   },
+   "profile_name": {
+      "message": "お名前"
+   },
+   "quick_block": {
+      "message": "クイックブロック"
+   },
+   "quick_block_brief_description": {
+      "message": "ボタンをワンタップするだけで、即座にウェブサイトのブロックを開始できる簡単な方法です。"
+   },
+   "rating_dialog_content": {
+      "message": "皆様のご意見をお聞かせください。"
+   },
+   "rating_dialog_rate_us_on_store": {
+      "message": "%browserName%ストアで私たちを評価する"
+   },
+   "rating_dialog_rate_us_on_store_content": {
+      "message": "お店でポジティブなレビューをしていただけると、本当に嬉しいです。"
+   },
+   "rating_dialog_title": {
+      "message": "AppBlockを気に入っていただけたでしょうか？"
+   },
+   "reset": {
+      "message": "リセット"
+   },
+   "resume": {
+      "message": "再開"
+   },
+   "saturday": {
+      "message": "土曜日"
+   },
+   "saturday_short": {
+      "message": "土"
+   },
+   "save": {
+      "message": "保存する"
+   },
+   "schedule": {
+      "message": "スケジュール"
+   },
+   "schedule_delete": {
+      "message": "スケジュールの削除"
+   },
+   "schedule_name": {
+      "message": "スケジュールの名前"
+   },
+   "schedule_pause_counting_down": {
+      "message": "一時停止のカウントダウン中"
+   },
+   "schedule_template_detox": {
+      "message": "デジタルデトックス"
+   },
+   "schedule_template_detox_text": {
+      "message": "自分へのごほうびとして携帯なしの日を作る。"
+   },
+   "schedule_template_focus": {
+      "message": "集中"
+   },
+   "schedule_template_focus_text": {
+      "message": "学校や職場での時間を強化する。"
+   },
+   "schedule_template_morning": {
+      "message": "マインドフルな朝"
+   },
+   "schedule_template_morning_text": {
+      "message": "邪魔されずに朝の習慣を楽しみましょう。"
+   },
+   "schedule_template_myself": {
+      "message": "自分だけの時間"
+   },
+   "schedule_template_myself_text": {
+      "message": "貴重な瞬間を有効に使いましょう。"
+   },
+   "schedule_template_study": {
+      "message": "勉強時間"
+   },
+   "schedule_template_study_text": {
+      "message": "勉強を楽にナビゲートする。"
+   },
+   "schedule_template_winddown": {
+      "message": "落ち着きを取り戻す"
+   },
+   "schedule_template_winddown_text": {
+      "message": "すてきな夢を簡単にかなえましょう。"
+   },
+   "schedules": {
+      "message": "スケジュール"
+   },
+   "schedules_empty_view_text": {
+      "message": "毎日のブロッキングを時間別に計画する。"
+   },
+   "schedules_templates_title": {
+      "message": "スケジュールテンプレート"
+   },
+   "select_all": {
+      "message": "すべてを選択"
+   },
+   "select_days": {
+      "message": "日付を選択"
+   },
+   "send_feedback": {
+      "message": "フィードバックを送信"
+   },
+   "send_feedback_send_us_feedback": {
+      "message": "ヘルプが必要な場合、エラーが発生した場合、またはご意見をお寄せください。"
+   },
+   "setup_strict_mode": {
+      "message": "厳格モードを設定する"
+   },
+   "sign_in": {
+      "message": "サインイン"
+   },
+   "sign_out": {
+      "message": "サインアウト"
+   },
+   "start": {
+      "message": "開始"
+   },
+   "stop": {
+      "message": "停止"
+   },
+   "strict_mode": {
+      "message": "厳格モード"
+   },
+   "strict_mode_activate_so_you_cant_bypass": {
+      "message": "厳格モードを有効に回避できないようにする。"
+   },
+   "strict_mode_active_snackbar": {
+      "message": "厳格モードはアクティブです"
+   },
+   "strict_mode_blockings_are_unlocked": {
+      "message": "あなたのブロックはアンロックされました"
+   },
+   "strict_mode_blockings_not_set": {
+      "message": "まだブロックを設定していません"
+   },
+   "strict_mode_blockings_not_set_description": {
+      "message": "厳格モードは、スクリーンタイムを減らすためにブロックを確保します。最初のスケジュールを作成するか、クイックブロックを設定します。"
+   },
+   "strict_mode_coming_soon": {
+      "message": "近日公開"
+   },
+   "strict_mode_confirm_dialog_description": {
+      "message": "「厳格モード」に設定されている場合、プロファイルを編集したり、一部の設定を変更したりすることはできません。"
+   },
+   "strict_mode_confirm_dialog_title": {
+      "message": "厳格モードを有効にしますか？"
+   },
+   "strict_mode_deactivate_info": {
+      "message": "厳格モードは、選択した方法によってのみ解除できます。"
+   },
+   "strict_mode_follow_schedules": {
+      "message": "スケジュールのフォロー"
+   },
+   "strict_mode_follow_schedules_description": {
+      "message": "選択した計画が非アクティブの場合、厳格モードを解除することができます。"
+   },
+   "strict_mode_pin": {
+      "message": "PINコード"
+   },
+   "strict_mode_pin_config_dialog_title": {
+      "message": "PINコードを設定する（4～8桁）"
+   },
+   "strict_mode_pin_deactivate_dialog_title": {
+      "message": "PINコードを入力"
+   },
+   "strict_mode_pin_description": {
+      "message": "設定したPINコードを使用して機能を無効にすることができます。"
+   },
+   "strict_mode_pin_error_incorrect_pin": {
+      "message": "不正な暗証番号"
+   },
+   "strict_mode_pin_error_not_matching_pin": {
+      "message": "PINコードが一致しない"
+   },
+   "strict_mode_quick_block_dialog_text1": {
+      "message": "クイック ブロックをオンにすると、厳格モードがアクティブな間はオフにできなくなります。それでもよろしいですか？"
+   },
+   "strict_mode_quick_block_dialog_text2": {
+      "message": "クイック ブロックをオンにすると、厳格モードがアクティブな間はオフにできなくなります。それでもよろしいですか？"
+   },
+   "strict_mode_quick_block_dialog_title": {
+      "message": "クイックブロックを開始する"
+   },
+   "strict_mode_repeat_pin": {
+      "message": "PINを確認する"
+   },
+   "strict_mode_timer": {
+      "message": "タイマー"
+   },
+   "strict_mode_timer_config_dialog_title": {
+      "message": "タイマーを設定する"
+   },
+   "strict_mode_timer_confirm_dialog_title": {
+      "message": "ストリクト・モードは次の場合に有効です。"
+   },
+   "strict_mode_timer_description": {
+      "message": "設定時間が経過すると、厳格モードは解除されます。"
+   },
+   "strict_mode_you_are_locked": {
+      "message": "ブロックはいかなる回避に対してロックされています。"
+   },
+   "sunday": {
+      "message": "日曜日"
+   },
+   "sunday_short": {
+      "message": "日"
+   },
+   "switch_blockmode_dialog_text": {
+      "message": "本当にブロックモードを%blockMode%に切り替えますか？このアクションは、設定されたすべてのウェブサイトを削除し、不可逆的です。"
+   },
+   "thursday": {
+      "message": "木曜日"
+   },
+   "thursday_short": {
+      "message": "木"
+   },
+   "time": {
+      "message": "時間"
+   },
+   "tos": {
+      "message": "利用規約"
+   },
+   "try_blocking_by_your_needs": {
+      "message": "ニーズ、時間、場所などでブロックしてみる"
+   },
+   "tuesday": {
+      "message": "火曜日"
+   },
+   "tuesday_short": {
+      "message": "火"
+   },
+   "warning": {
+      "message": "注意事項"
+   },
+   "warning_dialog_btn": {
+      "message": "了解"
+   },
+   "warning_dialog_extend": {
+      "message": "スケジュール時間を延長することしかできない。"
+   },
+   "warning_dialog_extend_all_week": {
+      "message": "1週間延長することはできない。"
+   },
+   "warning_dialog_text": {
+      "message": "このスケジュールは1分以内にロックされます。それ以降、このスケジュールでの作業は不可能になります。"
+   },
+   "warning_dialog_title": {
+      "message": "警告"
+   },
+   "web_content": {
+      "message": "ウェブコンテンツ"
+   },
+   "web_content_tooltip": {
+      "message": "ページのコンテンツに指定されたキーワードが含まれているとブロックされます："
+   },
+   "websites": {
+      "message": "ウェブサイト"
+   },
+   "wednesday": {
+      "message": "水曜日"
+   },
+   "wednesday_short": {
+      "message": "水"
+   },
+   "weekdays": {
+      "message": "平日"
+   },
+   "weekend": {
+      "message": "週末"
+   },
+   "welcome_to_appblock": {
+      "message": "AppBlockにようこそ"
+   },
+   "when_is_active": {
+      "message": "いつ活動するのか？"
+   }
+}

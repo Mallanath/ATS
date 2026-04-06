@@ -1,0 +1,32 @@
+{
+   "dark_theme": {
+      "message": "Темная тема"
+   },
+   "dark_theme_off": {
+      "message": "Выкл"
+   },
+   "dark_theme_on": {
+      "message": "Вкл"
+   },
+   "extension_description": {
+      "message": "Udemy Plus добавляет новые функции поверх вашего любимого Udemy."
+   },
+   "extension_name": {
+      "message": "Udemy Plus"
+   },
+   "gmail": {
+      "message": ".com \u003C/strong>"
+   },
+   "loading_please_wait": {
+      "message": "Загрузка, пожалуйста подождите"
+   },
+   "mark_all_completed": {
+      "message": "✔ Отметить все как просмотренное"
+   },
+   "mark_all_uncompleted": {
+      "message": "❌ Отметить все как непросмотренное"
+   },
+   "upcoming_features": {
+      "message": "Сообщите нам, какие функции вы хотели бы увидеть через \u003Cstrong>tulpar.dev"
+   }
+}

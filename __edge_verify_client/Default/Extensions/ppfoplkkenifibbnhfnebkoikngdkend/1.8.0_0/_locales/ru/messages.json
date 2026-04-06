@@ -1,0 +1,752 @@
+{
+   "access": {
+      "message": "Доступ"
+   },
+   "activate": {
+      "message": "Включить"
+   },
+   "active": {
+      "message": "Активен"
+   },
+   "active_all_day": {
+      "message": "Активно в течение всего дня"
+   },
+   "active_until": {
+      "message": "Активно до"
+   },
+   "add": {
+      "message": "Добавить"
+   },
+   "add_keyword_eg": {
+      "message": "Добавить ключевое слово"
+   },
+   "add_time": {
+      "message": "Добавить время"
+   },
+   "add_website_eg": {
+      "message": "Добавление веб-сайта"
+   },
+   "added_to_blocking": {
+      "message": "Добавлено"
+   },
+   "all_day_long": {
+      "message": "Весь день"
+   },
+   "allow_list": {
+      "message": "Список разрешенного"
+   },
+   "allow_list_text": {
+      "message": "Выберите приложения, которые хотите разрешить. Все остальные будут заблокированы."
+   },
+   "already_blocked": {
+      "message": "Данный профиль уже содержит выбранный элемент"
+   },
+   "and": {
+      "message": "и"
+   },
+   "anywhere_in_url": {
+      "message": "В любой части URL"
+   },
+   "anywhere_in_url_tooltip": {
+      "message": "Заблокировано везде в URL"
+   },
+   "banner_block_apps_and_websites": {
+      "message": "Блокируйте приложения и веб-сайты"
+   },
+   "banner_block_based_on_location_and_more": {
+      "message": "Блокировка на основе местоположения и многое другое"
+   },
+   "banner_many_powerful_features": {
+      "message": "Множество мощных функций"
+   },
+   "banner_try_appblock_on": {
+      "message": "Попробуйте AppBlock на"
+   },
+   "banner_your_phone": {
+      "message": "ваш телефон"
+   },
+   "block_list": {
+      "message": "Список блокировки"
+   },
+   "block_list_text": {
+      "message": "Выберите приложения и веб-сайты для блокировки"
+   },
+   "block_this_web": {
+      "message": "Заблокируйте этот сайт"
+   },
+   "blocked_by": {
+      "message": "Интернет заблокирован"
+   },
+   "blocked_by_appblock": {
+      "message": "Этот сайт заблокирован расширением AppBlock %browserName%"
+   },
+   "blocked_by_blocklist": {
+      "message": "Этот сайт заблокирован «%blocklist%»"
+   },
+   "blocked_in": {
+      "message": "Заблокирован"
+   },
+   "blocking": {
+      "message": "Блокировка"
+   },
+   "breaking_your_rules": {
+      "message": "Ваши правила нарушаются?"
+   },
+   "btn_cancel": {
+      "message": "Отмена"
+   },
+   "btn_delete": {
+      "message": "Удалить"
+   },
+   "btn_start_anyway": {
+      "message": "Все равно начать"
+   },
+   "btn_switch": {
+      "message": "Переключатель"
+   },
+   "by_proceeding_you_agree_to_our": {
+      "message": "Продолжая, вы принимаете нашу "
+   },
+   "click_to_copy_link": {
+      "message": "Нажмите, чтобы скопировать ссылку"
+   },
+   "confirm": {
+      "message": "Подтвердить"
+   },
+   "continue": {
+      "message": "Продолжить"
+   },
+   "continue_to_the_app": {
+      "message": "Продолжить"
+   },
+   "current": {
+      "message": "Текущий"
+   },
+   "custom_time": {
+      "message": "Произвольное время"
+   },
+   "days": {
+      "message": "Дни"
+   },
+   "deactivate": {
+      "message": "Отключить"
+   },
+   "delete": {
+      "message": "Удалить"
+   },
+   "delete_all": {
+      "message": "Удалить все"
+   },
+   "delete_dialog_keywords": {
+      "message": "Вы действительно хотите удалить все ключевые слова из списка блокировки? Это действие необратимо"
+   },
+   "delete_dialog_websites": {
+      "message": "Вы действительно хотите удалить все сайты из списка блокировки? Это действие необратимо"
+   },
+   "delete_schedule_dialog_text1": {
+      "message": "Удалить это расписание? Это действие не может быть отменено."
+   },
+   "delete_schedule_dialog_text2": {
+      "message": "Вы собираетесь удалить расписание."
+   },
+   "delete_schedule_dialog_title": {
+      "message": "Удалить расписание"
+   },
+   "disable": {
+      "message": "Отключить"
+   },
+   "discover_schedules_blocking": {
+      "message": "Узнайте о блокировке по расписанию"
+   },
+   "domain": {
+      "message": "Домен"
+   },
+   "domain_tooltip": {
+      "message": "Заблокировано в домене"
+   },
+   "duplicate": {
+      "message": "Копировать"
+   },
+   "easy": {
+      "message": "Простой"
+   },
+   "enable_strict_mode_hint_text": {
+      "message": "Если вы хотите принудительно применять правила блокировки, попробуйте строгий режим."
+   },
+   "every": {
+      "message": "Каждый"
+   },
+   "every_day": {
+      "message": "Каждый день"
+   },
+   "extend": {
+      "message": "Продлить время"
+   },
+   "extend_timer": {
+      "message": "Продлить таймер"
+   },
+   "extended": {
+      "message": "Продленный"
+   },
+   "finish": {
+      "message": "Завершить"
+   },
+   "for_15_min": {
+      "message": "В течение 15 мин."
+   },
+   "for_1_hr": {
+      "message": "В течение 1 часа"
+   },
+   "for_today": {
+      "message": "На сегодня"
+   },
+   "friday": {
+      "message": "пятница"
+   },
+   "friday_short": {
+      "message": "пт"
+   },
+   "get_started": {
+      "message": "Начать работу"
+   },
+   "go_to_store": {
+      "message": "Перейти в магазин %browserName%"
+   },
+   "hard": {
+      "message": "Сложный"
+   },
+   "hours": {
+      "message": "Ч."
+   },
+   "hr_1": {
+      "message": "1 ч"
+   },
+   "hrs_24": {
+      "message": "24 часа"
+   },
+   "incognito_do_you_want_enable": {
+      "message": "Вы хотите заблокировать окно инкогнито?"
+   },
+   "incognito_link_copied_open_in_new_tab": {
+      "message": "Ссылка скопирована. Пожалуйста, откройте ее в новой вкладке."
+   },
+   "incognito_must_enable_in_settings": {
+      "message": "Вы должны включить эту опцию в настройках браузера."
+   },
+   "incognito_settings_path": {
+      "message": "Расширения -> Управление расширениями -> Сведения -> Разрешить использование в режиме инкогнито"
+   },
+   "incognito_settings_path_safari": {
+      "message": "Safari -> Настройки -> Расширения -> AppBlock -> В режиме Частного доступа"
+   },
+   "invalid_input": {
+      "message": "Недопустимый ввод"
+   },
+   "keywords": {
+      "message": "ключевые слова"
+   },
+   "login": {
+      "message": "Войти"
+   },
+   "login_with_google": {
+      "message": "Продолжить с Google"
+   },
+   "min_25": {
+      "message": "25мин"
+   },
+   "minutes": {
+      "message": "Мин."
+   },
+   "monday": {
+      "message": "понедельник"
+   },
+   "monday_short": {
+      "message": "пн"
+   },
+   "more_on_our_website": {
+      "message": "Подробнее на нашем сайте"
+   },
+   "never_show_again": {
+      "message": "Не показывать больше"
+   },
+   "new_schedule": {
+      "message": "Новое расписание"
+   },
+   "no_keyword_added": {
+      "message": "Ключевые слова не добавлены"
+   },
+   "no_website_added": {
+      "message": "Веб-сайты не добавлены"
+   },
+   "not_now": {
+      "message": "Не сейчас"
+   },
+   "onboarding_excessive_phone_usage": {
+      "message": "Чрезмерное использование телефона"
+   },
+   "onboarding_focus_on_school_or_work": {
+      "message": "Фокусируйтесь на учебе или работе"
+   },
+   "onboarding_gaming_addiction": {
+      "message": "Игровая зависимость"
+   },
+   "onboarding_mental_health_and_adhd": {
+      "message": "Душевное здоровье и СДВГ"
+   },
+   "onboarding_other": {
+      "message": "Другое"
+   },
+   "onboarding_porn_addiction": {
+      "message": "Порнозависимость"
+   },
+   "onboarding_sleep_hygiene": {
+      "message": "Гигиена сна"
+   },
+   "onboarding_step10_description": {
+      "message": "Изучите больше возможностей приложения."
+   },
+   "onboarding_step10_header_title": {
+      "message": "Вот как работает Quick Block"
+   },
+   "onboarding_step11_description": {
+      "message": "Изучите больше возможностей приложения."
+   },
+   "onboarding_step11_header_title": {
+      "message": "Знаете ли вы, что AppBlock также доступен в виде мобильного приложения?"
+   },
+   "onboarding_step11_no": {
+      "message": "Нет"
+   },
+   "onboarding_step11_yes_dont_use": {
+      "message": "Да, но я им не пользуюсь"
+   },
+   "onboarding_step11_yes_use": {
+      "message": "Да"
+   },
+   "onboarding_step12_content": {
+      "message": "Попробуйте заблокировать мобильные приложения и сайты на своем телефоне уже сегодня!"
+   },
+   "onboarding_step12_header_title": {
+      "message": "AppBlock используют миллионы людей по всему миру."
+   },
+   "onboarding_step1_header_title": {
+      "message": "Блокируйте отвлекающие веб-сайты и ключевые слова с помощью AppBlock"
+   },
+   "onboarding_step2_header_title": {
+      "message": "В каких случаях может помочь AppBlock?"
+   },
+   "onboarding_step3_header_title": {
+      "message": "В каких случаях может помочь AppBlock?"
+   },
+   "onboarding_step4_header_title": {
+      "message": "Знаете...\nВы не одиноки."
+   },
+   "onboarding_step4_text_1": {
+      "message": "Исследования показывают, что в наше время многим людям сложно сконцентрироваться из-за стресса и постоянных отвлечений на телефон."
+   },
+   "onboarding_step4_text_2": {
+      "message": "По данным Всемирной организации здравоохранения (ВОЗ), проблемы с душевным здоровьем испытает примерно каждый четвертый человек в мире."
+   },
+   "onboarding_step4_text_3": {
+      "message": "Согласно последним данным, среднестатистический пользователь проверяет телефон каждые 12 минут, то есть примерно 80 раз в день. 68% людей сидят в телефоне за едой с друзьями или семьей."
+   },
+   "onboarding_step4_text_4": {
+      "message": "Согласно последним данным, в любой момент времени 28 000 человек смотрят порнографию, причем 84% всех просмотров происходят на телефоне!"
+   },
+   "onboarding_step4_text_5": {
+      "message": "Проблема игровой зависимости становится все более серьезной по всему миру. ВОЗ считает ее психическим расстройством, которое затрагивает 3-4% геймеров. Это примерно 60 миллионов человек."
+   },
+   "onboarding_step4_text_6": {
+      "message": "Использование телефона перед сном может приводить к снижению выработки мелатонина и, как следствие, снижению качества сна. Из-за этого у многих людей начинаются нарушения сна."
+   },
+   "onboarding_step5_content": {
+      "message": "Мы поможем вам сконцентрироваться на самом важном за счет блокировки отвлекающих ресурсов."
+   },
+   "onboarding_step5_header_title": {
+      "message": "AppBlock снижает время, проведенное за устройством"
+   },
+   "onboarding_step6_header_title": {
+      "message": "Что пользователи говорят об AppBlock?"
+   },
+   "onboarding_step6_text_1": {
+      "message": "«Мне нравится приложение: оно простое и отлично помогает справиться с СДВГ!»"
+   },
+   "onboarding_step6_text_2": {
+      "message": "С помощью этого приложения я блокирую приложения, которые отвлекают меня от учебы, и благодаря этому приложению я экономлю так много времени на учебу для своего лучшего будущего"
+   },
+   "onboarding_step6_text_3": {
+      "message": "Это очень полезное приложение для меня. Работает очень хорошо с точки зрения того, как оно должно работать."
+   },
+   "onboarding_step7_continue_button": {
+      "message": "Продолжить"
+   },
+   "onboarding_step7_header_title": {
+      "message": "Наши 3 основные функции блокировки"
+   },
+   "onboarding_step7_quick_block_description": {
+      "message": "Чтобы не усложнять, будем просто включать и выключать блокировку?"
+   },
+   "onboarding_step7_quick_block_header": {
+      "message": "Быстрая блокировка"
+   },
+   "onboarding_step7_scheduled_block_description": {
+      "message": "Создавайте автоматические блокировки в зависимости от ваших потребностей, расписания и т. д."
+   },
+   "onboarding_step7_scheduled_block_header": {
+      "message": "Блокировка по расписанию"
+   },
+   "onboarding_step7_strict_mode_coming_soon": {
+      "message": "Скоро будет"
+   },
+   "onboarding_step7_strict_mode_description": {
+      "message": "Если вам сложно следовать правилам, которые вы задали в AppBlock, можно выбрать строгий режим с более жесткими правилами."
+   },
+   "onboarding_step7_strict_mode_header": {
+      "message": "Ограниченный режим"
+   },
+   "onboarding_step8_add_website_title": {
+      "message": "Добавление веб-сайта"
+   },
+   "onboarding_step8_description": {
+      "message": "Добавьте веб-сайты, которые будут блокироваться при активном режиме Quick Block. Не волнуйтесь, вы можете отключить блокировку в любой момент. Мы просто хотим показать вам, как все это работает."
+   },
+   "onboarding_step8_header_title": {
+      "message": "Давайте настроим первую блокировку вместе"
+   },
+   "onboarding_step9_description": {
+      "message": "Нажмите кнопку Пуск и проверьте, действительно ли выбранные вами сайты заблокированы."
+   },
+   "onboarding_step9_header_title": {
+      "message": "Ваша быстрая блокировка готова"
+   },
+   "page_set_as_distraction": {
+      "message": "Вы выбрали этот сайт в качестве отвлекающего фактора."
+   },
+   "pause": {
+      "message": "Пауза"
+   },
+   "pause_dialog_header_p1": {
+      "message": "Выберите длительность паузы."
+   },
+   "pause_dialog_header_p2": {
+      "message": "Выберите длительность паузы."
+   },
+   "paused": {
+      "message": "На паузе"
+   },
+   "permission_settings_path": {
+      "message": "Расширения -> Управление расширениями -> Сведения -> Доступ к сайтам -> На всех сайтах"
+   },
+   "permission_settings_path_copy_link": {
+      "message": "Копировать ссылку"
+   },
+   "permission_settings_path_copy_link_finish": {
+      "message": "Скопировано"
+   },
+   "permission_settings_path_safari": {
+      "message": "Safari -> Настройки -> Расширения -> AppBlock -> Разрешать всегда на каждом сайте."
+   },
+   "permission_settings_path_website": {
+      "message": "Посетите сайт"
+   },
+   "permission_settings_text": {
+      "message": "Для блокировки необходимо сделать еще один шаг. Зайдите в настройки %browserName% и выберите опцию блокировать все сайты. Полные инструкции вы найдете на нашем сайте или следуйте прилагаемому пути."
+   },
+   "permission_settings_title": {
+      "message": "Отсутствует разрешение"
+   },
+   "please_send_us_email_at": {
+      "message": "Повторите попытку или напишите нам на адрес"
+   },
+   "privacy_policy": {
+      "message": "Политика конфиденциальности"
+   },
+   "profile": {
+      "message": "Учетная запись"
+   },
+   "profile_delete_account": {
+      "message": "Удалить аккаунт"
+   },
+   "profile_dialog_text": {
+      "message": "Удалить аккаунт"
+   },
+   "profile_email": {
+      "message": "Эл. почта"
+   },
+   "profile_name": {
+      "message": "Ваше имя"
+   },
+   "quick_block": {
+      "message": "Быстрая блокировка"
+   },
+   "quick_block_brief_description": {
+      "message": "Это простой способ мгновенно начать блокировать веб-сайты одним нажатием кнопки"
+   },
+   "rating_dialog_content": {
+      "message": "Мы хотели бы узнать ваши отзывы"
+   },
+   "rating_dialog_rate_us_on_store": {
+      "message": "Оцените нас на %browserName% Store"
+   },
+   "rating_dialog_rate_us_on_store_content": {
+      "message": "Для нас будет очень важно, если вы оставите положительный отзыв о магазине."
+   },
+   "rating_dialog_title": {
+      "message": "Нравится AppBlock?"
+   },
+   "reset": {
+      "message": "Сброс"
+   },
+   "resume": {
+      "message": "Возобновить"
+   },
+   "saturday": {
+      "message": "суббота"
+   },
+   "saturday_short": {
+      "message": "сб"
+   },
+   "save": {
+      "message": "Сохранить"
+   },
+   "schedule": {
+      "message": "Расписание"
+   },
+   "schedule_delete": {
+      "message": "Удалить расписание"
+   },
+   "schedule_name": {
+      "message": "Название расписания"
+   },
+   "schedule_pause_counting_down": {
+      "message": "Обратный отсчет до паузы"
+   },
+   "schedule_template_detox": {
+      "message": "Цифровой детокс"
+   },
+   "schedule_template_detox_text": {
+      "message": "Насладитесь днем без телефона."
+   },
+   "schedule_template_focus": {
+      "message": "Сосредоточение"
+   },
+   "schedule_template_focus_text": {
+      "message": "Сделайте свое время в школе или на работе более эффективным."
+   },
+   "schedule_template_morning": {
+      "message": "Ответственное утро"
+   },
+   "schedule_template_morning_text": {
+      "message": "Наслаждайтесь утренними делами, не отвлекаясь на лишнее."
+   },
+   "schedule_template_myself": {
+      "message": "Время для  себя"
+   },
+   "schedule_template_myself_text": {
+      "message": "Получайте лучшее от самых ценных моментов."
+   },
+   "schedule_template_study": {
+      "message": "Время учебы"
+   },
+   "schedule_template_study_text": {
+      "message": "Чтобы было проще учиться."
+   },
+   "schedule_template_winddown": {
+      "message": "Расслабление"
+   },
+   "schedule_template_winddown_text": {
+      "message": "Самые сладкие сны придут к вам быстрее."
+   },
+   "schedules": {
+      "message": "Расписания"
+   },
+   "schedules_empty_view_text": {
+      "message": "Планируйте свои ежедневные блокировки по времени."
+   },
+   "schedules_templates_title": {
+      "message": "Шаблоны расписаний"
+   },
+   "select_all": {
+      "message": "Выбрать все"
+   },
+   "select_days": {
+      "message": "Выбрать дни"
+   },
+   "send_feedback": {
+      "message": "Отправить отзыв"
+   },
+   "send_feedback_send_us_feedback": {
+      "message": "Если вам нужна помощь, вы столкнулись с ошибкой или хотите отправить нам отзыв."
+   },
+   "setup_strict_mode": {
+      "message": "Настроить ограниченный режим"
+   },
+   "sign_in": {
+      "message": "Войти"
+   },
+   "sign_out": {
+      "message": "Выйти"
+   },
+   "start": {
+      "message": "Начать"
+   },
+   "stop": {
+      "message": "Остановить"
+   },
+   "strict_mode": {
+      "message": "Ограниченный режим"
+   },
+   "strict_mode_activate_so_you_cant_bypass": {
+      "message": "Включите строгий режим, чтобы вы не могли их обойти."
+   },
+   "strict_mode_active_snackbar": {
+      "message": "Ограниченный режим включен"
+   },
+   "strict_mode_blockings_are_unlocked": {
+      "message": "Изменение блокировок разрешено"
+   },
+   "strict_mode_blockings_not_set": {
+      "message": "Вы еще не настроили блокировки"
+   },
+   "strict_mode_blockings_not_set_description": {
+      "message": "Строгий режим защитит блокировки и поможет сократить время, проведенное вами у экрана. Создайте первое расписание или установите быструю блокировку."
+   },
+   "strict_mode_coming_soon": {
+      "message": "Вскоре"
+   },
+   "strict_mode_confirm_dialog_description": {
+      "message": "При активном строгом режиме вы не сможете редактировать свои профили и изменять некоторые настройки."
+   },
+   "strict_mode_confirm_dialog_title": {
+      "message": "Готовы активировать строгий режим?"
+   },
+   "strict_mode_deactivate_info": {
+      "message": "Строгий режим можно отключить только выбранным вами способом."
+   },
+   "strict_mode_follow_schedules": {
+      "message": "Отслеживать расписания"
+   },
+   "strict_mode_follow_schedules_description": {
+      "message": "Строгий режим можно отключить вне времени его работы."
+   },
+   "strict_mode_pin": {
+      "message": "PIN-код"
+   },
+   "strict_mode_pin_config_dialog_title": {
+      "message": "Установите ПИН-код (4–8 цифр)"
+   },
+   "strict_mode_pin_deactivate_dialog_title": {
+      "message": "Введите ПИН-код"
+   },
+   "strict_mode_pin_description": {
+      "message": "Функцию можно отключить с помощью установленного PIN-кода."
+   },
+   "strict_mode_pin_error_incorrect_pin": {
+      "message": "Неверный PIN-код"
+   },
+   "strict_mode_pin_error_not_matching_pin": {
+      "message": "PIN-коды не совпадают"
+   },
+   "strict_mode_quick_block_dialog_text1": {
+      "message": "Если включить быструю блокировку, вы не сможете ее выключить, пока активен строгий режим. Продолжить?"
+   },
+   "strict_mode_quick_block_dialog_text2": {
+      "message": "Если включить быструю блокировку, вы не сможете ее выключить, пока активен строгий режим. Продолжить?"
+   },
+   "strict_mode_quick_block_dialog_title": {
+      "message": "Запустить быструю блокировку"
+   },
+   "strict_mode_repeat_pin": {
+      "message": "Подтвердите PIN-код"
+   },
+   "strict_mode_timer": {
+      "message": "Таймер"
+   },
+   "strict_mode_timer_config_dialog_title": {
+      "message": "Установить таймер"
+   },
+   "strict_mode_timer_confirm_dialog_title": {
+      "message": "Строгий режим будет активен для"
+   },
+   "strict_mode_timer_description": {
+      "message": "Строгий режим выключится по истечении установленного времени."
+   },
+   "strict_mode_you_are_locked": {
+      "message": "Блокировки защищены от всех видов доступа.."
+   },
+   "sunday": {
+      "message": "воскресенье"
+   },
+   "sunday_short": {
+      "message": "вс"
+   },
+   "switch_blockmode_dialog_text": {
+      "message": "Вы действительно хотите переключить режим блокировки на %blockMode%? Это действие удалит все установленные сайты и будет необратимым."
+   },
+   "thursday": {
+      "message": "четверг"
+   },
+   "thursday_short": {
+      "message": "чт"
+   },
+   "time": {
+      "message": "Время"
+   },
+   "tos": {
+      "message": "Условия использования"
+   },
+   "try_blocking_by_your_needs": {
+      "message": "Используйте блокировку по потребностям, времени, местоположению и т. д."
+   },
+   "tuesday": {
+      "message": "вторник"
+   },
+   "tuesday_short": {
+      "message": "вт"
+   },
+   "warning": {
+      "message": "Предупреждение!"
+   },
+   "warning_dialog_btn": {
+      "message": "OK"
+   },
+   "warning_dialog_extend": {
+      "message": "Вы можете только продлить время расписания."
+   },
+   "warning_dialog_extend_all_week": {
+      "message": "Вы не можете продлить расписание на целую неделю."
+   },
+   "warning_dialog_text": {
+      "message": "Это расписание заблокируется в течение минуты. После этого работать с ним будет невозможно."
+   },
+   "warning_dialog_title": {
+      "message": "Внимание"
+   },
+   "web_content": {
+      "message": "Веб-контент"
+   },
+   "web_content_tooltip": {
+      "message": "Он будет заблокирован, если содержимое страницы содержит заданное ключевое слово:"
+   },
+   "websites": {
+      "message": "Веб-сайты"
+   },
+   "wednesday": {
+      "message": "среда"
+   },
+   "wednesday_short": {
+      "message": "ср"
+   },
+   "weekdays": {
+      "message": "Будни"
+   },
+   "weekend": {
+      "message": "Выходные"
+   },
+   "welcome_to_appblock": {
+      "message": "Добро пожаловать в AppBlock"
+   },
+   "when_is_active": {
+      "message": "Когда активен?"
+   }
+}

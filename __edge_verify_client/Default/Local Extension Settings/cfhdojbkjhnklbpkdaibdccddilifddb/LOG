@@ -1,0 +1,15 @@
+2026/04/04-23:16:05.625 5494 Creating DB C:\Users\malla\Downloads\ATS\__edge_verify_client\Default\Local Extension Settings\cfhdojbkjhnklbpkdaibdccddilifddb since it was missing.
+2026/04/04-23:16:05.631 5494 Reusing MANIFEST C:\Users\malla\Downloads\ATS\__edge_verify_client\Default\Local Extension Settings\cfhdojbkjhnklbpkdaibdccddilifddb/MANIFEST-000001
+2026/04/04-23:16:32.610 30e4 Level-0 table #5: started
+2026/04/04-23:16:32.651 30e4 Level-0 table #5: 2548794 bytes OK
+2026/04/04-23:16:32.653 30e4 Delete type=0 #3
+2026/04/04-23:16:48.272 30e4 Level-0 table #7: started
+2026/04/04-23:16:48.319 30e4 Level-0 table #7: 2500468 bytes OK
+2026/04/04-23:16:48.322 30e4 Delete type=0 #4
+2026/04/04-23:20:05.729 30e4 Compacting 1@1 + 1@2 files
+2026/04/04-23:20:05.781 30e4 Generated table #8@1: 3 keys, 2500384 bytes
+2026/04/04-23:20:05.785 30e4 Generated table #9@1: 27 keys, 20057 bytes
+2026/04/04-23:20:05.785 30e4 Compacted 1@1 + 1@2 files => 2520441 bytes
+2026/04/04-23:20:05.786 30e4 compacted to: files[ 0 0 2 0 0 0 0 ]
+2026/04/04-23:20:05.788 30e4 Delete type=2 #5
+2026/04/04-23:20:05.788 30e4 Delete type=2 #7

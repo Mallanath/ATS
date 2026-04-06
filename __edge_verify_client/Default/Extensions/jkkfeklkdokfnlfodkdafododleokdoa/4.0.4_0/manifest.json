@@ -1,0 +1,38 @@
+{
+   "action": {
+      "default_icon": "/assets/icon16.png",
+      "default_popup": "Popup/popup.html",
+      "default_title": "BlockerX Porn Blocker"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "ContentScripts/scriptOnStart.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "ContentScripts/scriptOnEnd.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_extSummary__",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "assets/icon128.png",
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png"
+   },
+   "incognito": "split",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqyM9urCfyKwqA9bN5wA9L5b+nAnzubfSb1R9U+Oc7W8Y1H3wKzEYQgpwRY+affhpJuRxIyCSvv5BVxlLxzkVmPiMDeJOasrXuN5J2+1WYnndt9oAnMpG07CGhacmw2Td7m2AwSpKSnvFW0kU5S2V8sSKwpqMDQW/WpjdXzfVhYR4vkozReER8+pZYR6hQzhjbKepwKSFOn9kMyMQWbdZeIHiTKmOLQww75hL4+FHob7b9sgImRqjuaeR9cH5YU/2y7JAjITE/y1Tb22/EcK2xnmRW3wmiQrQ7XINVzHTC0tQslpZMRu275SQEVitN0dWvLjJ3ksrBL5s5Y/v6fYiNQIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_extTitle__",
+   "permissions": [ "storage", "idle", "unlimitedStorage", "notifications", "alarms" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.0.4",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "*.html", "*.png" ]
+   } ]
+}

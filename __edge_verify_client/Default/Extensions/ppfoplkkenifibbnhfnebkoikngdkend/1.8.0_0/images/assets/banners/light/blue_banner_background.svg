@@ -1,0 +1,27 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 321" width="680" height="321">
+	<title>uvodni-svg</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m0 16c0-8.84 7.16-16 16-16h648c8.84 0 16 7.16 16 16v289c0 8.84-7.16 16-16 16h-648c-8.84 0-16-7.16-16-16z"/>
+		</clipPath>
+		<linearGradient id="g1" x1="656.4" y1="-61" x2="608.6" y2="382" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#2f96ff"/>
+			<stop offset="1" stop-color="#2553cb"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: #ffffff } 
+		.s1 { fill: url(#g1) } 
+		.s2 { opacity: .6;fill: #ebebf5 } 
+	</style>
+	<g id="Clip-Path" clip-path="url(#cp1)">
+		<g id="Layer">
+			<path id="Layer" class="s0" d="m0 16c0-8.8 7.2-16 16-16h648c8.8 0 16 7.2 16 16v289c0 8.8-7.2 16-16 16h-648c-8.8 0-16-7.2-16-16z"/>
+			<path id="Layer" class="s1" d="m0-61h680v382h-680z"/>
+			<g id="Layer" style="opacity: .5">
+				<path id="Layer" fill-rule="evenodd" class="s0" d="m704-212.5h-0.1v-0.1l-282.3-111.2-69.4-146.8 351.8 141.7 351.7-141.7-69.4 146.8-282.3 111.2zm-0.1 121.9l222.9-92.8-38.8 92.9-184 77.3h-0.1l-184.1-77.3-38.7-92.9zm-146.4 215.5l25.2-66.4 121.1 56.2 121.1-56.2 25.2 66.4-146.3 61.2z"/>
+				<path id="Layer" fill-rule="evenodd" class="s2" d="m342.6-344.5l40.9 86.5-15.4 30.5 92.1 238.9 56.6 23.6-25.9 67.9-81.8-35.6-117.7-294.8z"/>
+			</g>
+		</g>
+	</g>
+</svg>

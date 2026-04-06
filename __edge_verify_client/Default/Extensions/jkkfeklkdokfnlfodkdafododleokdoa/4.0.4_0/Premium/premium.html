@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Premium- BlockerX</title>
+	<script src="/scripts/jQuery.js"></script>
+	<link rel="stylesheet" href="premium.css" />
+	<script src="../scripts/mixpanel.js"></script>
+	<script src="../scripts/translate.js"></script>
+</head>
+
+<body>
+	<main>
+		<div class="content_container">
+			<div class="content_head">
+				<div id="userEmailDiv" style="display: none;"><img src="/assets/simple-profile.png" alt="user_icon" /><span id="userEmail"></span></div>
+				<button id="loginBtn">Login</button>
+				<button id="logoutBtn" style="display: none">Logout</button>
+			</div>
+			<div class="tab_content_area">
+				<div class="tab_content_area_inner">
+					<div class="single_tab_content" id="content_4">
+						<div class="premiumPage" id="premiumPage">
+							<div id="premiumInactiveCase1" class="premium_head">
+								<h1>
+									<span id="premium_1">Premium</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+										<g id="Premium_icon" data-name="Premium icon"
+											transform="translate(-57.735 -190.985)">
+											<rect id="Rectangle_3" data-name="Rectangle 3" width="40" height="40"
+												transform="translate(57.735 190.985)" fill="none" />
+											<g id="crown" transform="translate(57.735 194.153)">
+												<path id="Path_6" data-name="Path 6"
+													d="M42.933,17.638,39.156,34.127a1.532,1.532,0,0,1-1.535,1.2H8.2a1.532,1.532,0,0,1-1.535-1.2L3.012,17.638a1.507,1.507,0,0,1,.553-1.517,1.551,1.551,0,0,1,1.628-.167l8.967,4.293L21.591,7.262a1.545,1.545,0,0,1,2.672,0l7.431,13,9.028-4.323a1.551,1.551,0,0,1,1.662.143,1.507,1.507,0,0,1,.549,1.556Z"
+													transform="translate(-2.977 -6.493)" fill="#ffd500" />
+											</g>
+										</g>
+									</svg>
+								</h1>
+								<p id="premium_p">
+									Get access to unlimited blocking and all premium features
+								</p>
+							</div>
+							<h1 id="discount_offer_timer" class="discount_offer_timer" style="display: none;">
+								<span id="offer_ends">Discount Offer Ends In </span>
+								<span id="offer_timer"> 00m : 00s</span>
+							</h1>
+							<h2 id="premiumInactiveCase2" class="premium_plans_heading centerText">
+								Choose a plan
+							</h2>
+							<div id="premiumInactiveCase3" class="premium_plans_container">
+								<div class="each_premium_plan lifetime_plan" id="developed_lifetime_card"
+									>
+									<div class="each_premium_plan_highlight">
+										<h4 id="bestValue">Best value</h4>
+									</div>
+									<div class="each_premium_plan_inner">
+										<div class="plan_card_head">
+											<h3 id="lifetime_plan">Lifetime plan</h3>
+											<h4 id="off72">83% off</h4>
+										</div>
+										<div class="plan_amount">
+											<h1><strong> $199.49 </strong></h1>
+										</div>
+										<div class="plan_info">
+											<span id="onetime"> One time payment of</span>
+											<strike> $1194.96 </strike> $199.49
+										</div>
+										<div class="get_plan_btn">
+											<button id="openLifetimePurchasePage">Get plan</button>
+										</div>
+										<div id="moneyBack" class="plan_money_back">
+											3 days money-back guarantee
+										</div>
+									</div>
+								</div>
+								<div class="each_premium_plan annual_plan" id="developed_annual_card"
+									>
+									<div class="each_premium_plan_highlight">
+										<h4 id="mostPopular">Most Popular</h4>
+									</div>
+									<div class="each_premium_plan_inner">
+										<div class="plan_card_head">
+											<h3 id="mostPopular_h3">12 month plan</h3>
+											<h4 id="off53">53% off</h4>
+										</div>
+										<div class="plan_amount">
+											<h1>
+												<strong>$109.59</strong><span id="yearPrice">/year</span>
+											</h1>
+										</div>
+										<div class="plan_info">
+											<span id="billed">Billed</span>
+											<strike> $597.48 </strike>$109.59
+											<span id="everyyear">every year</span>
+										</div>
+										<div class="get_plan_btn">
+											<button id="openAnnualPurchasePage">Try for Free</button>
+										</div>
+										<div id="renew_note1" class="plan_money_back">
+											Renews automatically, unless cancelled
+										</div>
+									</div>
+								</div>
+								<div class="each_premium_plan monthly_plan" id="developed_monthly_card"
+									>
+									<div class="each_premium_plan_highlight">
+										<h4>&nbsp;</h4>
+									</div>
+									<div class="each_premium_plan_inner">
+										<div class="plan_card_head">
+											<h3 id="monthPlan">1 month plan</h3>
+											<h4>&nbsp;</h4>
+										</div>
+										<div class="plan_amount">
+											<h1>
+												<strong>$49.79</strong><span id="permonth">/month</span>
+											</h1>
+										</div>
+										<div id="monthlyBill" class="plan_info">
+											Billed $49.79 every month
+										</div>
+										<div class="get_plan_btn">
+											<button id="openMonthlyPurchasePage">Get plan</button>
+										</div>
+										<div id="renew2" class="plan_money_back">
+											Renews automatically, unless cancelled
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="premiumActiveCase1" class="premium_head" style="display: none">
+								<h1 id="premUser">
+									Congratulations! Your Premium is Active
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_41_768)">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M20 0C8.96875 0 0 8.96875 0 20C0 31.0312 8.96875 40 20 40C31.0312 40 40 31.0312 40 20C40 8.96875 31.0312 0 20 0Z"
+												fill="#4BAE4F" />
+											<path
+												d="M16.1484 29.1484C13.5938 26.5937 11.0547 24.0156 8.49219 21.4609C8.21094 21.1797 8.21094 20.7109 8.49219 20.4297L11.4375 17.4844C11.7188 17.2031 12.1875 17.2031 12.4688 17.4844L16.6797 21.6953L27.5078 10.8594C27.7969 10.5781 28.2578 10.5781 28.5469 10.8594L31.5 13.8125C31.7891 14.1016 31.7891 14.5625 31.5 14.8437L17.1797 29.1484C16.8984 29.4375 16.4375 29.4375 16.1484 29.1484Z"
+												fill="white" />
+										</g>
+										<defs>
+											<clipPath id="clip0_41_768">
+												<rect width="40" height="40" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</h1>
+							</div>
+							<hr />
+							<h2 id="premAddOns" class="centerText premium_features_heading">
+								What will you get with BlockerX Premium
+							</h2>
+							<div class="features_container">
+								<div class="feature_row">
+									<div class="each_feature" style="margin-right: 1.25%">
+										<div class="each_feature_img_area">
+											<img src="/assets/Feature Icons/Whitelist icon.png" alt="" />
+										</div>
+										<div>
+											<p id="addon1" class="each_feature_heading">
+												Block unlimited websites and keywords
+											</p>
+											<p id="addon1_p" class="each_feature_description">
+												Add Unlimited keywords and websites to the blocklist(you
+												can add only 1 in free version)
+											</p>
+										</div>
+									</div>
+									<div class="each_feature" style="margin-right: 1.25%">
+										<div class="each_feature_img_area">
+											<img src="/assets/Feature Icons/W Whitelist icon .png" alt="" />
+										</div>
+										<div>
+											<p id="addon2" class="each_feature_heading">
+												Whitelist websites and keywords
+											</p>
+											<p id="addon2_p" class="each_feature_description">
+												Whitelist unlimited websites that you want to avoid
+												blocking
+											</p>
+										</div>
+									</div>
+									<div class="each_feature">
+										<div class="each_feature_img_area">
+											<img src="/assets/Feature Icons/Uninstall notification icon.png" alt="" />
+										</div>
+										<div>
+											<p id="addon3" class="each_feature_heading">
+												Uninstall Notification
+											</p>
+											<p id="addon3_p" class="each_feature_description">
+												If you uninstall the extension, your partner will be
+												notified through mail.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="feature_row">
+									<div class="each_feature" style="margin-right: 1.25%">
+										<div class="each_feature_img_area">
+											<img src="/assets/Feature Icons/Custom URL icon.png" alt="" />
+										</div>
+										<div>
+											<p id="addon4" class="each_feature_heading">Custom URL</p>
+											<p id="addon4_p" class="each_feature_description">
+												Get redirected to a URL of your choice when a website is
+												blocked
+											</p>
+										</div>
+									</div>
+									<div class="each_feature">
+										<div class="each_feature_img_area">
+											<img src="/assets/Feature Icons/Custom message icon.png" alt="" />
+										</div>
+										<div>
+											<p id="addon5" class="each_feature_heading">
+												Custom Message
+											</p>
+											<p id="addon5_p" class="each_feature_description">
+												Enter a custom message you want to be displayed when a
+												website is blocked.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr />
+							<h2 id="userExp" class="centerText premium_features_heading">
+								What our users have to say
+							</h2>
+							<div class="testimonials_container">
+								<div class="each_testimonial" style="margin-right: 1.25%">
+									<p id="test_user1" class="testimonial_text">
+										"Absolutely phenomenal extension. I bought premium, and have
+										been taking a tour of all the options i have. I tried
+										unblocking unrestricted browsers and i LOVE how much
+										feedback that is given back."
+									</p>
+									<div class="testimonial_username">
+										<h5 id="test_user1_name">Juan El Bean</h5>
+										<img src="/assets//Feature Icons/5-stars.png" alt="" />
+									</div>
+								</div>
+								<div class="each_testimonial" style="margin-right: 1.25%">
+									<p id="test_user2" class="testimonial_text">
+										"A fantastic extension. Like most good habit changing apps,
+										it takes away the need for willpower to achieve the goal.
+										Highly recommended."
+									</p>
+									<div class="testimonial_username">
+										<h5 id="test_user2_name">Ian Tighe</h5>
+										<img src="/assets//Feature Icons/5-stars.png" alt="" />
+									</div>
+								</div>
+								<div class="each_testimonial" style="margin-right: 1.25%">
+									<p id="test_user3" class="testimonial_text">
+										"This extension is a godsend. I have been struggling with
+										porn addiction for years and this app helped a lot. Any time
+										I get an urge and open up a website, it immediately blocks
+										it. It’s just perfect."
+									</p>
+									<div class="testimonial_username">
+										<h5 id="test_user3_name">Hellrider 386</h5>
+										<img src="/assets//Feature Icons/5-stars.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<hr />
+							<h2 id="improvement_h" class="centerText premium_features_heading">
+								BlockerX users saw a significant improvement in their lifestyle.
+							</h2>
+							<div class="improvement_main_outer">
+								<div class="improvement_main_inner">
+									<div class="improvement_container">
+										<div class="each_improvement" style="border: 1px solid #ece3ff">
+											<div class="improvement_header confidence_improvement">
+												<img src="/assets/Feature Icons/Confidence icon.png" alt="" />
+												<h4 id="features1" class="header_text">
+													Improved self-confidence
+												</h4>
+											</div>
+											<div class="improvement_body">
+												<p class="improvement_percentage" style="color: #8866d9">
+													73%
+												</p>
+												<p id="p1" class="body_text">
+													of BlockerX users report feeling more confident.
+												</p>
+											</div>
+										</div>
+										<div class="each_improvement" style="border: 1px solid #d4f3d4">
+											<div class="improvement_header sleep_improvement">
+												<img src="/assets/Feature Icons/Sleep icon.png" alt="" />
+												<h4 id="features2" class="header_text">Better Sleep</h4>
+											</div>
+											<div class="improvement_body">
+												<p class="improvement_percentage" style="color: #0dbb9d">
+													68%
+												</p>
+												<p id="p2" class="body_text">
+													of BlockerX users reported an improvement in their
+													sleep cycle.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="improvement_container">
+										<div class="each_improvement" style="border: 1px solid #fff0c6">
+											<div class="improvement_header energy_improvement">
+												<img src="/assets/Feature Icons/Energy icon.png" alt="" />
+												<h4 id="features3" class="header_text">More Energy</h4>
+											</div>
+											<div class="improvement_body">
+												<p class="improvement_percentage" style="color: #f6ab15">
+													78%
+												</p>
+												<p id="p3" class="body_text">
+													of BlockerX users reported feeling more energized.
+												</p>
+											</div>
+										</div>
+										<div class="each_improvement" style="border: 1px solid #ffdae0">
+											<div class="improvement_header relationship_improvement">
+												<img src="/assets/Feature Icons/Productivity icon.png" alt="" />
+												<h4 id="features4" class="header_text">
+													Stronger Relationship
+												</h4>
+											</div>
+											<div class="improvement_body">
+												<p class="improvement_percentage" style="color: #fd4985">
+													65%
+												</p>
+												<p id="p4" class="body_text">
+													of BlockerX users reported a stronger relationship
+													with their partner.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="premium_btn_area">
+								<button id="getAnnualPremiumDirectDeveloped">Try For Free</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="popup_modal" id="loginPop" style="display: none;">
+                <div class="popup_container">
+                    <div class="popup_close_area">
+                        <svg id="loginPopClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                            <g id="Close_button" data-name="Close button"
+                                transform="translate(353.815 177.815) rotate(-180)">
+                                <circle id="Ellipse_49" data-name="Ellipse 49" cx="16" cy="16" r="16"
+                                    transform="translate(321.815 145.815)" />
+                                <rect id="Rectangle_474" data-name="Rectangle 474" width="32" height="32"
+                                    transform="translate(321.815 145.815)" fill="none" />
+                                <rect id="Rectangle_503" data-name="Rectangle 503" width="2.651" height="15.907" rx="1.326"
+                                    transform="translate(333.221 168.469) rotate(-135)" />
+                                <rect id="Rectangle_504" data-name="Rectangle 504" width="2.651" height="15.907" rx="1.326"
+                                    transform="translate(331.346 157.221) rotate(-45)" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="popup_heading_area">
+                        <h2 id="welcomeback">Welcome back to BlockerX</h2>
+                        <span id="toggle_signin">Sign in to continue your porn-free journey.</span>
+                    </div>
+                    <div class="popup_form_area">
+                        <div class="popup_form_email_area">
+                            <input id="emailForLogin" type="text" required />
+                            <label id="email_label1" for="emailForLogin">
+                                Email address
+                            </label>
+                            <img id="emailForLoginIncorrect" src="../assets/Popup Img/Warning.png" alt=""
+                                style="display: none" />
+                            <img id="emailForLoginCorrect" src="../assets/Popup Img/Tick.png" alt=""
+                                style="display: none" />
+                        </div>
+                        <div class="popup_form_password_area">
+                            <input id="passwordForLogin" type="password" required />
+                            <label id="password_label1" for="passwordForLogin">
+                                Password (6+ characters)
+                            </label>
+                            <img id="showLoginPassword" src="../assets/Popup Img/hide.png" alt="">
+                            <img id="hideLoginPassword" src="../assets/Popup Img/seen.png" alt="" style="display: none;">
+                            <img id="passwordForLoginIncorrect" src="../assets/Popup Img/Warning.png" alt=""
+                                style="display: none" />
+                            <img id="passwordForLoginCorrect" src="../assets/Popup Img/Tick.png" alt=""
+                                style="display: none" />
+                        </div>
+                        <div class="forgot_password_area">
+                            <button id="switchToForgotPopup">Forgot password?</button>
+                        </div>
+                        <div class="popup_form_submit_area">
+                            <button id="submitForLogin" type="submit" disabled>
+                                Sign in
+                            </button>
+                        </div>
+                    </div>
+                    <div class="partition_area">
+                        <div class="line_first"></div>
+                        <div id="or" class="line_text">or</div>
+                        <div class="line_last"></div>
+                    </div>
+                    <div class="sign_with_google_area">
+                        <button id="signInWithGoogleBtn">
+                            <svg id="Google_logo" data-name="Google logo" xmlns="http://www.w3.org/2000/svg" width="24.128"
+                                height="24" viewBox="0 0 24.128 24">
+                                <rect id="Rectangle_463" data-name="Rectangle 463" width="24" height="24"
+                                    transform="translate(0.128)" fill="none" />
+                                <g id="icons8-google" transform="translate(0 0.009)">
+                                    <path id="Path_351" data-name="Path 351"
+                                        d="M27.749,13.643h-.966v-.05H15.991v4.8h6.777a7.2,7.2,0,1,1-2-7.771l3.392-3.392a11.979,11.979,0,1,0,3.826,8.764A12.073,12.073,0,0,0,27.749,13.643Z"
+                                        transform="translate(-4 -4)" fill="#ffc107" />
+                                    <path id="Path_352" data-name="Path 352"
+                                        d="M6.306,10.41l3.94,2.889a7.18,7.18,0,0,1,11.442-2.681l3.392-3.392A11.967,11.967,0,0,0,6.306,10.41Z"
+                                        transform="translate(-4.923 -4)" fill="#ff3d00" />
+                                    <path id="Path_353" data-name="Path 353"
+                                        d="M16.87,37.614A11.935,11.935,0,0,0,24.909,34.5L21.2,31.361a7.176,7.176,0,0,1-11.093-3.307L6.2,31.067A11.982,11.982,0,0,0,16.87,37.614Z"
+                                        transform="translate(-4.879 -13.632)" fill="#4caf50" />
+                                    <path id="Path_354" data-name="Path 354"
+                                        d="M35.758,20.05h-.966V20H24v4.8h6.777a7.219,7.219,0,0,1-2.45,3.34h0l3.711,3.14A11.6,11.6,0,0,0,35.991,22.4,12.073,12.073,0,0,0,35.758,20.05Z"
+                                        transform="translate(-12.009 -10.407)" fill="#1976d2" />
+                                </g>
+                            </svg>
+                            Continue with Google
+                        </button>
+                    </div>
+                </div>
+            </div>
+			<div class="popup_modal" id="logoutPop" style="display: none">
+				<div class="popup_container" style="height: 160px;">
+					<div class="popup_close_area">
+						<svg id="logoutPopClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+							<g id="Close_button" data-name="Close button"
+								transform="translate(353.815 177.815) rotate(-180)">
+								<circle id="Ellipse_49" data-name="Ellipse 49" cx="16" cy="16" r="16"
+									transform="translate(321.815 145.815)" />
+								<rect id="Rectangle_474" data-name="Rectangle 474" width="32" height="32"
+									transform="translate(321.815 145.815)" fill="none" />
+								<rect id="Rectangle_503" data-name="Rectangle 503" width="2.651" height="15.907" rx="1.326"
+									transform="translate(333.221 168.469) rotate(-135)" />
+								<rect id="Rectangle_504" data-name="Rectangle 504" width="2.651" height="15.907" rx="1.326"
+									transform="translate(331.346 157.221) rotate(-45)" />
+							</g>
+						</svg>
+					</div>
+					<div class="popup_heading_area">
+						<span id="logout_pop">Are you sure you want to Logout?</span>
+					</div>
+					<div class="popup_form_area">
+						<div class="popup_form_submit_area">
+							<button id="switchForLogoutAccept" type="submit">Yes</button>
+							<button id="switchForLogoutCancel" type="submit">Cancel</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+<script type="module" src="./premium.js"></script>
+
+</html>

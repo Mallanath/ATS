@@ -1,0 +1,39 @@
+{
+   "action": {
+      "default_icon": "assets/images/ninja-enable.png",
+      "default_popup": "popup.html",
+      "default_title": "Ninja Adult Porn Blocker"
+   },
+   "author": "IX Studio",
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "assets/js/check-url.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "assets/js/loaded-page.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "description": "The most powerful adult porn websites blocker with safe search enforcement.",
+   "host_permissions": [ "*://*/*" ],
+   "icons": {
+      "128": "assets/images/ninja-enable.png",
+      "16": "assets/images/ninja-enable.png",
+      "48": "assets/images/ninja-enable.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAilf5orSPIsSeIBm5SmanamwUkHSjOsOySPKRbUmDl5gs4LR7ujWjksgfiUKWdc4TqjOI9HpJRbUzfkiRz3wKLNtFpShm1YaCaAnQIU9BwdqwHAUlF56rN/9UouFMgg4N+DVARzlCLCQbqU7klbYMumtLh7coFOVWRCVX+kFjaRru909JJDSREm++YvmuHXfGxtGJqRZEgjlBdX7ChAgZa6TVOY0tsAloO/Lp66spWV961eG/4LpRoZjU2lZTcMl1rUzSVwy8mnvk80+Ea7KsZ0BmPcHIVtULNhsSqzQrdECDusPP227cO4cWecBc3AxbAuf1rMYnBBMWYtZ0/Bg80wIDAQAB",
+   "manifest_version": 3,
+   "name": "Ninja Adult Porn Blocker",
+   "options_page": "settings/settings.html",
+   "permissions": [ "activeTab", "tabs", "storage", "declarativeNetRequest" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.8",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "assets/*", "blocked.html" ],
+      "use_dynamic_url": false
+   } ]
+}

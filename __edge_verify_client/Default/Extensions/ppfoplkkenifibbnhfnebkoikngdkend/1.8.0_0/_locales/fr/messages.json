@@ -1,0 +1,752 @@
+{
+   "access": {
+      "message": "Accès"
+   },
+   "activate": {
+      "message": "Activer"
+   },
+   "active": {
+      "message": "Activé"
+   },
+   "active_all_day": {
+      "message": "Active toute la journée"
+   },
+   "active_until": {
+      "message": "Active jusqu'à"
+   },
+   "add": {
+      "message": "Ajouter"
+   },
+   "add_keyword_eg": {
+      "message": "Ajouter un mot-clé"
+   },
+   "add_time": {
+      "message": "Ajouter une heure"
+   },
+   "add_website_eg": {
+      "message": "Ajouter un site web"
+   },
+   "added_to_blocking": {
+      "message": "Correctement ajouté"
+   },
+   "all_day_long": {
+      "message": "Toute la journée"
+   },
+   "allow_list": {
+      "message": "Liste autorisée"
+   },
+   "allow_list_text": {
+      "message": "Sélectionnez les applications que vous voulez autoriser. Toute autre application sera bloquée."
+   },
+   "already_blocked": {
+      "message": "Ce profil contient déjà l'élément sélectionné"
+   },
+   "and": {
+      "message": "et"
+   },
+   "anywhere_in_url": {
+      "message": "N'importe où dans l'URL"
+   },
+   "anywhere_in_url_tooltip": {
+      "message": "Bloqué partout dans l'URL"
+   },
+   "banner_block_apps_and_websites": {
+      "message": "Bloquer des applications et des sites web"
+   },
+   "banner_block_based_on_location_and_more": {
+      "message": "Blocage en fonction de la localisation et plus encore"
+   },
+   "banner_many_powerful_features": {
+      "message": "De nombreuses fonctionnalités puissantes"
+   },
+   "banner_try_appblock_on": {
+      "message": "Essayez AppBlock sur"
+   },
+   "banner_your_phone": {
+      "message": "votre téléphone"
+   },
+   "block_list": {
+      "message": "Liste de blocage"
+   },
+   "block_list_text": {
+      "message": "Sélectionnez les applications et les sites web que vous voulez bloquer"
+   },
+   "block_this_web": {
+      "message": "Bloquer ce site"
+   },
+   "blocked_by": {
+      "message": "Le Web est bloqué"
+   },
+   "blocked_by_appblock": {
+      "message": "Ce site est bloqué par l'extension AppBlock %browserName%."
+   },
+   "blocked_by_blocklist": {
+      "message": "Ce site est bloqué par “%blocklist%”"
+   },
+   "blocked_in": {
+      "message": "Bloqué en"
+   },
+   "blocking": {
+      "message": "Blocage"
+   },
+   "breaking_your_rules": {
+      "message": "Vous brisez vos règles?"
+   },
+   "btn_cancel": {
+      "message": "Annuler"
+   },
+   "btn_delete": {
+      "message": "Supprimer"
+   },
+   "btn_start_anyway": {
+      "message": "Commencer quand même"
+   },
+   "btn_switch": {
+      "message": "Interrupteur"
+   },
+   "by_proceeding_you_agree_to_our": {
+      "message": "En continuant, vous acceptez notre"
+   },
+   "click_to_copy_link": {
+      "message": "Cliquez pour copier le lien"
+   },
+   "confirm": {
+      "message": "Confirmer"
+   },
+   "continue": {
+      "message": "Continuer"
+   },
+   "continue_to_the_app": {
+      "message": "Continuer"
+   },
+   "current": {
+      "message": "Actuelle"
+   },
+   "custom_time": {
+      "message": "Durée personnalisée"
+   },
+   "days": {
+      "message": "Jours"
+   },
+   "deactivate": {
+      "message": "Désactiver"
+   },
+   "delete": {
+      "message": "Supprimer"
+   },
+   "delete_all": {
+      "message": "Supprimer tout"
+   },
+   "delete_dialog_keywords": {
+      "message": "Voulez-vous vraiment supprimer tous les mots-clés de la liste de blocage ? Cette action est irréversible"
+   },
+   "delete_dialog_websites": {
+      "message": "Voulez-vous vraiment supprimer tous les sites web de la liste de blocage ? Cette action est irréversible"
+   },
+   "delete_schedule_dialog_text1": {
+      "message": "Voulez vous vraiment supprimer ce blocage programmé? Cette opération est irréversible"
+   },
+   "delete_schedule_dialog_text2": {
+      "message": "Vous êtes sur le point de supprimer l'horaire."
+   },
+   "delete_schedule_dialog_title": {
+      "message": "Supprimer le blocage programmé"
+   },
+   "disable": {
+      "message": "Désactiver"
+   },
+   "discover_schedules_blocking": {
+      "message": "Découvrir le blocage programmé"
+   },
+   "domain": {
+      "message": "Domaine"
+   },
+   "domain_tooltip": {
+      "message": "Bloqué dans le domaine"
+   },
+   "duplicate": {
+      "message": "Dupliquer"
+   },
+   "easy": {
+      "message": "Facile"
+   },
+   "enable_strict_mode_hint_text": {
+      "message": "Si vous voulez vous en tenir à votre blocage, essayez le mode strict."
+   },
+   "every": {
+      "message": "Tous les"
+   },
+   "every_day": {
+      "message": "Chaque jour"
+   },
+   "extend": {
+      "message": "Prolonger le temps"
+   },
+   "extend_timer": {
+      "message": "Prolonger la minuterie"
+   },
+   "extended": {
+      "message": "Prolongée"
+   },
+   "finish": {
+      "message": "Terminer"
+   },
+   "for_15_min": {
+      "message": "Pendant 15 min"
+   },
+   "for_1_hr": {
+      "message": "Pendant 1 h"
+   },
+   "for_today": {
+      "message": "Pour aujourd'hui"
+   },
+   "friday": {
+      "message": "vendredi"
+   },
+   "friday_short": {
+      "message": "Ven"
+   },
+   "get_started": {
+      "message": "Commencer"
+   },
+   "go_to_store": {
+      "message": "Aller à %browserName% Store"
+   },
+   "hard": {
+      "message": "Difficile"
+   },
+   "hours": {
+      "message": "Heures"
+   },
+   "hr_1": {
+      "message": "1hr"
+   },
+   "hrs_24": {
+      "message": "24h"
+   },
+   "incognito_do_you_want_enable": {
+      "message": "Voulez-vous bloquer dans une fenêtre Incognito ?"
+   },
+   "incognito_link_copied_open_in_new_tab": {
+      "message": "Lien copié. Veuillez l'ouvrir dans un nouvel onglet."
+   },
+   "incognito_must_enable_in_settings": {
+      "message": "Vous devez activer cette option dans les paramètres de votre navigateur."
+   },
+   "incognito_settings_path": {
+      "message": "Extensions -> Gérer les extensions -> Détails -> Autoriser en navigation privée"
+   },
+   "incognito_settings_path_safari": {
+      "message": "Safari -> Réglages-> Extensions-> AppBlock -> Autoriser en navigation privée"
+   },
+   "invalid_input": {
+      "message": "Entrée non valide"
+   },
+   "keywords": {
+      "message": "mots-clés"
+   },
+   "login": {
+      "message": "Se connecter"
+   },
+   "login_with_google": {
+      "message": "Continuer avec Google"
+   },
+   "min_25": {
+      "message": "25min"
+   },
+   "minutes": {
+      "message": "Minutes"
+   },
+   "monday": {
+      "message": "lundi"
+   },
+   "monday_short": {
+      "message": "Lun"
+   },
+   "more_on_our_website": {
+      "message": "Plus d'informations sur notre site web"
+   },
+   "never_show_again": {
+      "message": "Ne plus afficher"
+   },
+   "new_schedule": {
+      "message": "Nouvelle programmation"
+   },
+   "no_keyword_added": {
+      "message": "Aucun mot-clé ajouté"
+   },
+   "no_website_added": {
+      "message": "Aucun site web ajouté"
+   },
+   "not_now": {
+      "message": "Pas maintenant"
+   },
+   "onboarding_excessive_phone_usage": {
+      "message": "Utilisation excessive du téléphone"
+   },
+   "onboarding_focus_on_school_or_work": {
+      "message": "Concentrez-vous sur les études ou le travail"
+   },
+   "onboarding_gaming_addiction": {
+      "message": "Dépendance aux jeux vidéo"
+   },
+   "onboarding_mental_health_and_adhd": {
+      "message": "Santé mentale et TDAH"
+   },
+   "onboarding_other": {
+      "message": "Autre"
+   },
+   "onboarding_porn_addiction": {
+      "message": "Dépendance au porno"
+   },
+   "onboarding_sleep_hygiene": {
+      "message": "Hygiène du sommeil"
+   },
+   "onboarding_step10_description": {
+      "message": "Découvrez d'autres fonctionnalités de l'application."
+   },
+   "onboarding_step10_header_title": {
+      "message": "Voici comment fonctionne le bloc rapide"
+   },
+   "onboarding_step11_description": {
+      "message": "Découvrez d'autres fonctionnalités de l'application."
+   },
+   "onboarding_step11_header_title": {
+      "message": "Saviez-vous qu'AppBlock est également disponible en tant qu'application mobile ?"
+   },
+   "onboarding_step11_no": {
+      "message": "Non"
+   },
+   "onboarding_step11_yes_dont_use": {
+      "message": "Oui, mais je ne l'utilise pas"
+   },
+   "onboarding_step11_yes_use": {
+      "message": "Oui"
+   },
+   "onboarding_step12_content": {
+      "message": "Essayez de bloquer les applications mobiles et les sites web sur votre téléphone dès aujourd'hui !"
+   },
+   "onboarding_step12_header_title": {
+      "message": "AppBlock est utilisé par des millions de personnes dans le monde."
+   },
+   "onboarding_step1_header_title": {
+      "message": "Bloquer les sites web et les mots-clés distrayants avec AppBlock"
+   },
+   "onboarding_step2_header_title": {
+      "message": "Quelles applications AppBlock peut-il m'aider à gérer ?"
+   },
+   "onboarding_step3_header_title": {
+      "message": "Quelles applications AppBlock peut-il m'aider à gérer?"
+   },
+   "onboarding_step4_header_title": {
+      "message": "Vous devriez savoir que…\nQue vous n'êtes pas vraiment seul."
+   },
+   "onboarding_step4_text_1": {
+      "message": "D'innombrables études montrent que beaucoup de gens ont du mal à se concentrer à cause de la pression du mode de vie moderne et de la dépendance au téléphone, avec des applications distrayantes qui rivalisent pour capter votre attention."
+   },
+   "onboarding_step4_text_2": {
+      "message": "Selon l'Organisation mondiale de la santé (OMS), les problèmes de santé mentale touchent environ une personne sur quatre dans le monde."
+   },
+   "onboarding_step4_text_3": {
+      "message": "Selon les dernières données, l'utilisateur moyen consulte son téléphone toutes les 12 minutes, soit environ 80 fois par jour. 68% des gens utilisent leur téléphone lorsqu'ils mangent avec des amis ou des membres de leur famille."
+   },
+   "onboarding_step4_text_4": {
+      "message": "Selon les dernières données, 28 000 personnes regardent du contenu pornographique à tout moment, et 84% de ces visionnages se font sur un téléphone!"
+   },
+   "onboarding_step4_text_5": {
+      "message": "L'addiction aux jeux vidéo est un problème croissant dans le monde entier. Elle est classée comme un trouble mental par l'OMS et touche 3 à 4 % des joueurs. Cela représente environ 60 millions de personnes."
+   },
+   "onboarding_step4_text_6": {
+      "message": "L'utilisation du téléphone avant se coucher peut perturber le sommeil en réduisant la production de mélatonine, ce qui entraîne une mauvaise qualité du sommeil. Cela affecte la capacité d'un bon nombre de personnes à bien dormir."
+   },
+   "onboarding_step5_content": {
+      "message": "Nous vous aiderons en bloquant les distractions afin que vous puissiez vous concentrer sur les choses les plus importantes."
+   },
+   "onboarding_step5_header_title": {
+      "message": "AppBlock réduit votre temps écran"
+   },
+   "onboarding_step6_header_title": {
+      "message": "Que disent les utilisateurs à propos de AppBlock?"
+   },
+   "onboarding_step6_text_1": {
+      "message": "«J'adore, c'est simple et ça m'aide pour mon TDAH!»"
+   },
+   "onboarding_step6_text_2": {
+      "message": "Grâce à cette application, je bloque les applications qui me distraient dans mes études et grâce à cette application, je gagne beaucoup de temps pour mes études et mon avenir."
+   },
+   "onboarding_step6_text_3": {
+      "message": "Cette application m'a été extrêmement utile. Elle fonctionne très bien comme elle le prétend."
+   },
+   "onboarding_step7_continue_button": {
+      "message": "Continuer"
+   },
+   "onboarding_step7_header_title": {
+      "message": "Nos 3 principales fonctions de blocage"
+   },
+   "onboarding_step7_quick_block_description": {
+      "message": "Garder les choses simples et activer/désactiver simplement le blocage?"
+   },
+   "onboarding_step7_quick_block_header": {
+      "message": "Blocage rapide"
+   },
+   "onboarding_step7_scheduled_block_description": {
+      "message": "Créez des blocages automatisés en fonction de vos besoins, de votre emploi du temps, etc."
+   },
+   "onboarding_step7_scheduled_block_header": {
+      "message": "Blocage programmé"
+   },
+   "onboarding_step7_strict_mode_coming_soon": {
+      "message": "Prochainement"
+   },
+   "onboarding_step7_strict_mode_description": {
+      "message": "Si vous éprouvez des difficultés à suivre les règles que vous avez imposées dans Appblock, vous pouvez utiliser le Mode Strict pour appliquer des règles plus strictes."
+   },
+   "onboarding_step7_strict_mode_header": {
+      "message": "Mode strict"
+   },
+   "onboarding_step8_add_website_title": {
+      "message": "Ajouter un site web"
+   },
+   "onboarding_step8_description": {
+      "message": "Ajoutez les sites web qui seront bloqués lorsque le blocage rapide est activé. Ne vous inquiétez pas, vous pouvez désactiver le blocage à tout moment. Nous voulons simplement vous montrer comment cela fonctionne."
+   },
+   "onboarding_step8_header_title": {
+      "message": "Essayons le premier blocage ensemble"
+   },
+   "onboarding_step9_description": {
+      "message": "Appuyez sur le bouton Démarrer et allez voir si les sites web que vous avez sélectionnés sont réellement bloqués."
+   },
+   "onboarding_step9_header_title": {
+      "message": "Votre blocage rapide est prêt"
+   },
+   "page_set_as_distraction": {
+      "message": "Vous avez fait de ce site web une distraction"
+   },
+   "pause": {
+      "message": "Pause"
+   },
+   "pause_dialog_header_p1": {
+      "message": "Quelle durée pour votre pause ?"
+   },
+   "pause_dialog_header_p2": {
+      "message": "Quelle durée pour votre pause ?"
+   },
+   "paused": {
+      "message": "Mis en pause"
+   },
+   "permission_settings_path": {
+      "message": "Extensions -> Gérer les extensions -> Détails -> Accès aux sites  -> Sur tous les sites"
+   },
+   "permission_settings_path_copy_link": {
+      "message": "Copier le lien"
+   },
+   "permission_settings_path_copy_link_finish": {
+      "message": "Copié"
+   },
+   "permission_settings_path_safari": {
+      "message": "Safari -> Réglages-> Extensions-> AppBlock -> Toujours autoriser sur chaque site web"
+   },
+   "permission_settings_path_website": {
+      "message": "Visiter le site web"
+   },
+   "permission_settings_text": {
+      "message": "Il vous reste encore une étape à franchir pour bloquer les sites. Allez dans les paramètres de %browserName% et sélectionnez l'option de blocage sur tous les sites. Vous trouverez des instructions complètes sur notre site web ou suivez le chemin ci-joint."
+   },
+   "permission_settings_title": {
+      "message": "Autorisation manquante"
+   },
+   "please_send_us_email_at": {
+      "message": "Réessayez ou envoyez un e-mail"
+   },
+   "privacy_policy": {
+      "message": "Politique de confidentialité"
+   },
+   "profile": {
+      "message": "Compte"
+   },
+   "profile_delete_account": {
+      "message": "Suppression du compte"
+   },
+   "profile_dialog_text": {
+      "message": "Suppression du compte"
+   },
+   "profile_email": {
+      "message": "E-mail"
+   },
+   "profile_name": {
+      "message": "Votre nom"
+   },
+   "quick_block": {
+      "message": "Blocage rapide"
+   },
+   "quick_block_brief_description": {
+      "message": "Il s'agit d'un moyen simple de commencer à bloquer instantanément des sites web d'une simple pression sur un bouton."
+   },
+   "rating_dialog_content": {
+      "message": "Nous aimerions connaître votre avis"
+   },
+   "rating_dialog_rate_us_on_store": {
+      "message": "Notez-nous sur %browserName% Store"
+   },
+   "rating_dialog_rate_us_on_store_content": {
+      "message": "Nous serions très heureux que vous nous donniez un avis positif sur le magasin."
+   },
+   "rating_dialog_title": {
+      "message": "AppBlock est-il à votre goût ?"
+   },
+   "reset": {
+      "message": "Réinitialiser"
+   },
+   "resume": {
+      "message": "Reprendre"
+   },
+   "saturday": {
+      "message": "samedi"
+   },
+   "saturday_short": {
+      "message": "Sam"
+   },
+   "save": {
+      "message": "Sauvegarder"
+   },
+   "schedule": {
+      "message": "Programme"
+   },
+   "schedule_delete": {
+      "message": "Supprimer le blocage programmé"
+   },
+   "schedule_name": {
+      "message": "Nom de la programmation"
+   },
+   "schedule_pause_counting_down": {
+      "message": "Le compte à rebours de votre pause a commencé"
+   },
+   "schedule_template_detox": {
+      "message": "Détox digitale"
+   },
+   "schedule_template_detox_text": {
+      "message": "Offrez-vous une journée sans téléphone."
+   },
+   "schedule_template_focus": {
+      "message": "Concentration"
+   },
+   "schedule_template_focus_text": {
+      "message": "Boostez vos séances d'étude ou de travail."
+   },
+   "schedule_template_morning": {
+      "message": "Matinée en pleine conscience"
+   },
+   "schedule_template_morning_text": {
+      "message": "Profitez de votre routine matinale sans interruption."
+   },
+   "schedule_template_myself": {
+      "message": "Du temps pour moi-même"
+   },
+   "schedule_template_myself_text": {
+      "message": "Profitez au maximum de vos moments précieux."
+   },
+   "schedule_template_study": {
+      "message": "Temps d'étude"
+   },
+   "schedule_template_study_text": {
+      "message": "Menez vos études avec aisance."
+   },
+   "schedule_template_winddown": {
+      "message": "Décompressez"
+   },
+   "schedule_template_winddown_text": {
+      "message": "Accueillez plus sereinement vos beaux rêves."
+   },
+   "schedules": {
+      "message": "Programmations"
+   },
+   "schedules_empty_view_text": {
+      "message": "Planifiez votre blocage quotidien en fonction du temps."
+   },
+   "schedules_templates_title": {
+      "message": "Modèles de programme"
+   },
+   "select_all": {
+      "message": "Tout sélectionner"
+   },
+   "select_days": {
+      "message": "Sélectionner des jours"
+   },
+   "send_feedback": {
+      "message": "Envoyer d'un commentaire"
+   },
+   "send_feedback_send_us_feedback": {
+      "message": "Si vous avez besoin d'aide, si vous avez rencontré une erreur ou si vous souhaitez nous faire part de vos commentaires."
+   },
+   "setup_strict_mode": {
+      "message": "Configurer le mode strict"
+   },
+   "sign_in": {
+      "message": "Se connecter"
+   },
+   "sign_out": {
+      "message": "Déconnexion"
+   },
+   "start": {
+      "message": "Commencer"
+   },
+   "stop": {
+      "message": "Arrêter"
+   },
+   "strict_mode": {
+      "message": "Mode strict"
+   },
+   "strict_mode_activate_so_you_cant_bypass": {
+      "message": "Activez le Mode strict pour vous empêcher de les contourner."
+   },
+   "strict_mode_active_snackbar": {
+      "message": "Le Mode strict est activé."
+   },
+   "strict_mode_blockings_are_unlocked": {
+      "message": "Vos blocages sont déverrouillés"
+   },
+   "strict_mode_blockings_not_set": {
+      "message": "Vous n'avez pas encore défini de blocages"
+   },
+   "strict_mode_blockings_not_set_description": {
+      "message": "Le Mode strict sécurise les blocages pour réduire votre temps d'écran. Créez votre premier programme ou configurez un Blocage rapide."
+   },
+   "strict_mode_coming_soon": {
+      "message": "À venir"
+   },
+   "strict_mode_confirm_dialog_description": {
+      "message": "Vous ne pourrez pas modifier vos profils et changer certains paramètres lorsque le Mode strict est activé."
+   },
+   "strict_mode_confirm_dialog_title": {
+      "message": "Êtes-vous prêt à activer le mode strict?"
+   },
+   "strict_mode_deactivate_info": {
+      "message": "Le Mode strict ne peut être désactivé qu'à travers la méthode choisie."
+   },
+   "strict_mode_follow_schedules": {
+      "message": "Suivre les programmations"
+   },
+   "strict_mode_follow_schedules_description": {
+      "message": "Vous pourrez désactiver le Mode strict si les programmes sélectionnés sont inactifs."
+   },
+   "strict_mode_pin": {
+      "message": "Code PIN"
+   },
+   "strict_mode_pin_config_dialog_title": {
+      "message": "Définir un code PIN (4 à 8 chiffres)"
+   },
+   "strict_mode_pin_deactivate_dialog_title": {
+      "message": "Saisir le code PIN"
+   },
+   "strict_mode_pin_description": {
+      "message": "Vous pourrez désactiver la fonctionnalité en utilisant le code PIN défini."
+   },
+   "strict_mode_pin_error_incorrect_pin": {
+      "message": "Code PIN incorrect"
+   },
+   "strict_mode_pin_error_not_matching_pin": {
+      "message": "Les codes PIN ne correspondent pas"
+   },
+   "strict_mode_quick_block_dialog_text1": {
+      "message": "En activant le Blocage rapide, vous ne pourrez pas le désactiver tant que le mode strict est actif. Voulez-vous vraiment faire cela?"
+   },
+   "strict_mode_quick_block_dialog_text2": {
+      "message": "En activant le Blocage rapide, vous ne pourrez pas le désactiver tant que le mode strict est actif. Voulez-vous vraiment faire cela?"
+   },
+   "strict_mode_quick_block_dialog_title": {
+      "message": "Lancer le Blocage rapide"
+   },
+   "strict_mode_repeat_pin": {
+      "message": "Confirmer le NIP"
+   },
+   "strict_mode_timer": {
+      "message": "Chronomètre"
+   },
+   "strict_mode_timer_config_dialog_title": {
+      "message": "Définir le minuteur"
+   },
+   "strict_mode_timer_confirm_dialog_title": {
+      "message": "Le mode strict sera actif pour"
+   },
+   "strict_mode_timer_description": {
+      "message": "Le Mode strict sera désactivé une fois le minuteur défini s'est écoulé."
+   },
+   "strict_mode_you_are_locked": {
+      "message": "Vos blocages sont verrouillés face à tout contournement."
+   },
+   "sunday": {
+      "message": "dimanche"
+   },
+   "sunday_short": {
+      "message": "Dim"
+   },
+   "switch_blockmode_dialog_text": {
+      "message": "Voulez-vous vraiment changer le mode de blocage en %blockMode% ? Cette action supprime tous les sites web définis et est irréversible."
+   },
+   "thursday": {
+      "message": "jeudi"
+   },
+   "thursday_short": {
+      "message": "Jeu"
+   },
+   "time": {
+      "message": "Temps"
+   },
+   "tos": {
+      "message": "Conditions d'utilisation"
+   },
+   "try_blocking_by_your_needs": {
+      "message": "Essayez le blocage en fonction de vos besoins, de l'heure, du lieu et plus"
+   },
+   "tuesday": {
+      "message": "mardi"
+   },
+   "tuesday_short": {
+      "message": "Mar"
+   },
+   "warning": {
+      "message": "Attention !"
+   },
+   "warning_dialog_btn": {
+      "message": "OK"
+   },
+   "warning_dialog_extend": {
+      "message": "Vous ne pouvez que prolonger la durée de la programmation."
+   },
+   "warning_dialog_extend_all_week": {
+      "message": "Vous ne pouvez pas prolonger l'horaire d'une semaine entière."
+   },
+   "warning_dialog_text": {
+      "message": "Ce programme se verrouillera dans la minute qui suit. Ensuite, il sera impossible de travailler avec."
+   },
+   "warning_dialog_title": {
+      "message": "Attention"
+   },
+   "web_content": {
+      "message": "Contenu du site web"
+   },
+   "web_content_tooltip": {
+      "message": "Elle sera bloquée si le contenu de la page contient le mot-clé donné :"
+   },
+   "websites": {
+      "message": "Sites web"
+   },
+   "wednesday": {
+      "message": "mercredi"
+   },
+   "wednesday_short": {
+      "message": "Mer"
+   },
+   "weekdays": {
+      "message": "Jours de la semaine"
+   },
+   "weekend": {
+      "message": "Week-end"
+   },
+   "welcome_to_appblock": {
+      "message": "Bienvenue sur AppBlock"
+   },
+   "when_is_active": {
+      "message": "Quand est-ce que c'est actif ?"
+   }
+}

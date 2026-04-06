@@ -1,0 +1,8 @@
+2026/04/04-23:05:14.304 3344 Creating DB C:\Users\malla\Downloads\ATS\__edge_verify\Default\Local Extension Settings\cfhdojbkjhnklbpkdaibdccddilifddb since it was missing.
+2026/04/04-23:05:14.310 3344 Reusing MANIFEST C:\Users\malla\Downloads\ATS\__edge_verify\Default\Local Extension Settings\cfhdojbkjhnklbpkdaibdccddilifddb/MANIFEST-000001
+2026/04/04-23:05:36.483 47bc Level-0 table #5: started
+2026/04/04-23:05:36.528 47bc Level-0 table #5: 2548449 bytes OK
+2026/04/04-23:05:36.531 47bc Delete type=0 #3
+2026/04/04-23:05:46.314 3e4c Level-0 table #7: started
+2026/04/04-23:05:46.349 3e4c Level-0 table #7: 2500587 bytes OK
+2026/04/04-23:05:46.352 3e4c Delete type=0 #4

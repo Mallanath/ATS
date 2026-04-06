@@ -1,0 +1,1 @@
+async function getExperimentInfo(){try{const t=await fetch("https://dev.blockerx.net/api/chrome/experiments",{method:"GET"});if(!t.ok)throw new Error(`Error: ${t.status}`);return await t.json()}catch(t){console.log("Failed to fetch experiment info:",t)}}

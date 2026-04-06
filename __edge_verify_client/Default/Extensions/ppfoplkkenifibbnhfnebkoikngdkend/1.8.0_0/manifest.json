@@ -1,0 +1,42 @@
+{
+   "action": {
+      "default_icon": "images/icon-48x48-off.png",
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "./core/background.js",
+      "type": "module"
+   },
+   "browser_specific_settings": {
+      "safari": {
+         "strict_max_version": "17.*",
+         "strict_min_version": "17.0"
+      }
+   },
+   "content_scripts": [ {
+      "js": [ "./core/content_script.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "default_locale": "en",
+   "description": "Block distracting webs and stay focused on your work.",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "48": "images/icon-48x48-off.png"
+   },
+   "incognito": "spanning",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAocupXeZKFJZLGeo2j4YJUcNyEryKTRrpYcN6R7Otkq/bE1XclejTWQ4v8Ymo1Dq5bCdc/FYFYbWjRiU3oiTXRqKgQS8fwO8SM8ThFgS9x7EVeFOcrA9G77t8mY0njpZ2is9nDx+cg3fYW0ffMl+1kDRDqxrotwmu1+jbEPmr2gh8ezX1iS6NQcYPrbpCjTNLY6IpN2sCV812g/jIIw0ryxONA5bINjaEQtAy3yrTyUOlHDQIYJzb8mNA1VZ0vPYYi8+xAqkeJVDXct7j7ge4EmwEne3lCVTv4iPmLLVhbi+NM1o0HS+5eJDyGDKPLZv+MXOmXOx61YIrGbeuY2khxwIDAQAB",
+   "manifest_version": 3,
+   "name": "AppBlock - Block sites & Stay focused",
+   "oauth2": {
+      "client_id": "470721382414-mn7ier5fkkover3dl3kc25aog55f9j57.apps.googleusercontent.com",
+      "scopes": [ "https://www.googleapis.com/auth/plus.login", "https://www.googleapis.com/auth/userinfo.email" ]
+   },
+   "options_page": "index.html",
+   "permissions": [ "storage", "webNavigation", "declarativeNetRequest", "tabs", "alarms", "identity" ],
+   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+   "version": "1.8.0",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "block.html" ]
+   } ]
+}

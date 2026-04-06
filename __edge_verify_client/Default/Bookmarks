@@ -1,0 +1,224 @@
+{
+   "checksum": "fcbcce4c5f0e4d94db1087c5fd44d997",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "0",
+            "date_last_used": "13378273091017686",
+            "guid": "7085c545-9903-41e0-80ab-02507a3990a1",
+            "id": "13",
+            "name": "The Complete 2022 Web Development Bootcamp | Udemy",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12399308#overview",
+            "visit_count": 1
+         }, {
+            "date_added": "0",
+            "date_last_used": "0",
+            "guid": "c17e09db-4008-4ccd-8b1f-5cac5575cbf0",
+            "id": "14",
+            "name": "A Pen by Mallanath Mise",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://codepen.io/mallanathmise/pen/BaYOrJw?editors=1000",
+            "visit_count": 0
+         }, {
+            "date_added": "13380650415402917",
+            "date_last_used": "0",
+            "guid": "4e4f17aa-d819-494e-be94-7e2500ad2915",
+            "id": "15",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "git-cheat-sheet-education",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://education.github.com/git-cheat-sheet-education.pdf",
+            "visit_count": 1
+         }, {
+            "date_added": "13378400407851332",
+            "date_last_used": "0",
+            "guid": "f5a855fe-4927-461f-8233-937b39014ae5",
+            "id": "16",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Inbox (7,378) - mallanathmise443@gmail.com - Gmail",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/0/#inbox",
+            "visit_count": 1
+         }, {
+            "date_added": "13379172457274369",
+            "date_last_used": "0",
+            "guid": "5d7b08c5-8b7b-4839-bee2-d9eb3aa3ccec",
+            "id": "17",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "AWS Console - Signup",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://portal.aws.amazon.com/billing/signup?type=resubscribe&src=header-abnr&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/paymentinformation",
+            "visit_count": 1
+         }, {
+            "date_added": "13381307611434711",
+            "date_last_used": "0",
+            "guid": "b63c38da-50de-48b3-8349-4eb17b15ac73",
+            "id": "18",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Console Home | Console Home | eu-north-1",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://eu-north-1.console.aws.amazon.com/console/home?nc2=h_ct&region=eu-north-1&src=header-signin#",
+            "visit_count": 1
+         }, {
+            "date_added": "13381435095344266",
+            "date_last_used": "0",
+            "guid": "1153aa50-5434-4012-9f90-dbbb694f237a",
+            "id": "19",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "(140) Understanding Rap ft. Kr$na, RAFTAAR, Rohan Cariappa - YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=VnFvVqrZffo&ab_channel=SamayRaina",
+            "visit_count": 1
+         }, {
+            "date_added": "13382522143227779",
+            "date_last_used": "0",
+            "guid": "3b0fd497-a8e2-4cde-b80a-7f950323df19",
+            "id": "20",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Vegamovies | Download Hindi Dubbed Movies, K-Dramas & Anime Series in HD",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://vegamovies.co.bz/",
+            "visit_count": 1
+         }, {
+            "date_added": "13419798327788440",
+            "date_last_used": "0",
+            "guid": "e926cb5b-b600-452b-96ed-324f20e80880",
+            "id": "9",
+            "name": "Lenovo Support",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://support.lenovo.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13419798327787279",
+            "date_last_used": "0",
+            "guid": "3e6ac554-f06a-4f86-aadf-d11c147aff35",
+            "id": "8",
+            "name": "Lenovo",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.lenovo.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13419798327783873",
+            "date_last_used": "0",
+            "guid": "926fc2f9-ff38-4e9f-a986-04709e01a13b",
+            "id": "7",
+            "name": "McAfee",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.mcafee.com/consumer/v/browserfav/lenovo.html",
+            "visit_count": 0
+         } ],
+         "date_added": "13419798327442758",
+         "date_last_used": "0",
+         "date_modified": "13419798327788440",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "children": [  ],
+            "date_added": "13355250947495286",
+            "date_last_used": "0",
+            "date_modified": "13355250947495286",
+            "guid": "be4a3c49-17f1-47ff-8737-135c5909c6ae",
+            "id": "10",
+            "name": "Other Bookmarks",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13378109207241055",
+               "date_last_used": "0",
+               "guid": "269d5bd3-953f-4742-88a6-dcaaacff3169",
+               "id": "12",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "(18) Sahil Lavingia on X: \"How can you create the maximum value for society? How can you build the deepest connection with others? These two questions drive society\" / X",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://x.com/shl/status/1865602026379382855",
+               "visit_count": 1
+            } ],
+            "date_added": "13355250947495472",
+            "date_last_used": "0",
+            "date_modified": "13378109207241055",
+            "guid": "8b966370-42ff-43d7-b593-1d52f3305ad2",
+            "id": "11",
+            "name": "Synced Bookmarks",
+            "source": "unknown",
+            "type": "folder"
+         } ],
+         "date_added": "13419798327442758",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13419798327442758",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "workspaces_v2": {
+         "children": [  ],
+         "date_added": "13419798327442758",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "75aa6670-344f-549d-b742-660f029506ab",
+         "id": "5",
+         "name": "Workspaces",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CkEKHgiIgQISCPIglVmdAQAAKg4QABgBIAAoBjAAOABAABIAKhg4V2JGKzJnblVTbHJrQmY1U2ZOQTN3PT1IA6AGDBKOAQgFEokBChx3UkJyWkwrNlBBOWF2S2dqTlA3SlhETGNmdnM9EiRhNTRhMzQ3Yi1jNDExLTU0MTktYmYwYi04OTIyNTE1NmI2ZWIYACAAKAAwvoCmyqQzOJ6CpsqkM0CegqbKpDNKHG5teDY1c1FEdnhJOFRnRWV2K0ErbnR0b1NuND1aAGUAAAAAwj4CYAASjgEIAxKJAQocbmpnRHU4OGVDcnZYcDg2cEQ3ZkhHY3FGcDg4PRIkYjE2NmU3YjQtOWI1OC01YTFhLWIxMDktOGJiMzdiZjRiMmJhGAAgACgAMOP25M3PLzjHtLO75y9Ax7Szu+cvShx5ek5CMDFjbjU0QTdjUlUwdVQrL1BnbVR0VW89WgBlAAAAAMI+AmAAEq0BCBQSqAEKHDJDa1VDcGc3MmNHMktValcrWTV6Sk1WSk5YQT0SJDNiMGZkNDk3LWE4ZTItNGNkZS1iODBhLTdmOTUwMzIzZGYxORgAIAAoADCxy5DeyjI46c6Q3soyQOnOkN7KMkocOXM1aWxKSzZsTUNHUnR5SDBLdXZ4bzdadmtrPVofIh39MFJxOUwrTFBWUER3aXJjQ3JXZ0ZHQWVqTWtrPWUphQLXwj4CYAUSrQEIExKoAQocay9sb1R1Kys5Z1ZSNWFRNDBBcjc1eHdPRnE0PRIkMTE1M2FhNTAtNTQzNC00MDEyLTlmOTAtZGJiYjY5NGYyMzdhGAAgACgAMNm05NfGMjjbt+TXxjJA27fk18YyShxmT1pTYkNHYW5qNHJ3QWJ5aWlkZzR5VHYvaE09Wh8iHfpBRWZCVkRWMjhHRFNSZDdtNHIvUlBQWC9rUFk9Zf2cjErCPgJgBRKsAQgNEqcBChx3N1ZWNytzOGk5aW8wWFB3QXBQRFB1THQ2YkU9EiQ3MDg1YzU0NS05OTAzLTQxZTAtODBhYi0wMjUwN2EzOTkwYTEYACAAKAAw3p6D9LoyOIvqmpLlMUCL6pqS5TFKHHJOUVFhck0yT1hZSWVLZFBZUHB6TGpKSFNhaz1aHiIcTjE0cnk3Y0JlTkdqNmhmUU5RRUpzSVpDbVZVPWUEotYHwj4CYAUSrQEIERKoAQocbDczM04rVHoxVERsTEpiUXd0ejkrRW9sQ3NJPRIkNWQ3YjA4YzUtOGI3Yi00ODM5LWJlZTItZDllYjNhYTNjY2VjGAAgACgAMJXTx6TGMjiF+e+gvjJAhfnvoL4yShxuQ3RtM0tEVUlHc3ZmRWxFSjBEMExxNk1PZzg9Wh8iHe5BdFZPMjU3OXJ4bk82bU52WGxUQjlFV29pZkk9ZUpJ6gnCPgJgBRKtAQgPEqgBChxaMzg2WFdPWXRxeE10ZTUzWkNPUjRDMjlEK0k9EiQ0ZTRmMTdhYS1kODE5LTQ5NGUtYmU5NC03ZTI1MDBhZDI5MTUYACAAKAAw+LPQ4cMyOIO0z+HDMkCDtM/hwzJKHFAxSjN1MzdOWUhEUVU5YlRHdVIwSTFtSUhxQT1aHyId02VtYkVsSE1SVFFWR1ZiWHBiZUZKbzBKZjNiMD1lTy1lSsI+AmAFEq0BCA4SqAEKHDNIalloUjZVUDF1QTZjWUxJNHlSd0R3T2RnQT0SJGMxN2UwOWRiLTQwMDgtNGNjZC04YjFmLTVjYWM1NTc1Y2JmMBgAIAAoADDZjrDAizM48umakuUxQPLpmpLlMUocVWt4aWRCSTIreEFyMXJ3bVdNNEtXR2ZjTXFBPVofIh2nNHBzeFJ1TEN4Sm1hY1ZORTUyOXMweGJHZW40PWUKJhvzwj4CYAUSrQEICxKoAQocZDRvSkRGbWQxenNPLzhEWEVWNVZQSGZwMTB3PRIkOGI5NjYzNzAtNDJmZi00M2Q3LWI1OTMtMWQ1MmYzMzA1YWQyGAAgACgAMK/ompLlMTi+6pqS5TFAvuqakuUxShw0cndUWnc2VDM0aGpYSk52VjgzTFhndDh6UlU9Wh8iHZs3VEkyRlc1UmROcnFUanhqT0FORm9JWGFDY1E9ZQAAAADCPgJgABKOAQgBEokBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9EiQ1M2M4ZTc0OC0yZTFlLTUwZWMtODlhZC02ODI3YjVkN2JiM2UYACAAKAAw4/bkzc8vOImvs7vnL0CJr7O75y9KHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1aAGUAAAAAwj4CYAASrQEIEhKoAQocYjhzVVV3OTB2YjV3THMyYTFOV1AvcEVQMlVnPRIkYjYzYzM4ZGEtNTBkZS00OGIzLTgzNDktNGViMTdiMTVhYzczGAAgACgAMJCu/5rGMjiFsf+axjJAhbH/msYyShxNMWZtcXpSMEdaNGs5RWVVYUxHeU9sRi91RXc9Wh8iHfRrZGIycWxSSWNoT3ZSRW1mZmFGNXJabFM2eDg9ZSvjWD3CPgJgBRKsAQgMEqcBChx0cUV0dTJlWnBuV1pSdnU5ZjRSN0pmNUdhTGs9EiQyNjlkNWJkMy05NTNmLTQ3NDItODhhNi1kY2FhYWNmZjMxNjkYACAAKAAwi6vwpboyOOGs8KW6MkDhrPClujJKHHlaSmJUeTE0L21xQTJzMDk3aDR0UTkrMGc0WT1aHiIcYml5d3ZyOTJVbjcrem5LOVJMd2MxRGhZSzc4PWUWSmTfwj4CYAUSjgEIAhKJAQocWWNTVG9udkVTUHdxQ3M0TDJjclZodjY4TDk4PRIkNWJiYjJmN2MtZGU5NC01ZjdmLWE0M2ItZmQ2ZjlkOGIyOWJhGAAgACgAMOP25M3PLziSsrO75y9AkrKzu+cvShxvUFZraHdCUmJWNjVLQ1dSMitJT05IV29PdTg9WgBlAAAAAMI+AmAAEqwBCAoSpwEKHEMzY1Q1NzdYVHBvZk90Y1FlOEhWRk1tZzlWbz0SJGJlNGEzYzQ5LTE3ZjEtNDdmZi04NzM3LTEzNWM1OTA5YzZhZRgAIAAoADCu6JqS5TE4pOqakuUxQKTqmpLlMUocaFp6U01OakFXbEZWOGExMEk5RmtsaXdRTGZnPVoeIhw3cHZOZTF2K2s0UjJiQU1PSjZFMkhFUzZ0UEE9ZQAAAADCPgJgABKtAQgQEqgBChxsYzh1M05xMEZWRE1ablNvVG96eFBqS3BFVE09EiRmNWE4NTVmZS00OTI3LTQ2MWYtODIzMy05MzdiMzkwMTRhZTUYACAAKAAwgPzQ4cMyOIXp3bC7MkCF6d2wuzJKHG1hajZTQTNZZWNEK2RQRWU3dzBxUGowOEpyRT1aHyId6TRJR252TFlvWXM5U2RjeWd4ZlhtamE4c3ZJND1lmz2FtsI+AmAFMAA4AA==",
+   "version": 1
+}

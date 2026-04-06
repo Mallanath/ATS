@@ -1,0 +1,26 @@
+{
+   "action": {
+      "default_icon": "assets/img/icon16.png"
+   },
+   "background": {
+      "service_worker": "service_worker.js"
+   },
+   "content_scripts": [ {
+      "js": [ "blockedSites.js", "contentscript.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Block porn in Chrome with this simple, free extension.",
+   "icons": {
+      "128": "assets/img/icon128.png",
+      "16": "assets/img/icon16.png",
+      "48": "assets/img/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj5LR1LwP1MMpLF3N4xvE8L027Xu2VvMFllSapq50DoeR661ppt0gJhOO/1EqNJmD6iFRz08P9iTTtWP1NHUp2alEUWvHgxoCsje0xiAoDjDKwDoulZ2/hddq6i4GMm1BeWfWN2yHLJcUpBbANoPsM8ZrT0xXF/GBdFGaItKqXpwOzv9V7E/rojRDa8bZBdPK7w+M59HOaIg4VhByYTKUjeLw0dkMEbdBEh/tdavmS7KaMRxjG7Pz0Hst3On5CSHBJWyrGDWXl1aQw36l0tTaopw338/zNw8DDjtK01mY7pN8fUcFGNGFq8hYHyZabqQvD7bB8BAzNwaUFm7ZTOXgrwIDAQAB",
+   "manifest_version": 3,
+   "name": "Porn Blocker",
+   "options_page": "options.html",
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.23"
+}
