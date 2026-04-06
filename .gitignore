@@ -1,0 +1,41 @@
+# Edge browser verification data (auto-generated, should not be in repo)
+__edge_verify/
+__edge_verify_client/
+__edge_verify_clients_clean/
+
+# Development/temporary check scripts
+__tmp_check.js
+__tmp_client_check.js
+__ats_check.js
+
+# Development/debug output files
+edge_dom.txt
+__edge_dom.txt
+__edge_err.txt
+
+# Dependencies
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment files (if any)
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
