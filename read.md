@@ -1,6 +1,6 @@
 # Vector ATS Agent Reference
 
-This file is a fast reference for agents working in this repository. Read this first, then search only the section or function relevant to the task instead of re-scanning `index.html`.
+This file is the quickest way to orient yourself in this repository. Read it first, then jump directly to the area you need instead of re-scanning all of `index.html`.
 
 ## 1. What This Application Is
 
@@ -8,39 +8,41 @@ This file is a fast reference for agents working in this repository. Read this f
 - Type: single-page Applicant Tracking System
 - Stack: plain HTML + embedded CSS + embedded vanilla JavaScript
 - Build tools: none
-- Runtime: browser app served by a tiny Node static server
+- Runtime: browser app served by a small Node static server
 - Main entry point: `index.html`
 - Dev server: `node serve.js`
 - Local URL: `http://127.0.0.1:4173/`
 
 Important constraints:
 
-- Everything important lives in one large file: `index.html`
+- Nearly all real app logic lives in one large file: `index.html`
 - There is no bundler, transpiler, or hot reload
-- Refresh the browser manually after edits
+- Refresh manually after edits
 - Data persists in IndexedDB and some UI/admin settings persist in `localStorage`
-- The app uses a fixed seeded clock for consistency:
+- The app uses a fixed seeded clock:
   - `NOW = new Date('2026-04-01T10:15:00+05:30')`
 
 ## 2. File Map
 
 - `index.html`
-  - Entire app: markup, CSS, JS, seeded data logic, rendering, drawers, modals, event handlers
+  - Entire app: markup, CSS, JS, seed data, renderers, drawers, modals, event handlers
+  - Currently roughly 7k lines
 - `serve.js`
-  - Simple static server
+  - Small static server
   - Serves the newest of `index.html` or `ats.html`
-- `__ats_check.js`
-  - Large reference/check script with route labels, seed generation, validation-style helpers
-- `__tmp_check.js`, `__tmp_client_check.js`
-  - Temporary/reference scripts
-- `__edge_verify*`, `__edge_dom.txt`, `edge_dom.txt`, `__edge_err.txt`
-  - Browser verification output, not primary app code
+  - Sends no-cache headers to avoid stale refreshes
 - `AGENTS.md`
-  - High-level repo guidance
+  - Short repo-level development guide
+- `__ats_check.js`, `__tmp_check.js`, `temp_check.js`
+  - Reference and validation-style scripts
+- `__edge_verify*`
+  - Browser verification output, not primary application code
+- `corrupted_index.html`, `diff*.txt`, `recover.js`, `_patch*.js`, `fix.js`, `script.js`
+  - Recovery or scratch artifacts; inspect only if the task is specifically about repair history
 
 ## 3. Runtime Architecture
 
-The app is implemented as one self-invoking script inside `index.html`.
+The app is implemented as a single self-invoking script inside `index.html`.
 
 Core runtime constants:
 
@@ -58,31 +60,31 @@ Core runtime constants:
 Global app container:
 
 - `A.db`
-  - database wrapper
+  - IndexedDB wrapper
 - `A.cache`
   - in-memory arrays for each store
 - `A.lu`
   - lookup maps derived from cache
 - `A.ui`
-  - current route, drawer, modal, search, sidebar, calendar state, per-route table state
+  - current route, drawer, modal, search, sidebar, calendar, and per-route state
 
 Primary render flow:
 
 - `page()`
-  - chooses which top-level route renderer to run
+  - selects the top-level route renderer
 - `shell(content)`
-  - builds outer shell/sidebar/topbar
+  - builds the outer shell, sidebar, and topbar
 - `render()`
-  - writes shell HTML, then renders drawer, modal, toasts, DnD, permissions
+  - writes shell HTML, then drawer, modal, toasts, DnD, and permissions UI
 - `drawer()`
-  - right-side workbench/drawer renderer
+  - right-side detail/workbench renderer
 - `modal()`
   - centered modal renderer
 
 State helpers to know:
 
 - `state(k)`
-  - per-route state bucket for query, filters, sorting, pagination, saved view, selected rows, active tab
+  - route-level state bucket for query, filters, sorting, pagination, saved view, selected rows, and active tab
 - `activeFilters(k)`
 - `clearSavedView(k)`
 
@@ -95,7 +97,7 @@ Permission helpers:
 
 ## 4. Persistence Model
 
-Primary persistence is IndexedDB. If IndexedDB is unavailable, the app falls back to local storage-style behavior in its DB wrapper.
+Primary persistence is IndexedDB. If IndexedDB is unavailable, the DB wrapper falls back to a more limited local-storage-style behavior.
 
 Object stores:
 
@@ -142,12 +144,12 @@ Seeded baseline volumes from `NEED`:
 - `saved_views`: 12
 - `reports`: 10
 
-Lookup building happens in `buildLookups()`. If data changes look wrong, inspect:
+Lookup rebuilding happens in `buildLookups()`. When saved rows do not appear correctly, inspect:
 
 - `saveRow()`
 - `replaceStoreRows()`
 - `buildLookups()`
-- seed/repair helpers near the top of the JS section
+- seed and repair helpers near the top of the JS section
 
 ## 5. Main Routes and What They Do
 
@@ -163,6 +165,7 @@ Routes:
 - `interviews`
 - `offers`
 - `clients`
+- `platform`
 - `reports`
 - `settings`
 
@@ -185,10 +188,10 @@ Function: `careerPortal()`
 
 Purpose:
 
-- public-style internal job browsing experience
+- public-style internal jobs browsing experience
 - reads directly from `job_openings`
 - only shows jobs with status `Open`
-- application flow creates candidate + application records
+- application flow creates candidate and application records
 - source attribution is saved as career site / portal
 
 Search here when working on:
@@ -207,7 +210,7 @@ Core capabilities:
 - saved views
 - duplicate detection and merge
 - source tracking
-- GDPR/consent state
+- GDPR and consent state
 - RTW, screening, portal, background, signature, redeployment states
 - owner assignment
 - inline submission to jobs
@@ -282,12 +285,13 @@ Function: `applications()`
 Core capabilities:
 
 - application grid
-- stage, source, owner, status filters
+- stage, source, owner, and status filters
 - bulk stage move
 - bulk owner assign
 - bulk reject
 - client feedback
 - schedule interview
+- create submittals, offers, and placements
 
 Application drawer tabs:
 
@@ -304,12 +308,15 @@ High-value search tokens:
 - `bulkOwner`
 - `bulkReject`
 - `applicationFeedback`
+- `applicationSubmittal`
+- `applicationOffer`
+- `applicationPlacement`
 
 ### Assignments
 
 Function: `assignments()`
 
-This is one of the more specialized areas. It maps ATS workflows to staffing/placement concepts and includes Bullhorn-style parity notes.
+This is a specialized area that maps ATS workflows to staffing and placement concepts, including Bullhorn-style parity notes.
 
 Assignment workspace tabs:
 
@@ -324,13 +331,13 @@ Assignment drawer tabs:
 - `capability`
 - `timeline`
 
-Special purpose content:
+Special-purpose content:
 
 - capability matrix for Bullhorn-aligned behaviors
 - placement record workflows
-- temp/contract workflows
-- billing/pay/margin concepts
-- document, payroll, renewal, shift, leave, timesheet concepts
+- temp and contract workflows
+- billing, pay, and margin concepts
+- documents, payroll, renewal, shift, leave, and timesheet concepts
 
 High-value search tokens:
 
@@ -350,8 +357,7 @@ Purpose:
 
 - kanban-like pipeline by stage
 - global or job-specific pipeline view
-- drag/drop style stage operations
-- quick forward actions from current stage
+- quick-forward actions from current stage
 
 High-value search tokens:
 
@@ -366,9 +372,10 @@ Function: `interviews()`
 
 Capabilities:
 
-- list and calendar workspace
+- list and calendar workspaces
 - schedule/reschedule/cancel/complete interview
-- interview drawer with overview + application context
+- video provider flow and interview-type chooser
+- interview drawer with overview and application context
 
 High-value search tokens:
 
@@ -379,6 +386,7 @@ High-value search tokens:
 - `interviewReschedule`
 - `interviewCancel`
 - `interviewComplete`
+- `videoProceed`
 
 ### Offers
 
@@ -387,8 +395,10 @@ Function: `offers()`
 Capabilities:
 
 - offer grid
-- accept / decline
-- linked application context in drawer
+- create/edit offer
+- accept/decline
+- generate offer documents
+- linked application context in drawer actions
 
 High-value search tokens:
 
@@ -396,6 +406,7 @@ High-value search tokens:
 - `offerOverviewMarkup`
 - `acceptOffer`
 - `declineOffer`
+- `offerDocumentGenerator`
 
 ### Clients
 
@@ -409,11 +420,11 @@ Capabilities:
 - opportunities
 - BD tasks
 - job order management
-- collaboration / portal / reporting workspaces
+- collaboration, portal, and reporting workspaces
 
-Client drawer areas are broader than a simple overview and cover:
+Client drawer areas cover:
 
-- account/contact management
+- account and contact management
 - business development
 - jobs
 - collaboration
@@ -429,9 +440,23 @@ High-value search tokens:
 - `clientJobOrderManagementMarkup`
 - `clientCollaborationMarkup`
 
+### Platform
+
+Function search token: `function platform`
+
+Purpose:
+
+- platform-level operational workspace separate from client management and settings
+- useful when the task is not purely end-user configuration but broader operational administration
+
+Search here when working on:
+
+- global platform views
+- operational controls not housed under `settings`
+
 ### Reports
 
-Function: `reports()`
+Function search token: `renderReportsModule`
 
 Capabilities:
 
@@ -440,8 +465,8 @@ Capabilities:
 - folders
 - favorites
 - scheduled reports
-- deleted reports
-- builder with fields/measures/related modules
+- recently deleted reports
+- builder with fields, measures, and related modules
 
 High-value search tokens:
 
@@ -470,8 +495,8 @@ Capabilities:
 - platform defaults
 - workflow defaults
 - automation toggles
-- provider/integration settings
-- governance/retention/duplicate-check rules
+- provider and integration settings
+- governance, retention, and duplicate-check rules
 - user and role access management
 
 High-value search tokens:
@@ -491,8 +516,8 @@ High-value search tokens:
 
 - left sidebar modules
 - top search bar
-- quick add button
-- responsive collapsed sidebar support
+- quick-add button
+- responsive collapsed sidebar
 
 Search:
 
@@ -501,8 +526,8 @@ Search:
 ### Drawers
 
 - fixed right-side detail workspace
-- many routes open records in a drawer rather than full-page navigation
-- some drawers are wide/full
+- many routes open records in a drawer instead of navigating full-page
+- some drawers are wider workbench-style panels
 
 Search:
 
@@ -520,9 +545,9 @@ Search:
 - `modal()`
 - `data-form="`
 
-### Tables / Grids
+### Tables and Grids
 
-- generic grid and compact grid helpers
+- `grid(...)` and `compactGrid(...)`
 - filtering, saved views, sorting, pagination, bulk actions
 
 Search:
@@ -533,7 +558,7 @@ Search:
 - `filterField(`
 - `viewField(`
 
-### Cards / Workbench Panels
+### Cards and Panels
 
 Common building blocks:
 
@@ -556,20 +581,19 @@ Common patterns:
 - drawer open: `data-a="drawer"`
 - modal open: `data-a="modal"`
 - candidate actions: `data-a="candAction"`
+- workspace filters and mode switches: route-specific `data-a` values like `settingsTab`, `reportFolder`, `assignmentWorkspaceTab`, `interviewWorkspaceTab`
 
 Search points for event wiring:
 
-- document event listeners near the bottom of `index.html`
-- `data-a="candAction"`
-- `document.addEventListener('click'`
+- the delegated `document.addEventListener('click', async e => { ... })` block near the bottom of `index.html`
 - `document.addEventListener('change'`
 - `document.addEventListener('input'`
 
 If a button exists in markup but does nothing, inspect:
 
-1. the button `data-a` and related `data-*` attributes
-2. the delegated listener section near the end of the script
-3. modal/form submit handling for the related `data-form`
+1. the element's `data-a` and related `data-*` attributes
+2. the delegated listener section near the end of the file
+3. modal/form submit handling for the corresponding `data-form`
 
 ## 8. Form Names You Will Likely Need
 
@@ -582,6 +606,7 @@ Frequently used `data-form` values:
 - `placementAssignment`
 - `tempAssignment`
 - `interview`
+- `offer`
 - `mergeCandidate`
 - `candidateAttachment`
 - `candidateTask`
@@ -607,7 +632,7 @@ Settings forms:
 
 ## 9. Data and Domain Notes
 
-The app is not a minimal demo anymore. It models a broad recruiting/staffing domain, including:
+The app models a broad recruiting and staffing domain, including:
 
 - candidate sourcing and engagement
 - compliance and onboarding states
@@ -616,7 +641,7 @@ The app is not a minimal demo anymore. It models a broad recruiting/staffing dom
 - interview scheduling and review capture
 - offers and hires
 - client hierarchy, contacts, opportunities, and portal concepts
-- assignment/placement/temp-contract workflows
+- assignment, placement, and temp-contract workflows
 - reports, saved views, and scheduled-report workspace
 - role-based access and settings governance
 
@@ -626,7 +651,7 @@ Examples of simulated-but-modeled areas:
 
 - LinkedIn sync
 - job board connectors
-- WhatsApp/email/SMS provider flows
+- WhatsApp, email, and SMS provider flows
 - candidate AI matching
 - resume parsing
 - screening providers
@@ -665,12 +690,24 @@ If the task is about stage movement or application logic:
 - search `bulkReject`
 - search `pipeline(`
 
+If the task is about offers or hiring handoff:
+
+- search `function offers(`
+- search `offerDocumentGenerator`
+- search `acceptOffer`
+- search `declineOffer`
+
 If the task is about assignments / staffing / Bullhorn parity:
 
 - search `function assignments(`
 - search `assignmentMatrixRows`
 - search `requirementsMatrixRows`
 - search `assignmentCapabilityDrawerMarkup`
+
+If the task is about platform administration:
+
+- search `platform`
+- search `data-form="platform"`
 
 If the task is about reports:
 
@@ -706,29 +743,30 @@ If the task is about modals or form submission:
 ## 11. Safe Working Notes
 
 - Do not split the app into multiple files unless explicitly asked
-- Preserve existing CSS variable usage and component naming patterns
-- Prefer extending existing `data-a` action patterns over adding one-off listeners
-- When adding drawer actions, check both button markup and delegated handler logic
+- Preserve existing CSS variables, component naming, and `data-a` event patterns
+- When adding drawer actions, update both the button markup and delegated event logic
 - When adding new persisted fields, update:
-  - modal form
+  - the modal form
   - save logic
-  - row mappers / lookup builders if needed
-  - drawer/grid renderers that should display the field
-- Browser data may need clearing if a schema/seed change appears stale
+  - row mappers / lookup builders when needed
+  - drawer/grid renderers that should expose the field
+- Browser data may need clearing if schema or seed behavior appears stale
 
 ## 12. What To Ignore Unless Needed
 
-Usually ignore these unless the task is explicitly about verification or reference scripts:
+Usually ignore these unless the task is explicitly about verification or recovery:
 
 - `__edge_verify/`
 - `__edge_verify_client/`
 - `__edge_verify_clients_clean/`
-- `__edge_dom.txt`
-- `edge_dom.txt`
-- `__edge_err.txt`
-- `temp.txt`
-- `__tmp_check.js`
-- `__tmp_client_check.js`
+- `__server_out.log`
+- `__server_err.log`
+- `corrupted_index.html`
+- `diff.txt`
+- `diff_utf8.txt`
+- `tmp_1294.txt`
+- `_patch_fix.js`
+- `_patch_temp.js`
 
 ## 13. Recommended Starting Points
 
@@ -737,7 +775,7 @@ For most feature work:
 1. Open `index.html`
 2. Search for the route renderer or drawer markup for the affected area
 3. Search for the related `data-a` action or `data-form`
-4. Check whether the change also touches cache rows, lookups, or permissions
+4. Check whether the change also touches cache rows, lookups, permissions, or seed/repair helpers
 5. Refresh the browser after edits
 
-This document should be updated whenever a major module, route, data store, or interaction pattern changes.
+Update this document whenever a major route, data store, or interaction pattern changes.

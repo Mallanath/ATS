@@ -1,7 +1,7 @@
 # Vector ATS Development Guide
 
 ## Project Overview
-Single-page Applicant Tracking System (ATS) built as a vanilla JavaScript application with embedded CSS and no build tools.
+Single-page Applicant Tracking System (ATS) built in plain HTML, embedded CSS, and embedded vanilla JavaScript with no build tools.
 Read `read.md` first before exploring `index.html`.
 
 ## Development Setup
@@ -11,89 +11,110 @@ Read `read.md` first before exploring `index.html`.
 node serve.js
 ```
 - Serves at `http://127.0.0.1:4173/`
-- Entry point: `index.html` (also checks `ats.html`)
-- No hot reload - refresh browser manually after changes
+- Entry requests (`/`, `/index.html`, `/ats.html`) resolve to the newest of `index.html` or `ats.html`
+- No hot reload; refresh the browser manually after changes
 
 ### File Structure
-- **`index.html`**: Main application (HTML + CSS + JavaScript, ~5600 lines)
-- **`serve.js`**: Static file server
-- **`__ats_check.js`** / **`__tmp_check.js`**: Data validation/generation scripts
-- **`__edge_verify*` directories**: Browser verification data (ignore for app development)
+- **`index.html`**: Main application (HTML + CSS + JavaScript, currently ~7040 lines)
+- **`serve.js`**: Static file server with no-cache headers
+- **`read.md`**: Expanded agent/reference guide for navigating the app
+- **`__ats_check.js`**, **`__tmp_check.js`**, **`temp_check.js`**: Reference and validation-style helper scripts
+- **`__edge_verify*` directories**: Browser verification data; ignore for normal app work
+- **Scratch / recovery files** such as `corrupted_index.html`, `diff*.txt`, `_patch*.js`, `recover.js`: repository artifacts, not runtime app modules
 
 ## Architecture Notes
 
 ### Database Layer
-- Uses **IndexedDB** (`vector_ats_html_v1`)
-- Key stores: `users`, `candidates`, `applications`, `interviews`, `offers`, `tasks`
-- Data seeded with `NOW = new Date('2026-04-01T10:15:00+05:30')`
+- Uses **IndexedDB** with `DB_NAME = 'vector_ats_html_v1'`
+- Current schema version is `DB_VERSION = 3`
+- Metadata keys include `META = 'vector_ats_meta_v1'`
+- Seed markers are `SEED = '2026-04-04-restore'` and `SAVED_VIEW_VERSION = '2026-04-04-restore-views'`
+- Fixed seeded clock: `NOW = new Date('2026-04-01T10:15:00+05:30')`
+
+### Core Stores
+- Main stores include `users`, `departments`, `clients`, `contacts`, `opportunities`, `job_openings`, `candidates`, `applications`, `assignments`, `pipeline_stages`, `workflows`, `interviews`, `assessments`, `reviews`, `tasks`, `activity_log`, `notes`, `offers`, `hires`, `saved_views`, `reports`, `rejection_reasons`
 
 ### UI Patterns
-- **Drawer system**: Fixed right panel for detail views (`class="drawer"`)
-- **Modal system**: Centered overlay (`class="scrim"`)
-- **Tabs**: Horizontal tab navigation (`class="tabs"`)
-- **Grid layouts**: 12-column grid system (`.p5`, `.p6`, `.p7`, `.p12`)
-
-### CSS Conventions
-- CSS custom properties in `:root` (`--brand`, `--ok`, `--warn`, `--bad`, etc.)
-- Component classes: `.kpi`, `.panel`, `.wb`, `.card`, `.list`, `.mr`
-- State classes: `.ok`, `.warn`, `.bad`, `.info`, `.neu` (for pills/status)
-- Use `class="pill ok"` for status indicators
+- **Drawer system**: fixed right-side detail workbench (`class="drawer"`)
+- **Modal system**: centered scrim overlays (`class="scrim"`)
+- **Tabs**: horizontal navigation for drawers and workspace subviews (`class="tabs"`)
+- **Grid layouts**: 12-column helpers such as `.p5`, `.p6`, `.p7`, `.p12`
+- **Workbench panels**: `.panel`, `.kpi`, `.wb`, `.card`, `.list`, `.mr`
 
 ### JavaScript Patterns
-- Global state: `A.ui` for UI state, `A.cache` for data, `A.lu` for lookup maps
-- Event handling: `data-a` attribute for actions (e.g., `data-a="candAction" data-kind="sendMail"`)
-- Markup generation: Template literals with `esc()` for escaping
-- State management: `state(k)` returns per-route state object
+- Global state lives under `A`
+- `A.ui`: route, drawer, modal, search, sidebar, calendar, route-specific UI state
+- `A.cache`: cached rows from IndexedDB
+- `A.lu`: derived lookup maps
+- `state(k)`: returns a route-level UI state bucket
+- Markup is generated with template literals and escaped using `esc()`
+- Most interactions are delegated through `data-a` attributes
+
+## Current Main Routes
+- `dashboard`
+- `career-portal`
+- `candidates`
+- `jobs`
+- `applications`
+- `assignments`
+- `pipeline`
+- `interviews`
+- `offers`
+- `clients`
+- `platform`
+- `reports`
+- `settings`
 
 ## Common Tasks
 
-### Adding a Button to Candidate Actions
-1. Find `candidateActions=` in `index.html` (line ~4023)
-2. Add button with `data-a="candAction" data-kind="yourAction"`
-3. Handle action in switch statement (search for `case 'yourAction'`)
+### Adding a Candidate Action
+1. Search `candidateActions=` in `index.html`
+2. Add a button with `data-a="candAction" data-kind="yourAction"`
+3. Wire the behavior in the delegated click handler near the bottom of `index.html`
 
-### Modifying Drawer Header
-1. Locate `workbenchDrawerHeader()` function (line ~3988)
-2. Modify `info` array for buttons/text in header
-3. Modify `actions` string for action buttons
+### Modifying the Drawer Header
+1. Search `workbenchDrawerHeader`
+2. Update the `info` array for badges or metadata
+3. Update the `actions` markup for buttons
 
 ### Updating CSS
-1. Search for existing class names first
-2. CSS is in `<style>` tag at top of `index.html`
-3. Use CSS custom properties for colors (`var(--brand)`, etc.)
+1. Search for an existing class before adding a new one
+2. CSS lives in the top `<style>` block inside `index.html`
+3. Prefer CSS custom properties such as `var(--brand)`, `var(--ok)`, `var(--warn)`, `var(--bad)`
 
-### Adding New Routes
-1. Add to `ROUTES` array in `__ats_check.js` or `__tmp_check.js`
-2. Add label to `LABEL` object
-3. Add route handler in main switch statement
+### Adding or Updating Routes
+1. Check `const ROUTES` and `const LABEL` in `index.html`
+2. Add or update the corresponding route renderer function
+3. Verify navigation, permissions, and any drawer/modal entry points that reference the route
 
 ## Important Conventions
 
 ### Button Styling
-- Primary: `class="btnp"` (brand color)
-- Default: `class="btn"` (outlined)
-- Danger: `class="btnd"` (red)
+- Primary: `class="btnp"`
+- Default: `class="btn"`
+- Danger: `class="btnd"`
 
 ### Status Pills
-- Use `class="pill ok"` for positive status
-- Use `class="pill warn"` for pending/warning
-- Use `class="pill bad"` for negative status
-- Use `class="pill info"` for informational
+- Positive: `class="pill ok"`
+- Warning/pending: `class="pill warn"`
+- Negative: `class="pill bad"`
+- Informational: `class="pill info"`
+- Neutral: `class="pill neu"`
 
 ### Event Handling
-- All actions use `data-a` attribute
-- Candidate actions: `data-a="candAction" data-kind="[action]"`
-- Navigation: `data-a="tab"` with `data-m` (module) and `data-tab`
-- Search: `data-a="search"`
+- Most actions use `data-a`
+- Candidate actions use `data-a="candAction"` plus `data-kind`
+- Navigation uses `data-a="nav"`
+- Drawer tabs use `data-a="tab"`
+- Search controls commonly use `data-a="search"`
 
 ### Data IDs
-- Format: `[prefix]_[number]` (e.g., `usr_01`, `cand_042`, `app_123`)
-- Use `nextId(prefix, n)` helper to generate IDs
+- IDs generally follow `[prefix]_[number]` such as `usr_01`, `cand_042`, `app_123`
+- Use existing helpers like `pad()` and `nextId(...)` patterns rather than inventing a new format
 
-## Gotchas
-
-1. **No build step**: Changes to `index.html` require browser refresh
-2. **Embedded everything**: CSS/JS/HTML in single file - no separate files
-3. **Browser storage**: Data persists in IndexedDB, clear via DevTools if needed
-4. **Fixed date**: App uses `NOW = new Date('2026-04-01...')` for consistency
-5. **Edge directories**: `__edge_verify*` folders are browser data, not app code
+## Working Notes
+- No build step; edit and refresh
+- The app is intentionally single-file; do not split it unless explicitly asked
+- Browser data persists in IndexedDB and some settings in `localStorage`
+- If schema or seed behavior looks stale, clear browser storage or use the app reset path
+- Ignore `__edge_verify*` directories unless the task is specifically about verification output
