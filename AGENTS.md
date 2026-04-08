@@ -2,6 +2,7 @@
 
 ## Project Overview
 Single-page Applicant Tracking System (ATS) built as a vanilla JavaScript application with embedded CSS and no build tools.
+Read `read.md` first before exploring `index.html`.
 
 ## Development Setup
 
